@@ -757,12 +757,12 @@ h1:hover {
   -ms-grid-row-span: 1 2;
 }
 
-.Cuentas img {
+#money {
   position: absolute;
-  width: 100%;
-  margin-top: 6px;
-  margin-left: 7px;
-  margin-right: 6px;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 6%;
   color: transparent;
 }
 

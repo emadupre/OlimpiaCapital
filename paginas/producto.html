@@ -27,111 +27,98 @@
         </p>
         <div class="hero-buttons">
           <a href="#services" class="btn btn-primary">Explorar servicios</a>
-          <button class="btn btn-secondary">Contactar</button>
+          <a href="#services" class="btn btn-secondary">Contacto</a>
         </div>
       </div>
     </section>
 
     <hr>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Nuestros Servicios</h2>
-        <p class="section-description">
-          Soluciones tecnológicas integrales para impulsar la transformación
-          digital de tu empresa
-        </p>
-        <div class="services-grid">
-          <!-- Services will be inserted by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <!-- Currency Exchange Section -->
-    <section id="exchange" class="exchange">
-      <div class="container">
-        <div class="exchange-calculator">
-          <h2>Cambio de Divisas</h2>
-          <div class="calculator-grid">
-            <div class="calculator-inputs">
-              <div class="input-group">
-                <label for="amount">Monto</label>
-                <input type="number" id="amount" placeholder="0.00" />
-              </div>
-              <div class="currency-selectors">
-                <div class="input-group">
-                  <label for="fromCurrency">De</label>
-                  <select id="fromCurrency">
-                    <option value="USD">USD - Dólar</option>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="GBP">GBP - Libra</option>
-                  </select>
+    
+    <div class="contenedor-calculadoras">
+      <div class="calculadoras">
+        <div class="divisas">
+          <div id="exchange" class="exchange">
+            <div class="container">
+              <div class="exchange-calculator">
+                <h2>Cambio de Divisas</h2>
+                <div class="calculator-grid">
+                  <div class="calculator-inputs">
+                    <div class="input-group">
+                      <label for="amount">Monto</label>
+                      <input type="number" id="amount" placeholder="0.00" />
+                    </div>
+                    <div class="currency-selectors">
+                      <div class="input-group">
+                        <label for="fromCurrency">De</label>
+                        <select id="fromCurrency">
+                          <option value="USD">USD - Dólar</option>
+                          <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - Libra</option>
+                      </select>
+                    </div>
+                    <div class="input-group">
+                      <label for="toCurrency">A</label>
+                      <select id="toCurrency">
+                        <option value="ARS">ARS - Pesos</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label for="operation">Operación</label>
+                    <select id="operation">
+                      <option value="buy">Compra</option>
+                      <option value="sell">Venta</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="input-group">
-                  <label for="toCurrency">A</label>
-                  <select id="toCurrency">
-                    <option value="ARS">ARS - Pesos</option>
-                  </select>
+                <div class="exchange-result">
+                  <h3>Resultado</h3>
+                  <div id="result-amount">$ 0.00</div>
+                  <div id="exchange-info"></div>
                 </div>
-              </div>
-              <div class="input-group">
-                <label for="operation">Operación</label>
-                <select id="operation">
-                  <option value="buy">Compra</option>
-                  <option value="sell">Venta</option>
-                </select>
               </div>
             </div>
-            <div class="exchange-result">
-              <h3>Resultado</h3>
-              <div id="result-amount">$ 0.00</div>
-              <div id="exchange-info"></div>
+          </div>
+        </div>
+        </div>
+        <div class="prestamos">
+          <div id="loans" class="loans">
+            <div class="container">
+              <div class="loan-calculator">
+                <h2>Calculadora de Préstamos</h2>
+                <div class="calculator-grid">
+                  <div class="calculator-inputs">
+                    <div class="input-group">
+                      <label for="loanAmount">Monto del préstamo</label>
+                      <input type="number" id="loanAmount" placeholder="10000" />
+                    </div>
+                    <div class="input-group">
+                      <label for="loanTerm">Plazo (meses)</label>
+                      <select id="loanTerm">
+                        <option value="12">12 meses</option>
+                        <option value="24">24 meses</option>
+                        <option value="36">36 meses</option>
+                        <option value="48">48 meses</option>
+                        <option value="60">60 meses</option>
+                      </select>
+                    </div>
+                    <div class="input-group">
+                      <label for="interestRate">Tasa de interés anual (%)</label>
+                      <input type="number" id="interestRate" value="12" />
+                    </div>
+                  </div>
+                  <div class="loan-result">
+                    <h3>Cuota Mensual Estimada</h3>
+                    <div id="monthly-payment">$ 0.00</div>
+                    <div id="loan-info"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <hr>
-
-    <!-- Loan Calculator Section -->
-    <section id="loans" class="loans">
-      <div class="container">
-        <div class="loan-calculator">
-          <h2>Calculadora de Préstamos</h2>
-          <div class="calculator-grid">
-            <div class="calculator-inputs">
-              <div class="input-group">
-                <label for="loanAmount">Monto del préstamo</label>
-                <input type="number" id="loanAmount" placeholder="10000" />
-              </div>
-              <div class="input-group">
-                <label for="loanTerm">Plazo (meses)</label>
-                <select id="loanTerm">
-                  <option value="12">12 meses</option>
-                  <option value="24">24 meses</option>
-                  <option value="36">36 meses</option>
-                  <option value="48">48 meses</option>
-                  <option value="60">60 meses</option>
-                </select>
-              </div>
-              <div class="input-group">
-                <label for="interestRate">Tasa de interés anual (%)</label>
-                <input type="number" id="interestRate" value="12" />
-              </div>
-            </div>
-            <div class="loan-result">
-              <h3>Cuota Mensual Estimada</h3>
-              <div id="monthly-payment">$ 0.00</div>
-              <div id="loan-info"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <hr>
 
@@ -143,12 +130,7 @@
           Simplifica tus operaciones internacionales con nuestra plataforma de
           pagos global
         </p>
-        <div class="features-grid">
-          <!-- Features will be inserted by JavaScript -->
-        </div>
-        <div class="cta">
-          <button class="btn btn-primary">Comenzar Ahora</button>
-        </div>
+        <a href="#services" class="btn btn-primary">Comenza ahora</a>
       </div>
     </section>
 
