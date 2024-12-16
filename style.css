@@ -45,18 +45,19 @@ body {
   line-height: 1.5;
 }
 
-.tapador{
-  background: #D4D5E5;
+.tapador {
+  background: #d4d5e5;
   width: 160px;
   height: 92px;
-  display: flex; 
-  position:absolute;
+  display: flex;
+  position: sticky;
   z-index: 10;
-  margin-left: 23%;
+  margin-left: 72%;
   margin-top: -100px;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: end;
   align-content: end;
+  overflow: hidden;
 }
 
 /* Navbar styles */
@@ -200,6 +201,7 @@ h1:hover {
   margin-top: 1.5rem;
   font-size: 2rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5%;
 }
 
 .hero-tagline {
@@ -284,7 +286,7 @@ h1:hover {
 .button .liquid > span > span {
   animation: move 6s ease-in-out infinite;
   animation-delay: calc(0.2s * var(--i));
-  background: rgb(255, 140, 0, 0.5);;
+  background: rgb(255, 140, 0, 0.5);
   width: 50px;
   height: 50px;
   display: block;
@@ -383,7 +385,7 @@ h1:hover {
   transition: background-color 0.2s, transform 0.2s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;  Necesario para el pseudoelemento */
- /* overflow: hidden; /* Evita que el pseudoelemento salga del botón */
+/* overflow: hidden; /* Evita que el pseudoelemento salga del botón */
 /*} */
 
 /*.primary-btn::after {
@@ -392,7 +394,7 @@ h1:hover {
   position: absolute;
   opacity: 0;
   right: 1rem; /* Posición inicial fuera de vista */
-  /*top: 50%;
+/*top: 50%;
   transform: translateY(-50%);
   font-size: 1.5rem;
   transition: opacity 0.3s, right 0.3s; /* Suavidad de movimiento */
@@ -461,7 +463,6 @@ h1:hover {
     opacity: 1;
   }
 }
-
 
 /* ABOUT SECTION */
 .about-section {
@@ -1437,7 +1438,6 @@ ul {
 }
 
 /* FIN REDES SOCIALES */
-
 
 .footer-info {
   font-size: 0.9rem;
