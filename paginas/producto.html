@@ -35,47 +35,48 @@
 
     <hr />
 
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright">
-        <script
-          type="text/javascript"
-          src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-          async
-        >
-            {
-            "symbols": [
+    <section class="monedas">
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+          <script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+            async
+          >
               {
-                "proName": "BITSTAMP:BTCUSD",
-                "title": "Bitcoin"
-              },
-              {
-                "proName": "BITSTAMP:ETHUSD",
-                "title": "Ethereum"
-              },
-              {
-                "description": "USDT",
-                "proName": "CRYPTOCAP:USDT"
-              },
-              {
-                "description": "Binance USD",
-                "proName": "BINANCE:BNBUSD"
-              },
-              {
-                "description": "USD to ARS",
-                "proName": "FX_IDC:USDARS"
-              }
-            ],
-            "showSymbolLogo": true,
-            "isTransparent": false,
-            "displayMode": "compact",
-            "colorTheme": "light",
-            "locale": "es"
-          }
-        </script>
+              "symbols": [
+                {
+                  "proName": "BITSTAMP:BTCUSD",
+                  "title": "Bitcoin"
+                },
+                {
+                  "proName": "BITSTAMP:ETHUSD",
+                  "title": "Ethereum"
+                },
+                {
+                  "description": "USDT",
+                  "proName": "CRYPTOCAP:USDT"
+                },
+                {
+                  "description": "Binance USD",
+                  "proName": "BINANCE:BNBUSD"
+                },
+                {
+                  "description": "USD to ARS",
+                  "proName": "FX_IDC:USDARS"
+                }
+              ],
+              "showSymbolLogo": true,
+              "isTransparent": false,
+              "displayMode": "compact",
+              "colorTheme": "light",
+              "locale": "es"
+            }
+          </script>
+        </div>
       </div>
-    </div>
-
+    </section>
     <hr />
 
     <div class="contenedor-calculadoras">
@@ -194,9 +195,23 @@
           Visita nuestras agencias físicas para realizar tus operaciones de
           cambio de manera segura
         </p>
-        <div class="locations-grid">
-          <!-- Locations will be inserted by JavaScript -->
-        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Cambio Internacional -->
+    <section id="cambio-internacional" class="locations">
+      <div class="container">
+        <h2>Cambio Internacional</h2>
+        <p class="section-description">
+          Realiza tus operaciones de manera rápida y segura con Magno Capital.
+          <br />
+          Ofrecemos las mejores tasas del mercado y un servicio confiable.
+        </p>
+        <a href="#services" class="btn btn-primary"
+          >Contáctanos para más información</a
+        >
       </div>
     </section>
 
