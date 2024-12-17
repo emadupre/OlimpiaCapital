@@ -1,11 +1,33 @@
 RewriteEngine On
 
 # Evita redirecciones infinitas comprobando si la URL ya está en la ruta final
+#RewriteCond %{REQUEST_URI} !^/paginas/producto/producto\.html$
+#RewriteRule ^producto\.html$ paginas/producto/producto.html [L]
+
+#RewriteCond %{REQUEST_URI} !^/paginas/contacto/contacto\.html$
+#RewriteRule ^contacto\.html$ paginas/contacto/contacto.html [L]
+
+#RewriteCond %{REQUEST_URI} !^/paginas/nosotros/nosotros\.html$
+#RewriteRule ^nosotros\.html$ paginas/nosotros/nosotros.html [L]
+
+
+RewriteEngine On
+
+# Evita redirecciones infinitas y asegura que las rutas funcionen correctamente
 RewriteCond %{REQUEST_URI} !^/paginas/producto/producto\.html$
-RewriteRule ^producto\.html$ paginas/producto/producto.html [L]
+RewriteRule ^producto$ paginas/producto/producto.html [L]
 
 RewriteCond %{REQUEST_URI} !^/paginas/contacto/contacto\.html$
-RewriteRule ^contacto\.html$ paginas/contacto/contacto.html [L]
+RewriteRule ^contacto$ paginas/contacto/contacto.html [L]
 
 RewriteCond %{REQUEST_URI} !^/paginas/nosotros/nosotros\.html$
-RewriteRule ^nosotros\.html$ paginas/nosotros/nosotros.html [L]
+RewriteRule ^nosotros$ paginas/nosotros/nosotros.html [L]
+
+# Eliminar la extensión .html de las URLs (Redirección 301)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Servir archivos .html aunque no se escriba la extensión
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
