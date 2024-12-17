@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Producto</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,212 +12,12 @@
         <img src="LOGO-SOLO-A-COLOR.png" id="main-logo" alt="" />
       </a>
       <nav class="navbar">
-        <a href="#">Nosotros</a>
-        <a href="producto.html">Producto</a>
-        <a href="#footer">Contacto</a>
+        <a href="/paginas/nosotros/nosotros.html">Nosotros</a>
+        <a href="/paginas/producto/producto.html">Producto</a>
+        <a href="/paginas/contacto/contacto.html">Contacto</a>
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <h1>Impulsa tu Negocio con <span>Tecnología Inteligente</span></h1>
-        <p>
-          Transformamos empresas a través de soluciones digitales innovadoras y
-          personalizadas
-        </p>
-        <div class="hero-buttons">
-          <a href="#services" class="btn btn-primary">Explorar servicios</a>
-          <a href="#services" class="btn btn-secondary">Contacto</a>
-        </div>
-      </div>
-    </section>
-
-    <hr />
-
-    <section class="monedas">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright">
-          <script
-            type="text/javascript"
-            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-            async
-          >
-              {
-              "symbols": [
-                {
-                  "proName": "BITSTAMP:BTCUSD",
-                  "title": "Bitcoin"
-                },
-                {
-                  "proName": "BITSTAMP:ETHUSD",
-                  "title": "Ethereum"
-                },
-                {
-                  "description": "USDT",
-                  "proName": "CRYPTOCAP:USDT"
-                },
-                {
-                  "description": "Binance USD",
-                  "proName": "BINANCE:BNBUSD"
-                },
-                {
-                  "description": "USD to ARS",
-                  "proName": "FX_IDC:USDARS"
-                }
-              ],
-              "showSymbolLogo": true,
-              "isTransparent": false,
-              "displayMode": "compact",
-              "colorTheme": "light",
-              "locale": "es"
-            }
-          </script>
-        </div>
-      </div>
-    </section>
-    <hr />
-
-    <div class="contenedor-calculadoras">
-      <div class="calculadoras">
-        <div class="divisas">
-          <div id="exchange" class="exchange">
-            <div class="container">
-              <div class="exchange-calculator">
-                <h2>Cambio de Divisas</h2>
-                <div class="calculator-grid">
-                  <div class="calculator-inputs">
-                    <div class="input-group">
-                      <label for="amount">Monto</label>
-                      <input type="number" id="amount" placeholder="0.00" />
-                    </div>
-                    <div class="currency-selectors">
-                      <div class="input-group">
-                        <label for="fromCurrency">De</label>
-                        <select id="fromCurrency">
-                          <option value="USD">USD - Dólar</option>
-                          <option value="EUR">EUR - Euro</option>
-                          <option value="GBP">GBP - Libra</option>
-                        </select>
-                      </div>
-                      <div class="input-group">
-                        <label for="toCurrency">A</label>
-                        <select id="toCurrency">
-                          <option value="ARS">ARS - Pesos</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="input-group">
-                      <label for="operation">Operación</label>
-                      <select id="operation">
-                        <option value="buy">Compra</option>
-                        <option value="sell">Venta</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="exchange-result">
-                    <h3>Resultado</h3>
-                    <div id="result-amount">$ 0.00</div>
-                    <div id="exchange-info"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="prestamos">
-          <div id="loans" class="loans">
-            <div class="container">
-              <div class="loan-calculator">
-                <h2>Calculadora de Préstamos</h2>
-                <div class="calculator-grid">
-                  <div class="calculator-inputs">
-                    <div class="input-group">
-                      <label for="loanAmount">Monto del préstamo</label>
-                      <input
-                        type="number"
-                        id="loanAmount"
-                        placeholder="10000"
-                      />
-                    </div>
-                    <div class="input-group">
-                      <label for="loanTerm">Plazo (meses)</label>
-                      <select id="loanTerm">
-                        <option value="12">12 meses</option>
-                        <option value="24">24 meses</option>
-                        <option value="36">36 meses</option>
-                        <option value="48">48 meses</option>
-                        <option value="60">60 meses</option>
-                      </select>
-                    </div>
-                    <div class="input-group">
-                      <label for="interestRate"
-                        >Tasa de interés anual (%)</label
-                      >
-                      <input type="number" id="interestRate" value="12" />
-                    </div>
-                  </div>
-                  <div class="loan-result">
-                    <h3>Cuota Mensual Estimada</h3>
-                    <div id="monthly-payment">$ 0.00</div>
-                    <div id="loan-info"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr />
-
-    <!-- International Payments Section -->
-    <section id="international" class="international">
-      <div class="container">
-        <h2>Pagos Internacionales</h2>
-        <p class="section-description">
-          Simplifica tus operaciones internacionales con nuestra plataforma de
-          pagos global
-        </p>
-        <a href="#services" class="btn btn-primary">Comenza ahora</a>
-      </div>
-    </section>
-
-    <hr />
-
-    <!-- Physical Locations Section -->
-    <section id="locations" class="locations">
-      <div class="container">
-        <h2>Agencias de Cambio</h2>
-        <p class="section-description">
-          Visita nuestras agencias físicas para realizar tus operaciones de
-          cambio de manera segura
-        </p>
-      </div>
-    </section>
-
-    <hr />
-
-    <!-- Cambio Internacional -->
-    <section id="cambio-internacional" class="locations">
-      <div class="container">
-        <h2>Cambio Internacional</h2>
-        <p class="section-description">
-          Realiza tus operaciones de manera rápida y segura con Magno Capital.
-          <br />
-          Ofrecemos las mejores tasas del mercado y un servicio confiable.
-        </p>
-        <a href="#services" class="btn btn-primary"
-          >Contáctanos para más información</a
-        >
-      </div>
-    </section>
-
-    <hr />
-
-    <!-- FOOTER -->
     <footer id="footer" class="custom-footer">
       <div class="footer-content">
         <div class="logo-section">
@@ -228,9 +28,9 @@
           />
         </div>
         <div class="footer-links">
-          <a href="#">Nosotros</a>
-          <a href="producto.html">Producto</a>
-          <a href="#">Contacto</a>
+          <a href="/paginas/nosotros/nosotros.html">Nosotros</a>
+          <a href="/paginas/producto/producto.html">Producto</a>
+          <a href="/paginas/contacto/contacto.html">Contacto</a>
         </div>
 
         <div class="social-media">
@@ -348,7 +148,6 @@
         </div>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
