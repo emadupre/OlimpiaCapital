@@ -1,0 +1,1355 @@
+# #-#-#-#-#  hostinger-easy-onboarding.po (Hostinger Easy Onboarding 1.0.0)  #-#-#-#-#
+# Copyright (C) 2024 Hostinger
+# This file is distributed under the GPL v3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger Easy Onboarding 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger-easy-"
+"onboarding\n"
+"Last-Translator: Zhou Yu\n"
+"Language-Team: Chinese (China)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-05-06T11:48:04+00:00\n"
+"PO-Revision-Date: 2024-12-12 14:36+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: hostinger-easy-onboarding\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Loco-Version: 2.6.11; wp-6.4.5"
+
+#: includes/Admin/Assets.php:162
+msgid ""
+" Learn how to connect your domain to Hostinger by watching this tutorial on "
+"YouTube for a step-by-step guide:"
+msgstr "观看YouTube上的教程，逐步了解如何将你的域名连接到Hostinger："
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:66
+msgid " Please refresh the page and try again."
+msgstr ""
+"请刷新页面并重试。\n"
+
+#. translators: %s plugin slug
+#: includes/Rest/StepRoutes.php:150
+msgid "%s is already active"
+msgstr "%s 已处于活动状态 "
+
+#. translators: %s field name that is missing
+#: includes/Rest/StepRoutes.php:61 includes/Rest/StepRoutes.php:65
+#: includes/Rest/StepRoutes.php:142 includes/Rest/WooRoutes.php:41
+#: includes/Rest/WooRoutes.php:112
+msgid "%s missing or empty"
+msgstr "%s 丢失或为空 "
+
+#: includes/Admin/Assets.php:196
+msgid ""
+"<strong>Almost there!</strong> Just a few more steps to get your site ready "
+"for online success."
+msgstr "<strong>即将设置成功！</strong>只需再采取几个步骤，就可以让您的网站为在线成功做好准备。"
+
+#: includes/Admin/Assets.php:256
+msgid ""
+"<strong>Use built-in payment methods</strong> - no extra plugins needed."
+msgstr "<strong>使用内置付款方式</strong>--无需额外插件。"
+
+#: includes/Admin/Assets.php:255
+msgid ""
+"<strong>Use built-in shipping methods</strong> - no extra plugins needed."
+msgstr "<strong>使用内置物流方式</strong>--无需额外插件。"
+
+#: includes/Admin/Onboarding/PluginManager.php:32
+msgid "Accept payments via credit card. Manage transactions within WordPress."
+msgstr "接受信用卡付款。在 WordPress 中管理交易。 "
+
+#: includes/Admin/Assets.php:226
+msgid "Access site identity and edit title"
+msgstr "访问网站身份并编辑标题 "
+
+#: includes/Errors.php:14
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr "抱歉，操作失败。请重试或联系客户支持。"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:44
+msgid "Actions"
+msgstr "操作"
+
+#: includes/Admin/Assets.php:240
+msgid "Activate"
+msgstr "激活 "
+
+#: includes/Admin/Assets.php:179 includes/Admin/Assets.php:228
+msgid "Add a new page"
+msgstr "添加一个新页面"
+
+#: includes/Admin/Assets.php:242
+msgid "Add a title"
+msgstr ""
+"添加一个标题\n"
+
+#: includes/Admin/Assets.php:258
+msgid "Add content"
+msgstr "添加内容"
+
+#: includes/Admin/Assets.php:229
+msgid "Add plugin"
+msgstr "添加插件 "
+
+#: includes/Admin/Onboarding/Onboarding.php:350
+#| msgid "Add products"
+msgid "Add product"
+msgstr "添加产品 "
+
+#: includes/Admin/Assets.php:251
+msgid "Add shipping method"
+msgstr "添加运输方式 "
+
+#: includes/Admin/Assets.php:257
+msgid ""
+"Add the title of the page, for example, About. Click the Add Title text to "
+"open the text box where you will add your title. The title of your page "
+"should be descriptive of the information the page will have."
+msgstr "添加页面的标题，例如，”关于“。单击“添加标题”文本以打开文本框，在其中添加标题。您的页面标题应该是描述此页面的信息。"
+
+#: includes/Admin/Assets.php:151
+msgid "Add your first product"
+msgstr "添加第一个产品 "
+
+#: includes/Admin/Assets.php:152 includes/Admin/Onboarding/Onboarding.php:346
+msgid "Add your first product or service"
+msgstr "添加你的第一个产品或服务"
+
+#: includes/Admin/Assets.php:230
+msgid "Added"
+msgstr " 已添加"
+
+#: includes/Admin/Assets.php:168
+msgid ""
+"Adding a logo is a great way to personalize a website or add branding "
+"information. You can use your existing logo or create a new one using the <a "
+"href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" style=\"text-"
+"decoration:none; font-weight:bold; color:#673de6\">AI Logo Maker.</a>"
+msgstr ""
+"添加徽标是个性化网站或添加品牌信息的好方法。你可以使用现有徽标或使用 <a href=\"https://logo.hostinger.com/?"
+"ref=wordpress-onboarding\" style=\"text-decoration:none; font-weight:bold; "
+"color:#673de6\">AI徽标制作工具创建一个新徽标。"
+
+#: includes/Admin/Onboarding/PluginManager.php:60
+msgid "Adds Correios shipping methods to your WooCommerce store."
+msgstr "为你的 WooCommerce 商店添加 Correios 配送。"
+
+#: includes/Admin/Onboarding/PluginManager.php:50
+msgid ""
+"Adiciona PagSeguro como meio de pagamento (com desconto nas taxas oficiais)."
+msgstr "添加 PagSeguro 作为支付手段（与税务部门无关）。"
+
+#: includes/Admin/Onboarding/PluginManager.php:41
+msgid ""
+"Amazon Pay is embedded directly into your existing web site, and all the "
+"buyer interactions with Amazon Pay and Login with Amazon take place in "
+"embedded widgets so that the buyer never leaves your site. "
+msgstr ""
+"亚马逊支付直接嵌入到你现有的网站中，所有与亚马逊支付和登录亚马逊的买家互动都在嵌入式小工具中进行，因此买家永远不会离开你的网站。\n"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:106
+msgid "An error occurred while deleting the page."
+msgstr "删除页面时发生错误。"
+
+#: includes/Errors.php:17
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr "发生未知错误。请重试或联系客户支持。"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:76
+msgid "An unexpected error occurred. Please try again."
+msgstr "出现意外错误。请重试。 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:31
+msgid "Are you sure you want to delete this page?"
+msgstr "您确定要删除此页面吗？ "
+
+#: includes/Admin/Assets.php:266
+msgid "Are you sure?"
+msgstr "您确定吗？"
+
+#. translators: %s php version
+#: hostinger-easy-onboarding.php:74
+msgid "Attention:"
+msgstr "注意："
+
+#: includes/Admin/Assets.php:243
+msgid "Back"
+msgstr "返回 "
+
+#: includes/Admin/Assets.php:268
+msgid ""
+"Before publishing, you can preview your created page by clicking on the "
+"Preview button. If you are happy with the result, click the Publish button."
+msgstr "在发布之前，您可以通过单击“预览”按钮预览创建的页面。如果您对结果满意，请单击”发布“按钮。"
+
+#: includes/Admin/Onboarding/Onboarding.php:503
+#: includes/Admin/Onboarding/Onboarding.php:533
+msgid ""
+"Build a professional, custom-designed site in moments. Just a few clicks and "
+"AI handles the rest."
+msgstr "即刻建立一个专业的定制设计网站。只需点击几下，剩下的就交给AI来处理。"
+
+#: includes/Admin/Assets.php:178 gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PageForm.js:70
+msgid "Cancel"
+msgstr "取消 "
+
+#: includes/Rest/WelcomeRoutes.php:65
+msgid "Choice parameter missing or empty"
+msgstr "缺少选择参数或空白参数"
+
+#: includes/Admin/Assets.php:144 includes/Admin/Onboarding/Onboarding.php:392
+msgid ""
+"Choose the ways you'd like to ship orders to customers. You can always add "
+"others later."
+msgstr "选择客户订单的发送方式。你也可以随时添加其他方式。"
+
+#: includes/Admin/Assets.php:191
+msgid "Complete"
+msgstr "完成"
+
+#: includes/Admin/Assets.php:197
+msgid "Completed steps"
+msgstr "已完成的步骤 "
+
+#: includes/Admin/Assets.php:231
+msgid "Configure"
+msgstr "配置"
+
+#: includes/Admin/Onboarding/PluginManager.php:35
+msgid ""
+"Configure the payment options and accept payments with cards, ticket and "
+"money of Mercado Pago account."
+msgstr "配置付款选项，并接受使用 Mercado Pago 账户的卡、票据和货币付款。 "
+
+#: includes/Admin/Hooks.php:494
+msgid "Congrats, you have connected WooPayments!"
+msgstr "恭喜您，您已成功连接WooPayments！"
+
+#: includes/Admin/Assets.php:193 includes/Admin/Hooks.php:487
+msgid "Congrats, you’re ready to show off your site!"
+msgstr "恭喜您，您已准备好为大家展示您的网站了！"
+
+#: includes/Admin/Assets.php:232
+msgid "Connect"
+msgstr "连接 "
+
+#: includes/Admin/Onboarding/Onboarding.php:233
+msgid "Connect a domain"
+msgstr "连接域名"
+
+#: includes/Admin/Onboarding/Onboarding.php:291
+msgid "Connect Amazon to site"
+msgstr "将亚马逊连接到网站 "
+
+#: includes/Admin/Onboarding/Onboarding.php:235
+msgid "Connect domain"
+msgstr "连接域名"
+
+#: includes/Admin/Assets.php:210
+msgid "Connect domain now"
+msgstr "立即连接域名 "
+
+#: includes/Admin/Onboarding/Onboarding.php:238
+#: includes/Admin/Onboarding/Onboarding.php:250
+msgid "Connect on hPanel"
+msgstr "连接hPanel"
+
+#: includes/Admin/Assets.php:239 includes/Admin/Onboarding/WelcomeCards.php:29
+msgid ""
+"Connect your <strong>Amazon Associate</strong> account to fetch API details."
+msgstr "连接你的 <strong>Amazon Associate</strong> 账户，获取 API 详情。"
+
+#: includes/Admin/Onboarding/Onboarding.php:285
+msgid "Connect your Amazon account to the site"
+msgstr "将你的亚马逊账户连接到网站"
+
+#: includes/Admin/Assets.php:180
+msgid "Connect your domain"
+msgstr "链接您的域名"
+
+#: includes/Admin/Assets.php:267
+msgid "Connect your domain first"
+msgstr "请先连接域名"
+
+#: includes/Admin/Assets.php:157 includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:271
+msgid "Connect your domain to Hostinger"
+msgstr "将域名连接到Hostinger"
+
+#: includes/Admin/Onboarding/Onboarding.php:254
+msgid "Connected a domain"
+msgstr "连接一个域名"
+
+#: includes/Admin/Onboarding/Onboarding.php:287
+msgid "Connected your Amazon account"
+msgstr "连接亚马逊账户 "
+
+#: includes/Admin/Assets.php:259
+msgid ""
+"Content can be anything you wish, for example, text, images, videos, tables, "
+"and lots more. Click on a plus sign and choose any block you want to add to "
+"the page."
+msgstr "内容可以是任何内容，例如文本、图像、视频、表格等等。单击加号选择您想添加的模块至页面。"
+
+#: includes/Admin/Assets.php:132
+msgid "Continue"
+msgstr "继续 "
+
+#: includes/Admin/Assets.php:263 includes/Admin/Hooks.php:484
+#: includes/Admin/Hooks.php:497
+msgid "Continue setup"
+msgstr "继续设置 "
+
+#: includes/Admin/Assets.php:181
+msgid "Create a logo"
+msgstr "创建标识"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/CreatePageButton.js:23
+msgid "Create a new Page"
+msgstr "创建新页面 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/CreatePageButton.js:26
+msgid "Create a new page"
+msgstr "创建新页面 "
+
+#: includes/Admin/Onboarding/Onboarding.php:502
+msgid "Create a site with AI"
+msgstr "使用AI创建网站"
+
+#: includes/Admin/Onboarding/PluginManager.php:57
+msgid ""
+"Create additional shipment methods in WooCommerce and enable pricing based "
+"on cart weight or total."
+msgstr "在 WooCommerce 中创建其他发货方式，并按购物车重量或总额计算定价。"
+
+#: includes/Admin/Onboarding/PluginManager.php:69
+msgid "Create Chronopost & Mondial relay shipping labels and send them easily."
+msgstr "创建 Chronopost 和 Mondial 中继运输标签，轻松发货。"
+
+#: includes/Admin/Onboarding/Onboarding.php:532
+msgid "Create content with AI"
+msgstr "使用AI创建内容"
+
+#: includes/Admin/Onboarding/Onboarding.php:511
+msgid "Create new site"
+msgstr "创建新网站 "
+
+#: includes/Admin/Onboarding/Onboarding.php:504
+msgid "Create site with AI"
+msgstr "利用AI创建网站"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:59
+msgid "Current page"
+msgstr "当前页面"
+
+#: includes/Admin/Assets.php:194
+msgid "Customize the way your site looks and start welcoming visitors."
+msgstr "自定义网站外观，开始迎接访客。 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:123
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:125
+msgid "Delete page"
+msgstr "删除页面 "
+
+#: includes/Admin/Assets.php:204 includes/Admin/Assets.php:233
+msgid "Dismiss"
+msgstr "离开"
+
+#: includes/Admin/Surveys.php:48
+msgid "Do you have any comments/suggestions to improve our AI tools?"
+msgstr "针对改进我们的AI工具，你可以提出一些意见或建议吗？"
+
+#: includes/Admin/Surveys.php:34
+msgid ""
+"Do you have any comments/suggestions to improve our WooCommerce onboarding?"
+msgstr "针对改进我们的 WooCommerce 引导流程，你可以提出一些意见或建议吗？"
+
+#: includes/Admin/Assets.php:273
+msgid ""
+"Domain propagation can take up to 24 hours. Your domain will propagate "
+"automatically, and you don't need to take any action during this time."
+msgstr "域名传送可能需要 24 小时。你的域名将自动传送，在此期间，你不需要进行任何额外的操作。"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:19
+msgid "Edit"
+msgstr "编辑 "
+
+#: includes/Admin/Assets.php:222
+msgid "Edit an image"
+msgstr "编辑图片"
+
+#: includes/Admin/Assets.php:216
+msgid "Edit description"
+msgstr "编辑详情"
+
+#: includes/Hooks.php:220
+msgid "Edit Home Page"
+msgstr "编辑主页 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:12
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:14
+msgid "Edit Page"
+msgstr "编辑页面 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/index.js:100
+#: gutenberg/edit-pages-panel/src/index.js:106
+msgid "Edit Pages"
+msgstr "编辑页面 "
+
+#: includes/Admin/Assets.php:214
+msgid "Edit post"
+msgstr "编辑发布内容"
+
+#: includes/Admin/Assets.php:175
+msgid "Edit post description"
+msgstr "编辑发布内容描述"
+
+#: includes/Admin/Assets.php:203
+msgid "Edit site"
+msgstr "编辑网站 "
+
+#: includes/Admin/Assets.php:177
+msgid "Edit site title"
+msgstr "编辑网站标题"
+
+#: includes/Admin/Assets.php:189
+msgid ""
+"Enter your store details so we can help you set up your online store faster."
+msgstr "请输入商店的详细信息，以便我们帮助你更快地建立网上商店。"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PageForm.js:46
+msgid "Error:"
+msgstr "错误： "
+
+#: includes/Admin/Onboarding/Onboarding.php:257
+#, fuzzy
+#| msgid ""
+#| "Every website needs a domain that makes it easy to access and remember. "
+#| "Get ours in just a few clicks."
+msgid ""
+"Every website needs a domain that makes it easy to access and remember. Get "
+"yours in just a few clicks."
+msgstr "每个网站都需要一个便于访问和记忆的域名。只需点击几下，即可获得我们的域名。 "
+
+#: includes/Admin/Assets.php:136
+msgid ""
+"Expand your audience with the help of Omnisend. Create email campaigns that "
+"drive sales."
+msgstr "在 Omnisend 的帮助下扩大受众范围。创建电子邮件营销活动，为你增加销售额。"
+
+#: includes/Admin/Onboarding/PluginManager.php:47
+msgid "Extends WooCommerce with a RedSys gateway."
+msgstr "使用 RedSys 网关扩展 WooCommerce。 "
+
+#: includes/Admin/Assets.php:282
+msgid "Find the answers you need in our Knowledge Base"
+msgstr "在我们的知识库中找到你所需要的答案"
+
+#: includes/Admin/Assets.php:218
+msgid "Find the Media page"
+msgstr "查找媒体库页面"
+
+#: includes/Admin/Assets.php:292
+msgid "Follow these steps to complete your setup"
+msgstr "请按照以下步骤完成设置 "
+
+#: includes/Admin/Assets.php:234
+msgid "Generate content"
+msgstr "生成内容 "
+
+#: includes/Admin/Assets.php:236 includes/Admin/Onboarding/WelcomeCards.php:37
+#| msgid "Create content with AI"
+msgid "Generate content with AI"
+msgstr "使用AI创建内容 "
+
+#: includes/Admin/Onboarding/Onboarding.php:534
+msgid "Generate post"
+msgstr "生成内容"
+
+#: includes/Admin/Assets.php:269
+msgid "Get a domain"
+msgstr "获取域名 "
+
+#: includes/Admin/Assets.php:122
+msgid "Get deal"
+msgstr "获取优惠 "
+
+#: includes/Admin/Hooks.php:337
+msgid "Get Discount"
+msgstr "获取折扣"
+
+#: includes/Admin/Onboarding/Onboarding.php:415
+msgid "Get found on Google"
+msgstr "在 Google 上被发现 "
+
+#: includes/Admin/Assets.php:237
+msgid ""
+"Get images, text, and SEO keywords created for you instantly – try <strong>"
+"AI Content Creator</strong>."
+msgstr "立即为你创建图片、文本和搜索引擎优化关键字--试试<strong>AI内容生成器吧</strong>。"
+
+#: includes/Admin/Onboarding/WelcomeCards.php:39
+msgid "Get images, text, and SEO keywords created for you instantly."
+msgstr "立即为你创建图片、文本和搜索引擎优化关键字。 "
+
+#: includes/Admin/Assets.php:290
+msgid "Get in touch with our live specialists"
+msgstr "联系我们的在线专家"
+
+#: includes/Admin/Assets.php:150 includes/Admin/Onboarding/Onboarding.php:373
+msgid ""
+"Get ready to accept customer payments. Let them pay for your products and "
+"services with ease."
+msgstr "设置客户付款，将一切准备就绪。让他们轻松购买你的产品及服务。"
+
+#: includes/Admin/Onboarding/Onboarding.php:308
+msgid ""
+"Get ready to sell online. Add your first product, then set up shipping and "
+"payments."
+msgstr "准备好在线销售。添加您的第一件产品，然后设置物流和支付方式。"
+
+#: includes/Admin/Onboarding/Onboarding.php:310
+#| msgid "Get Started"
+msgid "Get started"
+msgstr "立即开始  "
+
+#: includes/Admin/Assets.php:186
+msgid "Get started!"
+msgstr "现在就开始吧！"
+
+#: includes/Admin/Assets.php:145
+msgid "Getting your features ready"
+msgstr "完成所有性能设置"
+
+#: includes/Admin/Assets.php:212
+msgid "Go to Posts"
+msgstr "转至发布内容"
+
+#: includes/Admin/Assets.php:182 includes/Admin/Assets.php:224
+msgid "Go to the Customize page"
+msgstr "转至自定义页面"
+
+#: includes/Admin/Assets.php:265
+msgid ""
+"Google Site Kit is an essential plugin that makes sure that potential "
+"visitors can find your site on Google."
+msgstr "Google Site Kit 是一个重要插件，可确保潜在访客能在 Google 上找到您的网站。 "
+
+#: includes/Admin/Assets.php:211
+msgid "Got it!"
+msgstr "知道了！"
+
+#: includes/Admin/Assets.php:283
+msgid "Help Center"
+msgstr "帮助中心 "
+
+#: includes/Admin/Assets.php:209
+msgid "Hide completed"
+msgstr "隐藏已完成 "
+
+#: includes/Admin/Assets.php:202
+msgid "Hide list"
+msgstr "隐藏列表 "
+
+#: includes/Admin/Onboarding/PluginManager.php:54
+msgid ""
+"Hosted services for WooCommerce: automated tax calculation, shipping label "
+"printing, and smoother payment setup."
+msgstr "WooCommerce 托管服务：自动计税、打印运输标签以及更顺畅的付款设置流程。"
+
+#. Author of the plugin
+#: hostinger-easy-onboarding.php
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#: includes/Admin/Assets.php:286
+msgid "Hostinger Academy"
+msgstr "Hostinger学院 "
+
+#. Plugin Name of the plugin
+#: hostinger-easy-onboarding.php
+msgid "Hostinger Easy Onboarding"
+msgstr "Hostinger快速使用流程"
+
+#. Description of the plugin
+#: hostinger-easy-onboarding.php
+msgid "Hostinger Easy Onboarding WordPress plugin."
+msgstr "Hostinger WordPress插件快速使用流程 "
+
+#: includes/Admin/Assets.php:215
+msgid ""
+"Hover over the chosen post to see the options menu. Click on the Edit button "
+"to open the post editor."
+msgstr "将鼠标悬停在选定的发布内容上以查看“选项”菜单。单击”编辑“按钮打开内容编辑器。"
+
+#: includes/Admin/Surveys.php:41
+msgid "How could we make it easier to create a new WordPress website?"
+msgstr "如何让创建一个新的 WordPress 网站变得更容易？ "
+
+#: includes/Admin/Assets.php:278
+msgid "How to Back Up a WordPress Site"
+msgstr "如何备份WordPress网站"
+
+#: includes/Admin/Assets.php:270
+msgid "How to Build an EFFECTIVE Landing Page with WordPress (2024)"
+msgstr "如何使用 WordPress 创建有效的着陆页 (2024) "
+
+#: includes/Admin/Assets.php:274
+msgid "How to Create a WordPress Contact Us Page"
+msgstr "如何创建一个WordPress联系我们页面"
+
+#: includes/Admin/Assets.php:276
+msgid "How to Create Your Coming Soon Page in WordPress (2024)"
+msgstr "如何在 WordPress 中创建“即将推出”页面 (2024)"
+
+#: includes/Admin/Assets.php:279
+msgid "How to Import Images Into WordPress Website"
+msgstr "如何在WordPress网站中导入图片"
+
+#: includes/Admin/Assets.php:272
+msgid "How to Make a Website (2024): Simple, Quick, & Easy Tutorial"
+msgstr "如何制作网站（2024 年）：简单、快速、轻松教程 "
+
+#: includes/Admin/Assets.php:163
+msgid "How to Point Domain Name to Web Hosting"
+msgstr "如何将域名指向虚拟主机 "
+
+#: includes/Admin/Assets.php:280
+msgid "How to Set Up WordPress SMTP"
+msgstr "如何设置WordPress SMTP"
+
+#: includes/Admin/Surveys.php:40
+msgid ""
+"How would you rate your experience building a website based on a pre-built "
+"template? (Score 1-10)"
+msgstr "你如何评价预建模板网站创建的经验？(评分 1-10）"
+
+#: includes/Admin/Surveys.php:33
+msgid ""
+"How would you rate your experience setting up a WooCommerce site on our "
+"hosting?"
+msgstr "你通过我们的托管服务创建了 WooCommerce 网站，你如何评价整个体验呢？"
+
+#: includes/Admin/Surveys.php:47
+msgid ""
+"How would you rate your experience using our AI content generation tools in "
+"onboarding? (Scale 1-10)"
+msgstr "针对在引导流程中使用我们的AI内容生成工具，你如何评价该体验呢？ (1-10 分)"
+
+#: includes/Admin/Menu.php:75
+msgid "hPanel - Billing"
+msgstr "hPanel - 账单 "
+
+#: includes/Admin/Menu.php:57
+msgid "hPanel - Home"
+msgstr "hPanel - 主页 "
+
+#: includes/Admin/Menu.php:66
+msgid "hPanel - Websites"
+msgstr " hPanel - 网站"
+
+#. Plugin URI of the plugin
+#: hostinger-easy-onboarding.php
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#. Author URI of the plugin
+#: hostinger-easy-onboarding.php
+msgid "https://www.hostinger.com"
+msgstr "https://www.hostinger.com"
+
+#: includes/Admin/Assets.php:275
+msgid "I Bought a Domain, Now What?"
+msgstr "我买了一个域名，现在怎么办？ "
+
+#: includes/Admin/Assets.php:223
+msgid ""
+"If you wish to edit the image, click on the chosen image and click the Edit "
+"Image button. You can now crop, rotate, flip or scale the selected image."
+msgstr "如果你想编辑图像，点击选中的图像并点击“编辑图像”按钮。裁剪、旋转、翻转或缩放选定的图像。"
+
+#: includes/Admin/Assets.php:174 includes/Admin/Assets.php:225
+msgid ""
+"In the left sidebar, click Appearance to expand the menu. In the Appearance "
+"section, click Customize. The Customize page will open."
+msgstr "在左侧栏中,单击“外观”展开菜单。在“外观”部分，单击“自定义”。自定义页面将被打开。"
+
+#: includes/Admin/Assets.php:227
+msgid "In the left sidebar, click Site Identity and edit your site title."
+msgstr "在左侧栏中，单击“站点标识”并编辑您的站点标题。"
+
+#: includes/Admin/Assets.php:184
+msgid ""
+"In the left sidebar, click Site Identity, then click on the Select Site Icon "
+"button. Here, you can upload your brand logo."
+msgstr "在左侧边栏单击 \"网站标识\"，然后单击 \"选择网站图标 \"按钮。在这里，你可以上传你的品牌徽标。"
+
+#: includes/Admin/Assets.php:219
+msgid ""
+"In the left sidebar, find the Media button. Click on the Library button to "
+"see all the images you have uploaded to your website."
+msgstr "在左侧边栏找到 \"媒体 \"按钮。单击 \"库 \"按钮，查看你上传到网站的所有图片。"
+
+#: includes/Admin/Assets.php:241
+msgid ""
+"In the left sidebar, find the Pages menu and click on Add New button. You "
+"will see the WordPress page editor. Each paragraph, image, or video in the "
+"WordPress editor is presented as a “block” of content."
+msgstr ""
+"在左侧栏中,"
+"找到“页面”菜单并点击添加新的按钮。您将看到WordPress页面编辑器。WordPress编辑器中的每个段落、图像或视频都以“模块”的形式呈现。"
+
+#: includes/Admin/Assets.php:213
+msgid ""
+"In the left sidebar, find the Posts button. Click on the All Posts button "
+"and find the post for which you want to change the description."
+msgstr "在左侧栏中，找到“发布内容”按钮。单击“所有发布内容”按钮，找到需要更改详情描述的内容。"
+
+#: includes/Admin/Assets.php:155
+msgid ""
+"Increase your sites visibility by enabling its discoverability in the Google "
+"search engine."
+msgstr "通过在谷歌搜索引擎中的可发现性，提高网站知名度。 "
+
+#: includes/Admin/Assets.php:235
+msgid "Installed"
+msgstr "已安装 "
+
+#: includes/Admin/Assets.php:166
+#: includes/Admin/Views/Partials/PromotionalBanner.php:5
+msgid "Invite a Friend, Earn Up to $100"
+msgstr "邀请朋友，最高可赚 100 美元"
+
+#: includes/Admin/Onboarding/PluginManager.php:44
+msgid ""
+"It enables a WooCommerce site to accept payments through UPI apps like BHIM, "
+"Google Pay, Paytm, PhonePe or any Banking UPI app. Avoid payment gateway "
+"charges."
+msgstr ""
+"它允许 WooCommerce 网站通过 UPI 应用程序（如 BHIM、Google Pay、Paytm、PhonePe 或任何银行 UPI "
+"应用程序）接受付款。避免支付网关费用。"
+
+#: includes/Admin/Onboarding/Onboarding.php:289
+msgid ""
+"Join the Amazon Affiliate Program to start earning commissions. Link your "
+"Amazon affiliate account to your website, start promoting products and earn "
+"rewards."
+msgstr "加入亚马逊联盟计划，开始赚取佣金。将您的亚马逊联盟账户链接到您的网站，开始推广产品并赚取奖励。 "
+
+#: includes/Admin/Hooks.php:481
+msgid "Just a few more steps to launch your online store"
+msgstr "只需几个步骤即可启动你的在线商店"
+
+#: includes/Admin/Onboarding/Onboarding.php:510
+msgid "Keep current site"
+msgstr "保留当前网站 "
+
+#: includes/Admin/Assets.php:201 includes/Admin/Assets.php:281
+msgid "Knowledge Base"
+msgstr "知识库 "
+
+#: includes/Admin/Menu.php:34
+msgid "Learn"
+msgstr "学习"
+
+#: includes/Admin/Assets.php:285
+msgid "Learn WordPress"
+msgstr "学习 WordPress "
+
+#: includes/Admin/Assets.php:277
+msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
+msgstr "LiteSpeed 高速缓冲存储器:如何获得100%WordPress优化功能"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:27
+msgid "Loading..."
+msgstr "正在加载... "
+
+#: includes/Admin/Onboarding/Onboarding.php:417
+msgid ""
+"Make sure that your website shows up when visitors are looking for your "
+"business on Google."
+msgstr "确保访客在谷歌上搜索您的企业时，您的网站能够显示出来。"
+
+#: includes/Admin/Onboarding/Onboarding.php:423
+msgid "Manage"
+msgstr "管理 "
+
+#: includes/Admin/Assets.php:134 includes/Admin/Onboarding/Onboarding.php:390
+msgid "Manage shipping"
+msgstr "管理运输 "
+
+#: includes/Admin/Assets.php:133
+msgid "Market your business"
+msgstr "营销业务"
+
+#: includes/Admin/Assets.php:159
+msgid "Nameserver"
+msgstr "域名服务器"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:33
+msgid "No pages found."
+msgstr "未找到任何页面。 "
+
+#: includes/Helper.php:357
+msgid "No PHP files found in plugin directory"
+msgstr "未发现插件目录中 PHP 文件 "
+
+#: includes/Admin/Assets.php:121 includes/Admin/Onboarding/Onboarding.php:356
+msgid "Not interested"
+msgstr "不感兴趣 "
+
+#: includes/Admin/Onboarding/Onboarding.php:400
+#: includes/Admin/Onboarding/Onboarding.php:427
+msgid "Not needed"
+msgstr "不需要 "
+
+#: includes/Admin/Onboarding/Onboarding.php:506
+#: includes/Admin/Onboarding/Onboarding.php:536
+msgid "Not now"
+msgstr "暂时跳过"
+
+#: includes/Admin/Assets.php:205
+msgid "Now <strong>finish setting up</strong> the plugins you’ve installed."
+msgstr "现在，<strong>设置</strong>已安装插件。"
+
+#: includes/Admin/Views/Partials/RateUs.php:38
+msgid ""
+"on <a href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
+msgstr ""
+"在 <a href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>上"
+
+#: includes/Admin/Assets.php:198 includes/Admin/Menu.php:28
+#: includes/Admin/Menu.php:92 includes/Admin/Menu.php:93
+msgid "Onboarding"
+msgstr "使用流程"
+
+#: includes/Admin/Assets.php:130 includes/Admin/Onboarding/Onboarding.php:113
+msgid "Online store setup"
+msgstr "建立网上商店 "
+
+#: includes/Admin/Assets.php:287
+msgid ""
+"Opt-in to receive tips, discounts, and recommendations from the WooCommerce "
+"team directly in your inbox."
+msgstr "选择加入，即可在收件箱中直接收到 WooCommerce 团队提供的提示、折扣和建议。 "
+
+#: includes/Admin/Assets.php:253
+msgid "Or use payment plugins"
+msgstr "或使用支付插件 "
+
+#: includes/Admin/Assets.php:254
+msgid "Or use shipping plugins"
+msgstr "或使用物流插件"
+
+#: includes/Admin/Assets.php:249
+msgid "Other"
+msgstr "其他 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PageForm.js:41
+msgid "Page title:"
+msgstr "页面标题： "
+
+#: includes/Admin/Assets.php:244
+msgid "Payment plugins"
+msgstr "支付插件 "
+
+#: includes/Admin/Assets.php:246
+msgid "Payment settings"
+msgstr "付款设置 "
+
+#: includes/Admin/Onboarding/PluginManager.php:29
+msgid ""
+"PayPal's latest complete payments processing solution. Accept PayPal, Pay "
+"Later, credit/debit cards, alternative digital wallets local payment types "
+"and bank accounts."
+msgstr "PayPal 最新的支付处理解决方案。接受 PayPal、Pay Later、信用卡/借记卡、其他数字钱包、本地支付类型和银行账户。"
+
+#: includes/Admin/Assets.php:164
+msgid "Play on YouTube"
+msgstr "在 YouTube 上播放 "
+
+#: includes/Helper.php:352
+msgid "Plugin directory not found"
+msgstr "未找到插件目录 "
+
+#: includes/Helper.php:367
+msgid "Plugin main file not found"
+msgstr "未找到插件主文件 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PreviewPageButton.js:46
+msgid "Preview"
+msgstr "预览 "
+
+#: includes/Admin/Assets.php:131
+msgid "Preview website"
+msgstr "网站预览 "
+
+#: includes/Admin/Assets.php:260
+msgid "Publish the page"
+msgstr "发布页面"
+
+#: includes/Admin/Views/Partials/RateUs.php:2
+msgid "Rate this plugin"
+msgstr "评价此插件"
+
+#: includes/Admin/Assets.php:248
+msgid "Recommended for you"
+msgstr "为你推荐"
+
+#: includes/Admin/Assets.php:238 includes/Admin/Onboarding/WelcomeCards.php:27
+msgid "Run an Amazon Affiliate site"
+msgstr "运营亚马逊联盟网站 "
+
+#: includes/Admin/Assets.php:135
+msgid "Run email marketing campaigns"
+msgstr "开展电子邮件营销活动 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PageForm.js:62
+msgid "Save"
+msgstr "保存"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PageForm.js:59
+msgid "Saving"
+msgstr "正在保存"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/SearchBar.js:7
+#: gutenberg/edit-pages-panel/src/components/SearchBar.js:8
+msgid "Search pages"
+msgstr "搜索页面 "
+
+#: includes/Admin/Onboarding/PluginManager.php:38
+msgid ""
+"Securely accept payments, synchronize sales, and seamlessly manage inventory "
+"and product data between WooCommerce and Square POS."
+msgstr "在 WooCommerce 和 Square POS 之间安全地接受付款、同步销售、无缝管理库存和产品数据。 "
+
+#: includes/Admin/Onboarding/Onboarding.php:348
+msgid ""
+"Sell products, services and digital downloads. Set up and customize each "
+"item to fit your business needs."
+msgstr "销售产品、服务和数字下载。设置和定制每个项目，以满足您的业务需求。 "
+
+#: includes/Admin/Assets.php:153
+msgid ""
+"Sell products, services, and digital downloads. Set up and customize each "
+"item to fit your business needs."
+msgstr "销售产品、服务和数字下载。设置和定制每个项目，以满足你的业务需求。 "
+
+#: includes/Admin/Assets.php:148 includes/Admin/Onboarding/Onboarding.php:371
+msgid "Set up a payment method"
+msgstr "设置付款方式 "
+
+#: includes/Admin/Onboarding/WelcomeCards.php:17
+#| msgid "Set up your online store"
+msgid "Set up an online store"
+msgstr "设置你的网上商店 "
+
+#: includes/Admin/Onboarding/Onboarding.php:419
+msgid "Set up Google Site Kit"
+msgstr "设置 Google 网站工具包 "
+
+#: includes/Admin/Assets.php:149 includes/Admin/Onboarding/Onboarding.php:375
+msgid "Set up payment method"
+msgstr "设置付款方式 "
+
+#: includes/Admin/Assets.php:247
+msgid "Set up payments"
+msgstr "设置付款 "
+
+#: includes/Admin/Assets.php:262
+msgid "Set up shipping"
+msgstr "设置物流"
+
+#: includes/Admin/Assets.php:261
+msgid "Set up Site Kit"
+msgstr "设置网站工具包 "
+
+#: includes/Admin/Onboarding/Onboarding.php:306
+msgid "Set up your online store"
+msgstr "开设网上商店 "
+
+#: includes/Admin/Onboarding/WelcomeCards.php:19
+#| msgid ""
+#| "Install <strong>WooCommerce</strong>, add products or services, and start "
+#| "selling today."
+msgid ""
+"Setup <strong>WooCommerce</strong>, add products or services, and start "
+"selling today."
+msgstr "安装 <strong>WooCommerce</strong>，添加产品或服务，立即开始销售。  "
+
+#: includes/Admin/Assets.php:154
+msgid "Setup Google Site Kit"
+msgstr "设置 Google 网站工具包 "
+
+#: includes/Admin/Assets.php:147 includes/Admin/Assets.php:188
+#| msgid "Set up my online store"
+msgid "Setup my online store"
+msgstr "设置我的网上商店 "
+
+#: includes/Admin/Assets.php:195
+msgid "Setup website"
+msgstr "建立网站 "
+
+#: includes/Admin/Views/Partials/PromotionalBanner.php:9
+msgid ""
+"Share your referral link with friends and family and <b>receive 20% "
+"commission</b> for every successful referral."
+msgstr "与亲朋好友分享你的推荐链接，<b>每次成功推荐均可获得 20% 的佣金</b>。"
+
+#: includes/Admin/Assets.php:165
+msgid ""
+"Share your referral link with friends and family and <strong>receive 20% "
+"commission</strong> for every successful referral."
+msgstr "与亲朋好友分享你的推荐链接，<strong>每次成功推荐均可获得 20% 的佣金</strong>。"
+
+#: includes/Admin/Assets.php:137
+msgid "Ship products with ease"
+msgstr "轻松运输产品"
+
+#: includes/Admin/Assets.php:138 includes/Admin/Onboarding/Onboarding.php:394
+msgid "Shipping methods"
+msgstr "运输方式 "
+
+#: includes/Admin/Assets.php:245
+msgid "Shipping plugins"
+msgstr "物流插件"
+
+#: includes/Admin/Assets.php:250
+msgid "Shipping settings"
+msgstr "物流设置"
+
+#: includes/Rest/WooRoutes.php:47
+msgid "Shop locale is empty, please setup store first"
+msgstr "商店位置为空，请先设置商店 "
+
+#: includes/Admin/Assets.php:199
+msgid "Show list"
+msgstr "显示列表 "
+
+#: includes/Admin/Assets.php:187
+msgid "Skip"
+msgstr "跳过 "
+
+#: includes/Rest/StepRoutes.php:169
+msgid "Sorry, there are activation errors."
+msgstr "抱歉，存在激活错误。 "
+
+#: includes/Rest/StepRoutes.php:71 includes/Rest/StepRoutes.php:156
+#: includes/Rest/WooRoutes.php:53 includes/Rest/WooRoutes.php:135
+msgid "Sorry, there are validation errors."
+msgstr "抱歉，出现验证错误。 "
+
+#: includes/Admin/Assets.php:156
+#: includes/Admin/Views/Partials/PromotionalBanner.php:24
+msgid "Start earning"
+msgstr "开始赚钱"
+
+#: includes/Admin/Onboarding/Onboarding.php:59
+msgid "Started creating your site"
+msgstr "开始创建您的网站 "
+
+#: includes/Rest/StepRoutes.php:90
+msgid "Step category and/or step does not exist."
+msgstr "步骤类别和/或步骤不存在。 "
+
+#: includes/Admin/Onboarding/Onboarding.php:327
+msgid "Store info"
+msgstr "商店信息 "
+
+#: includes/Rest/WooRoutes.php:129
+msgid "Store location locale not found"
+msgstr "未找到商店位置语言 "
+
+#: includes/Admin/Onboarding/PluginManager.php:26
+msgid "Take credit card payments on your store using Stripe."
+msgstr "使用 Stripe 在你的店铺上接受信用卡付款。"
+
+#: includes/Admin/Assets.php:185
+msgid "Take me there"
+msgstr "转至界面"
+
+#: includes/Admin/Assets.php:288
+msgid "Tell us a bit about your business"
+msgstr "请向我们介绍一下你的业务"
+
+#: includes/Admin/Assets.php:127
+msgid ""
+"The biggest ever <span style=\"color: #8C85FF\">Amazing Friday</span> sale!"
+msgstr "有史以来最大规模的<span style=\"color：#8C85FF\">Amazing Friday</span>促销！"
+
+#: includes/Admin/Assets.php:125
+msgid ""
+"The biggest ever <span style=\"color: #8C85FF\">Black Friday</span> sale!"
+msgstr "有史以来最大规模的<span style=\"color：#8C85FF\">黑色星期五</span>促销！"
+
+#: includes/Admin/Assets.php:128
+msgid ""
+"The biggest ever <span style=\"color: #8C85FF\">Blessed Friday</span> sale!"
+msgstr "有史以来最大规模的<span style=\"color：#8C85FF\">祝福星期五</span>促销活动！"
+
+#: includes/Admin/Assets.php:124
+msgid ""
+"The biggest ever <span style=\"color: #8C85FF\">Cyber Monday</span> sale!"
+msgstr "有史以来最大规模的<span style=\"color：#8C85FF\">网络星期一</span>促销！"
+
+#: includes/Admin/Assets.php:129
+msgid ""
+"The biggest ever <span style=\"color: #8C85FF\">End of the year</span> sale!"
+msgstr "有史以来最大规模的<span style=\"color：#8C85FF\">年末促销</span>！"
+
+#: includes/Admin/Assets.php:126
+msgid ""
+"The biggest ever <span style=\"color: #8C85FF\">White Friday</span> sale!"
+msgstr "有史以来最大规模的<span style=\"color：#8C85FF\">白色星期五</span>促销！"
+
+#. translators: %s php version
+#: hostinger-easy-onboarding.php:74
+msgid ""
+"The Hostinger Easy Onboarding plugin requires minimum PHP version of <b>"
+"%s</b>. "
+msgstr "Hostinger Easy Onboarding插件的最低PHP版本要求为<b>%s</b>。 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:49
+msgid "The page was deleted!"
+msgstr "该网页已被删除！ "
+
+#: includes/Admin/Onboarding/PluginManager.php:66
+msgid ""
+"The USPS Simple plugin calculates rates for domestic shipping dynamically "
+"using USPS API during checkout."
+msgstr "USPS Simple 插件在结账时使用 USPS API 动态计算国内运费率。 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/DeletePageButton.js:62
+msgid "There was an error."
+msgstr "存在一个错误。"
+
+#: includes/Admin/Onboarding/PluginManager.php:63
+msgid ""
+"This extension gives you the possibility to use the Colissimo shipping "
+"methods in WooCommerce"
+msgstr "该扩展可让你在 WooCommerce 中使用 Colissimo 货运方法。"
+
+#: includes/Admin/Assets.php:293
+msgid "This field is required"
+msgstr "该字段为必填字段 "
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/PagesList.js:41
+msgid "Title"
+msgstr "标题 "
+
+#: includes/Admin/Assets.php:221
+msgid ""
+"To upload a new image, click on Add New button on the Media Library page and "
+"select files."
+msgstr "要上传新图片，请单击媒体库页面上的“添加新的”按钮并选择“文档”。"
+
+#: includes/Admin/Assets.php:139
+msgid "Try Omnisend"
+msgstr "试试 Omnisend "
+
+#: includes/Admin/Assets.php:200
+msgid "Tutorials"
+msgstr "教程 "
+
+#: includes/Errors.php:31
+msgid "Unknown error code."
+msgstr "未知错误代码。"
+
+#: includes/Admin/Assets.php:176 includes/Admin/Assets.php:220
+msgid "Upload an image"
+msgstr "上传一张图片"
+
+#: includes/Admin/Assets.php:169 includes/Admin/Assets.php:183
+msgid "Upload your logo"
+msgstr "上传您的品牌图标"
+
+#: includes/Admin/Hooks.php:333
+msgid ""
+"Use the special discount code <b>ONLYHOSTINGER30</b> to get 30% off on "
+"Omnisend for 6 months when you upgrade."
+msgstr "使用特别折扣代码 <b>ONLYHOSTINGER30</b>，升级时可享受 6 个月 Omnisend 7 折优惠。"
+
+#: includes/Admin/Hooks.php:490
+msgid "View checklist"
+msgstr "查看清单 "
+
+#: includes/Admin/Assets.php:208
+msgid "View completed"
+msgstr "查看已完成项目"
+
+#: includes/Admin/Onboarding/Onboarding.php:331
+msgid "View Details"
+msgstr "查看详情 "
+
+#: includes/Admin/Onboarding/Onboarding.php:314
+msgid "View list"
+msgstr "查看列表 "
+
+#: includes/Admin/Assets.php:206
+msgid "View plugins"
+msgstr "查看插件 "
+
+#: includes/Admin/Onboarding/Onboarding.php:241
+msgid ""
+"Visit hPanel and connect a real domain. If you already did this, please wait "
+"up to 24h until the domain fully connects"
+msgstr "访问 hPanel 并连接一个真实域名。如果已经连接，请等待 24 小时，直到域名完全连接。 "
+
+#: includes/Admin/Assets.php:158
+msgid "Wait for domain propagation"
+msgstr "等待域名传送 "
+
+#: includes/Admin/Onboarding/Onboarding.php:508
+msgid "Want to create a new AI site?"
+msgstr "是否想要创建一个新的AI网站？"
+
+#: includes/Errors.php:20
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later, and if the issue "
+"persists, kindly contact our support team for assistance."
+msgstr "给您带来不便，我们深表歉意。AI内容生成过程遇到服务器错误。请稍后重试，如果问题仍然存在，请联系我们的客户支持团队寻求帮助。"
+
+#: includes/Admin/Assets.php:289 includes/Admin/Onboarding/Onboarding.php:329
+msgid "We'll use this information to help you set up your store faster."
+msgstr "我们将利用这些信息帮助你更快地开设店铺。"
+
+#: gutenberg/edit-pages-panel/build/index.js:1
+#: gutenberg/edit-pages-panel/src/components/StoreSetupButton.js:29
+msgid "Website Setup"
+msgstr ""
+
+#: includes/Admin/Assets.php:167 includes/Admin/Assets.php:192
+#: includes/Admin/Onboarding/Onboarding.php:49
+msgid "Website setup"
+msgstr "网站设置 "
+
+#: includes/Admin/Assets.php:171
+msgid "Website URL"
+msgstr "网站地址"
+
+#: includes/Admin/Assets.php:291
+msgid "Welcome to WordPress!"
+msgstr "欢迎使用 WordPress！ "
+
+#: includes/Admin/Assets.php:143
+msgid "What type of products or services will you sell?"
+msgstr "你准备销售什么类型的产品或服务？"
+
+#: includes/Admin/Assets.php:142
+msgid "Where is your store located?"
+msgstr "你的商店在哪里？"
+
+#: includes/Admin/Assets.php:284
+msgid "WordPress tutorials"
+msgstr "WordPress 教程 "
+
+#: includes/Admin/Assets.php:264
+msgid "Yes, skip step"
+msgstr "是，跳过步骤 "
+
+#. translators: %s php version
+#: hostinger-easy-onboarding.php:78
+msgid "You are running <b>%s</b> PHP version."
+msgstr "你运行的是 <b>%s</b> PHP 版本。"
+
+#: includes/Admin/Assets.php:252
+msgid ""
+"You can also set up a shipping method without installing additional plugins."
+msgstr "你还可以设置发货方式，无需安装其他插件。"
+
+#: includes/Admin/Assets.php:161
+#, fuzzy
+#| msgid ""
+#| "You can connect domain to Hostinger by changing the nameservers. "
+#| "Different domain providers are have unique procedures for changing "
+#| "nameservers. Here are Hostinger's nameservers:"
+msgid ""
+"You can connect a domain to Hostinger by changing the nameservers. Different "
+"domain providers are have unique procedures for changing nameservers. Here "
+"are Hostinger's nameservers:"
+msgstr "你可以通过更改域名服务器将域名连接到Hostinger。不同的域名提供商都有独特的域名服务器更改程序。以下是Hostinger的域名服务器："
+
+#: includes/Admin/Assets.php:217
+msgid ""
+"You can see the whole post in the editor. Find the description part and "
+"change it to your preferences."
+msgstr "您可以在编辑器中看到完整内容。找到描述部分并进行更改。"
+
+#: includes/Admin/Assets.php:173
+msgid ""
+"You need to purchase a domain for your website before the preview domain "
+"becomes inaccessible. Find a desired website name using a <a style=\"text-"
+"decoration:none; font-weight:bold; color:#673de6\" target=\"_blank\" "
+"href=\"https://hpanel.hostinger.com/domains/domain-checker\" >domain name "
+"searcher.</a >"
+msgstr ""
+"你需要在预览域名无法访问之前为网站购买一个域名。使用 <a style=\"text-decoration:none; font-weight:bold;"
+" color:#673de6\" target=\"_blank\" href=\"https://hpanel.hostinger."
+"com/domains/domain-checker\">域名搜索器查找所需的网站名称。"
+
+#: includes/Admin/Assets.php:141
+msgid "Your business email"
+msgstr "你的企业电子邮件"
+
+#: includes/Admin/Onboarding/Onboarding.php:509
+msgid ""
+"Your new site will replace the current one. Use the same description or "
+"change it."
+msgstr "您的新网站将取代当前网站。使用相同的描述或更改描述。 "
+
+#: includes/Admin/Assets.php:146 includes/Admin/Assets.php:190
+msgid "Your progress"
+msgstr "你的进度"
+
+#: includes/Admin/Assets.php:140
+msgid "Your store name"
+msgstr "你的商店名称"
+
+#: includes/Admin/Assets.php:172
+msgid ""
+"Your website is already published and can be accessed using Hostinger free "
+"temporary subdomain right now. Here is the current URL of your website:"
+msgstr "你已发布网站，现在可以通过使用Hostinger免费临时子域进行访问。以下是网站当前的URL地址："
+
+#: includes/Admin/Assets.php:123
+msgid "You’ll love these great deals that were handpicked just for you."
+msgstr "您一定会喜欢这些专为您精心挑选的超值优惠。 "
+
+#: includes/Admin/Assets.php:207
+msgid "You’re done setting up your online store!"
+msgstr "你已经完成了网店的创建！"
+
+#: includes/Admin/Assets.php:170
+msgid "👋 Welcome to WordPress"
+msgstr "欢迎访问WordPress"

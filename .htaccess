@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Evita redirecciones infinitas comprobando si la URL ya está en la ruta final
+RewriteCond %{REQUEST_URI} !^/paginas/producto/producto\.html$
+RewriteRule ^producto\.html$ paginas/producto/producto.html [L]
+
+RewriteCond %{REQUEST_URI} !^/paginas/contacto/contacto\.html$
+RewriteRule ^contacto\.html$ paginas/contacto/contacto.html [L]
+
+RewriteCond %{REQUEST_URI} !^/paginas/nosotros/nosotros\.html$
+RewriteRule ^nosotros\.html$ paginas/nosotros/nosotros.html [L]
