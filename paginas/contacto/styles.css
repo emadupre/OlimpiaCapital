@@ -424,18 +424,3 @@ hr {
   font-size: 0.9rem;
   color: #555;
 }
-
-.legal-links {
-  display: flex;
-  gap: 0.5rem; /* Separación entre los enlaces */
-}
-
-.legal-links a {
-  color: #002b5c;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.legal-links a:hover {
-  text-decoration: underline;
-}
