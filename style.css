@@ -1,9 +1,9 @@
 :root {
-  --color-primary: #4f4f8a;
-  --color-primary-dark: #000029;
+  --color-primary: #136b46;
+  --color-primary-dark: #0E2D1D;
   --color-accent: #cfa869;
   --color-accent-dark: #855500;
-  --color-text: #4a5568;
+  --color-text: #199644;
   --color-white: #ffffff;
 }
 
@@ -12,16 +12,16 @@ html {
 }
 
 @font-face {
-  font-family: "Mosk Ultra-Bold";
-  src: url("fonts/Mosk\ Ultra-Bold\ 900.ttf") format("truetype");
+  font-family: "CORBEL";
+  src: url("fonts/CORBEL.TTF") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Mosk Extra-Bold";
-  src: url("fonts/Mosk\ Extra-Bold\ 800.ttf") format("truetype");
+  font-family: "CORBELB";
+  src: url("fonts/CORBELB.TTF") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -36,17 +36,17 @@ html {
 body {
   background-color: #ffffff;
   opacity: 1;
-  background-image: radial-gradient(#4f4f8a 1.5px, transparent 1.5px),
-    radial-gradient(#4f4f8a 1.5px, #ffffff 1.5px);
-  background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
+  background-image: url(/src/mmmotif.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size:3000vh;
   font-family: system-ui, -apple-system, sans-serif;
   color: var(--color-text);
   line-height: 1.5;
 }
 
 .tapador {
-  background: #d4d5e5;
+  background: #ffffff;
   width: 160px;
   height: 92px;
   display: flex;
@@ -85,10 +85,10 @@ body {
 }
 
 .navbar a {
-  font-family: "Mosk Medium 700", system-ui, -apple-system, sans-serif;
+  font-family: "CORBELB", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
   text-decoration: none;
@@ -96,7 +96,7 @@ body {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: var(--color-accent-dark);
+  color: var(--color-text);
 }
 
 .header.scroll {
@@ -177,28 +177,34 @@ body {
   gap: 2rem;
 }
 
+.hero-container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-content {
   padding: 2rem 0;
   animation: slideIn 1s ease-out;
 }
 
 h1 {
-  font-family: "Mosk Ultra-Bold", sans-serif;
-  font-size: 2.25rem;
-  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ffffff;
   line-height: 1.2;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 3px 3px 6px var(--color-primary-dark);
   transition: color 0.3s ease;
 }
 
 h1:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-dark);
 }
 
 .hero-text {
   color: var(--color-text);
-  font-weight: 300;
   margin-top: 1.5rem;
+  font-weight: 400;
   font-size: 2rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   padding-bottom: 5%;
@@ -232,6 +238,10 @@ h1:hover {
   height: 0;
 }
 
+.button a {
+  text-decoration: none;
+}
+
 .button p {
   width: 150px;
   height: 60px;
@@ -246,7 +256,7 @@ h1:hover {
   justify-content: center;
   font-weight: 600;
   transition: all 0.3s ease;
-  text-shadow: 0 0 10px rgb(255, 140, 0, 0.5);
+  text-shadow: 0 0 10px var(--color-primary);
   letter-spacing: 1px;
   user-select: none;
 }
@@ -286,7 +296,7 @@ h1:hover {
 .button .liquid > span > span {
   animation: move 6s ease-in-out infinite;
   animation-delay: calc(0.2s * var(--i));
-  background: rgb(255, 140, 0, 0.5);
+  background: var(--color-primary);
   width: 50px;
   height: 50px;
   display: block;
@@ -301,7 +311,7 @@ h1:hover {
   top: 0;
   width: 40px;
   height: 40px;
-  background: linear-gradient(orange, darkorange);
+  background: linear-gradient(var(--color-primary),var(--color-primary-dark));
   border-radius: 50%;
   box-shadow: 0 0 30px hsl(255, 140, 0, 0.5);
 }
@@ -366,49 +376,11 @@ h1:hover {
 
 @media (pointer: coarse), (pointer: none) {
   .button .liquid > span > span {
-    background: linear-gradient(orange, darkorange);
+    background: linear-gradient(var(--color-primary),var(--color-primary-dark));
   }
 }
 
 /* FIN DE BOTON */
-
-/*
-.primary-btn {
-  background-color: var(--color-accent);
-  color: var(--color-white);
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 0.375rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;  Necesario para el pseudoelemento */
-/* overflow: hidden; /* Evita que el pseudoelemento salga del botón */
-/*} */
-
-/*.primary-btn::after {
-  content: ">";
-  color: var(--color-white);
-  position: absolute;
-  opacity: 0;
-  right: 1rem; /* Posición inicial fuera de vista */
-/*top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  transition: opacity 0.3s, right 0.3s; /* Suavidad de movimiento */
-/*}
-
-.primary-btn:hover {
-  background-color: var(--color-accent-dark);
-  transform: translateY(-5px);
-}
-
-.primary-btn:hover::after {
-  opacity: 1;
-  right: 0.5rem; /* Desplaza la flecha suavemente hacia adentro */
-/*} */
 
 .hero-image {
   position: relative;
@@ -427,7 +399,7 @@ h1:hover {
   }
 
   h1 {
-    font-weight: 200;
+    font-weight: 700;
     font-size: 3.75rem;
   }
 }
@@ -498,8 +470,7 @@ h1:hover {
 }
 
 .about-description {
-  font-size: 1.6rem;
-  max-width: 600px;
+  font-size: 1.7rem;
   margin: 0 auto;
   color: var(--color-text);
 }
@@ -525,7 +496,6 @@ h1:hover {
 }
 
 #info-descripcion {
-  font-size: 1.375rem;
   line-height: 2rem;
   text-wrap: balance;
   box-sizing: border-box;
@@ -550,10 +520,15 @@ h1:hover {
 }
 
 .horizontal h1 {
+  font-weight: 700;
   font-size: 14rem;
-  color: var(--color-primary-dark);
+  color: #08b26b;
+  text-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.200),  /* Desenfoque hacia el exterior */
+    0 0 20px rgba(0, 0, 0, 0.200),  /* Desenfoque más amplio */
+    0 0 30px rgba(0, 0, 0, 0.200);  /* Más capas para un efecto más suave */ /* Fondo para resaltar el texto */
   white-space: nowrap;
-  padding: 0 20%;
+  padding: 0 1%;
 }
 /* TARJETAS FLOTANTES */
 
@@ -820,11 +795,6 @@ h1:hover {
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
-.tile h2 {
-  font-weight: 400;
-  font-size: xx-large;
-}
 .Facil,
 .Inclusivo,
 .Seguro,
@@ -892,6 +862,8 @@ h1:hover {
   margin-top: 5rem;
   text-align: center;
   margin-bottom: 6rem;
+  background-color: #ffffffd2;
+  padding: 1%;
   opacity: 0;
   transform: translateY(20px); /* Ligeramente hacia abajo */
   transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
@@ -903,10 +875,9 @@ h1:hover {
 }
 
 .mission-title {
-  font-family: "Mosk Ultra-Bold", sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: var(--color-text);
-  line-height: 1.2;
+  line-height: 5.5rem;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
 }
@@ -916,8 +887,11 @@ h1:hover {
 }
 
 .mission-description {
-  font-size: 1.6rem;
-  max-width: 600px;
+  padding: 2%;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   color: var(--color-text);
 }
@@ -953,7 +927,7 @@ h1:hover {
 }
 
 .value-card h3 {
-  font-family: "Mosk Ultra-Bold", sans-serif;
+  font-family: "CORBELB", sans-serif;
   font-size: 1.5rem;
   color: var(--color-primary-dark);
   margin-bottom: 1rem;
@@ -991,7 +965,7 @@ h1:hover {
   }
 
   .mission-title {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -1083,7 +1057,7 @@ h1:hover {
   font-size: 3.5rem;
   line-height: 4.5rem;
   font-weight: 600;
-  color: #16263a;
+  color: var(--color-primary);
 }
 
 .card__description {
@@ -1141,7 +1115,7 @@ h1:hover {
 }
 
 h2 {
-  color: #75aadb;
+  color: var(--color-primary);
   margin-top: 0;
 }
 
@@ -1258,7 +1232,7 @@ ul {
   display: block;
   font-size: 6rem;
   font-weight: bold;
-  color: #0066ff;
+  color: var(--color-primary);
   margin-bottom: 10px;
 }
 
@@ -1267,7 +1241,7 @@ ul {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  color: #0066ff;
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -1330,13 +1304,13 @@ ul {
 
 .footer-links a {
   font-size: 1rem;
-  color: #002b5c;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
 }
 
 .footer-links a:hover {
-  color: var(--color-accent);
+  color: var(--color-text);
   text-decoration: none;
 }
 
