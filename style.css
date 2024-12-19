@@ -44,12 +44,12 @@ body {
 .tapador {
   background: #ffffff;
   width: 160px;
-  height: 92px;
+  height: 60px;
   display: flex;
   position: sticky;
   z-index: 10;
   margin-left: 72%;
-  margin-top: -100px;
+  margin-top: -70px;
   flex-wrap: wrap;
   justify-content: end;
   align-content: end;
@@ -184,12 +184,27 @@ body {
   animation: slideIn 1s ease-out;
 }
 
+.titulo {
+  height:50%;
+  width:100%;
+  justify-content:left;
+  align-items:center;
+  display: flex;
+  overflow: hidden;
+}
+.text{
+  font-family: "CORBELB";
+  font-size: 3rem;
+  color:var(--color-primary);
+}
+.dud{
+  color:#757575;
+}
 h1 {
   font-weight: 700;
   font-size: 3rem;
   color: #ffffff;
   line-height: 1.2;
-  text-shadow: 3px 3px 6px var(--color-primary-dark);
   transition: color 0.3s ease;
 }
 
@@ -199,22 +214,10 @@ h1:hover {
 
 .hero-text {
   color: var(--color-text);
-  margin-top: 1.5rem;
   font-weight: 400;
   font-size: 2rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   padding-bottom: 5%;
-}
-
-.hero-tagline {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--color-accent);
-}
-
-.hero-cta {
-  margin-top: 2rem;
 }
 
 /*Boton css liquid*/
@@ -248,7 +251,7 @@ h1:hover {
   justify-content: center;
   font-weight: 600;
   transition: all 0.3s ease;
-  text-shadow: 0 0 10px var(--color-primary);
+  text-shadow: 0 0 10px var(--color-text);
   letter-spacing: 1px;
   user-select: none;
 }
@@ -288,7 +291,7 @@ h1:hover {
 .button .liquid > span > span {
   animation: move 6s ease-in-out infinite;
   animation-delay: calc(0.2s * var(--i));
-  background: var(--color-primary);
+  background: var(--color-text);
   width: 50px;
   height: 50px;
   display: block;
@@ -303,7 +306,7 @@ h1:hover {
   top: 0;
   width: 40px;
   height: 40px;
-  background: linear-gradient(var(--color-primary),var(--color-primary-dark));
+  background: linear-gradient(var(--color-text),var(--color-primary));
   border-radius: 50%;
   box-shadow: 0 0 30px hsl(255, 140, 0, 0.5);
 }
@@ -515,10 +518,6 @@ h1:hover {
   font-weight: 700;
   font-size: 14rem;
   color: #08b26b;
-  text-shadow: 
-    0 0 10px rgba(0, 0, 0, 0.200),  /* Desenfoque hacia el exterior */
-    0 0 20px rgba(0, 0, 0, 0.200),  /* Desenfoque más amplio */
-    0 0 30px rgba(0, 0, 0, 0.200);  /* Más capas para un efecto más suave */ /* Fondo para resaltar el texto */
   white-space: nowrap;
   padding: 0 1%;
 }
@@ -880,7 +879,7 @@ h1:hover {
 
 .mission-description {
   padding: 2%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -1049,7 +1048,7 @@ h1:hover {
   font-size: 3.5rem;
   line-height: 4.5rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .card__description {
@@ -1060,7 +1059,7 @@ h1:hover {
   margin: 0;
   box-sizing: border-box;
   border: 0 solid;
-  color: #16263a;
+  
 }
 
 .space {
@@ -1224,7 +1223,7 @@ ul {
   display: block;
   font-size: 6rem;
   font-weight: bold;
-  color: var(--color-primary);
+  color: var(--color-text);
   margin-bottom: 10px;
 }
 
@@ -1434,21 +1433,6 @@ hr {
 .footer-bottom p {
   font-size: 0.9rem;
   color: #555;
-}
-
-.legal-links {
-  display: flex;
-  gap: 0.5rem; /* Separación entre los enlaces */
-}
-
-.legal-links a {
-  color: #002b5c;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.legal-links a:hover {
-  text-decoration: underline;
 }
 
 /* FIN FOOTER */
