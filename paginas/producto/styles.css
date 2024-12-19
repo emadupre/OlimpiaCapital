@@ -696,25 +696,111 @@ hr {
   gap: 2rem;
 }
 
-.location-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+/* TARJETAS AGENCIA DE CAMBIO */
 
-.location-info {
+.card-container {
   display: flex;
-  align-items: start;
-  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 16px; /* Espaciado entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  align-items: center;
+  margin: 20px; /* Espaciado alrededor del contenedor */
 }
 
-.location-info svg {
-  margin-right: 0.75rem;
-  color: #2563eb;
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Cambia a disposición en columna */
+  }
 }
 
-/* */
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 999;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background-color: #199644; /* Agregado el color verde */
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 240px;
+  z-index: 2;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ffffff9b;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+.card-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: var(--color-primary);
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.card-content p {
+  margin: 0.2rem 0;
+  font-size: 0.7rem;
+}
+
+.card-content .icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/*FIN AGENCIA DE CAMBIO */
+
+
 #cambio-internacional {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
 }
