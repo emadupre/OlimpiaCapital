@@ -1,50 +1,48 @@
 :root {
-    --color-primary: #4f4f8a;
-    --color-primary-dark: #000029;
-    --color-accent: #cfa869;
-    --color-accent-dark: #855500;
-    --color-text: #4a5568;
-    --color-white: #ffffff;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  @font-face {
-    font-family: "Mosk Ultra-Bold";
-    src: url("fonts/Mosk\ Ultra-Bold\ 900.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "Mosk Extra-Bold";
-    src: url("fonts/Mosk\ Extra-Bold\ 800.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #cfa869;
-    opacity: 1;
-    background-image: radial-gradient(#4f4f8a 1.5px, transparent 1.5px),
-      radial-gradient(#4f4f8a 1.5px, #ffffff 1.5px);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;
-    font-family: "Mosk Extra-Bold", system-ui, -apple-system, sans-serif;
-    color: var(--color-text);
-    line-height: 1.5;
-  }
+  --color-primary: #136b46;
+  --color-primary-dark: #0e2d1d;
+  --color-accent: #cfa869;
+  --color-accent-dark: #855500;
+  --color-text: #199644;
+  --color-white: #ffffff;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "CORBEL";
+  src: url("/fonts/CORBEL.TTF") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CORBELB";
+  src: url("/fonts/CORBELB.TTF") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  opacity: 1;
+  background-image: url(/src/mmmotif.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size:3000vh;
+  font-family: "CORBEL", system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
 
 /*NAV-BAR*/
 
@@ -71,7 +69,7 @@
 }
 
 .navbar a {
-  font-family: "Mosk Medium 700", system-ui, -apple-system, sans-serif;
+  font-family: "CORBELB", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 700;
@@ -149,25 +147,43 @@
 /* FIN DE NAV BAR */
 
 h1 {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-family: "CORBELB";
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffffff;
+  line-height: 1.2;
+  text-shadow: 3px 3px 6px var(--color-primary-dark);
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: var(--color-primary-dark);
 }
 
 .hero p {
   text-align: center;
   font-size: 1.7rem;
+  font-weight: 500;
   margin-bottom: 1rem;
+  color: var(--color-text);
 }
 
 h2 {
-  font-size: 3rem;
+  font-family: "CORBELB";
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--color-primary);
 }
 
-p{
+p {
+  font-family: "CORBEL";
   font-size: 1.7rem;
   text-align: center;
+  color: var(--color-text);
+  font-weight: 500;
 }
 
 h3 {
@@ -178,7 +194,6 @@ h3 {
 hr {
   background-color: rgba(0, 0, 0, 0.786);
 }
-
 
 /* HERO SECCION */
 .hero #contenedor {
@@ -199,21 +214,20 @@ hr {
 }
 
 .hero h1 span {
-  color: #2563eb;
   display: block;
 }
 
-#hero-nosotros{
+#hero-nosotros {
   text-align: center;
   padding: 50px 20px;
 }
 
-#historia{
+#historia {
   padding: 40px;
   background-color: #f9f9f943;
 }
 
-#historia div{
+#historia div {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -223,12 +237,18 @@ hr {
   padding: 5rem calc(50vw - 600px);
 }
 
-#mision-vision p{
+#mision-vision p {
   font-size: 1rem;
   text-align: justify;
 }
 
-.objetivos{
+.nuestra-historia p{
+  text-shadow: 1px 1px 1.5px var(--color-white);
+  transition: color 0.3s ease;
+  padding-top: 2%;
+}
+
+.objetivos {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -237,122 +257,22 @@ hr {
   justify-content: center;
 }
 
-#mision{
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
-}
-
-#vision{
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
-}
-
-#valores{
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
-}
-
-#equipo{
+#equipo {
   background-color: #f4f4f468;
   padding: 40px;
 }
 
-.nuestro-team{
+.nuestro-team {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.team{
+.team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
-/* TARJETAS MISION, VISON Y VALOR */
-
-/* CARD LIST LAYOUT */
-
-.card-list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.card-list > :not(:first-child){
-  margin-left: .5rem;
-}
-
-.card-list > :not(:last-child){
-  margin-right: .5rem;
-}
-
-.card-list li{
-  flex: 1 1 0;
-}
-
-/* EACH CARD IS A LINK */
-
-.card{
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: #333;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: ease-in all .1s;
-  box-shadow: 
-    0 1px 1px rgba(0,0,0,0.1),
-    0 2px 2px rgba(0,0,0,0.1);
-}
-
-.card:hover{
-  transform: translateY(-6px);
-  box-shadow:
-    0 2px 2px rgba(0,0,0,0.1),
-    0 4px 4px rgba(0,0,0,0.1),
-    0 8px 8px rgba(0,0,0,0.1),
-    0 16px 16px rgba(0,0,0,0.1),
-    0 32px 32px rgba(0,0,0,0.1);
-}
-
-/* SETTING MARGINS AND CHILD ORDER */
-
-.card > *{
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.card > :not(.card-img-cont){
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-
-/* IMAGES HAVE A FIXED RATIO CONTAINER AND THE IMAGE IS ABSOLUTE AND OBJECT-FIT COVER SO ALL IMAGES HAVE SAME SIZE */
-
-.card-img-cont{
-  order: -1;
-  width: 100%;
-  height: 0;
-  padding-bottom: 66%;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.card-img{
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-
-
 
 /* TEAM  TARJETAS*/
 
@@ -447,16 +367,40 @@ hr {
 
 /* FIN TEAM TARJETAS */
 
-
-/* Contacto con nosotros */
-#cta-nosotros{
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #333;
-  color: #fff;
+.nuestro-team{
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.393);
 }
 
-#cta-nosotros a{
+.nuestro-team h2{
+  font-family: "CORBELB";
+  font-size: 4rem;
+  color: var(--color-text);
+}
+
+.nuestro-team p {
+  padding-top: 2%;
+}
+.text-primary {
+  color: var(--color-primary);
+}
+
+/* Contacto con nosotros */
+#cta-nosotros {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff41;
+  color: var(--color-primary);
+}
+
+.cta{
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.393);
+}
+
+.cta p{
+  padding-top: 2%;
+}
+
+#cta-nosotros a {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 25px;
@@ -652,4 +596,120 @@ hr {
 
 .legal-links a:hover {
   text-decoration: underline;
+}
+
+/* TARJETAS CREATIVAS */
+
+.creative-cards {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.393);
+  font-family: "CORBELB";
+  padding: 120px 0;
+  position: relative;
+}
+.creative-cards .contenedor {
+  max-width: 1320px;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.creative-cards .contenedor .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.creative-cards .contenedor .row .card-column {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  text-align: center;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.card-details {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.card-details:before {
+  content: "";
+  width: 190px;
+  height: 380px;
+  background: #f7f6f2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) skew(-20deg, 0deg);
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.card-details:hover:before {
+  background-color: rgba(54, 104, 54, 0.259);
+}
+.card-icons {
+  width: 140px;
+  height: 150px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-icons:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid;
+  width: 100%;
+  height: 100%;
+  transform: skew(-20deg, 0deg);
+  background: #fff;
+  border-color: rgba(77, 135, 77, 0.56);
+  transition: 0.3s ease-in-out;
+}
+.card-details:hover .card-icons:before {
+  background-color: rgb(255, 255, 255);
+}
+.card-icons img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+.card-details h2 {
+  color: var(--color-primary);
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.card-details p {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-text);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* ============= Responsive Ipad ==================== */
+@media (max-width: 992px) {
+  .creative-cards .contenedor .row .card-column {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+}
+
+/* ============= Responsive Iphone ==================== */
+@media (max-width: 480px) {
+  .creative-cards .contenedor .row .card-column {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card-details {
+    width: 100%;
+  }
 }

@@ -1,9 +1,9 @@
 :root {
-  --color-primary: #4f4f8a;
-  --color-primary-dark: #000029;
+  --color-primary: #136b46;
+  --color-primary-dark: #0e2d1d;
   --color-accent: #cfa869;
   --color-accent-dark: #855500;
-  --color-text: #4a5568;
+  --color-text: #199644;
   --color-white: #ffffff;
 }
 
@@ -12,16 +12,16 @@ html {
 }
 
 @font-face {
-  font-family: "Mosk Ultra-Bold";
-  src: url("fonts/Mosk\ Ultra-Bold\ 900.ttf") format("truetype");
+  font-family: "CORBEL";
+  src: url("/fonts/CORBEL.TTF") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Mosk Extra-Bold";
-  src: url("fonts/Mosk\ Extra-Bold\ 800.ttf") format("truetype");
+  font-family: "CORBELB";
+  src: url("/fonts/CORBELB.TTF") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -34,14 +34,12 @@ html {
 }
 
 body {
-  background-color: #cfa869;
   opacity: 1;
-  background-image: radial-gradient(#4f4f8a 1.5px, transparent 1.5px),
-    radial-gradient(#4f4f8a 1.5px, #ffffff 1.5px);
-  background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
-  font-family: system-ui, -apple-system, sans-serif;
-  color: var(--color-text);
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23136b46' fill-opacity='0.72'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 50vh;
+  font-family: "CORBEL", system-ui, -apple-system, sans-serif;
+  font-weight: 700;
   line-height: 1.5;
 }
 
@@ -70,7 +68,7 @@ body {
 }
 
 .navbar a {
-  font-family: "Mosk Medium 700", system-ui, -apple-system, sans-serif;
+  font-family: "CORBELB", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 700;
@@ -160,13 +158,22 @@ body {
   flex-wrap: nowrap;
 }
 
+.hero {
+  font-family: "CORBELB";
+  text-shadow: 1px 1px 3px var(--color-primary-dark);
+}
+
 /* Typography */
-h1 {
+.hero h1 {
+  font-family: "CORBELB";
+  color: var(--color-primary-dark);
   font-size: 5rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
+  font-family: "CORBEL";
+  color: var(--color-text);
   text-align: center;
   font-size: 1.7rem;
   margin-bottom: 1rem;
@@ -178,7 +185,7 @@ h2 {
   text-align: center;
 }
 
-p{
+p {
   font-size: 1.7rem;
 }
 
@@ -205,12 +212,12 @@ hr {
 }
 
 .btn-primary {
-  background-color: #2563eb;
+  background-color: var(--color-primary);
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
+  background-color: var(--color-primary-dark);
 }
 
 .btn-secondary {
@@ -238,7 +245,7 @@ hr {
 }
 
 .hero h1 span {
-  color: #2563eb;
+  color: var(--color-primary);
   display: block;
 }
 
@@ -252,6 +259,7 @@ hr {
 /* CALCULADORAS */
 
 .contenedor-calculadoras {
+  font-family: "CORBELB";
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
   background-color: rgba(255, 255, 255, 0.786);
   display: grid;
@@ -260,6 +268,11 @@ hr {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "calculadoras calculadoras";
+}
+
+.contenedor-calculadoras h2 {
+  color: var(--color-primary);
+  text-shadow: 1px 1px 3px var(--color-primary-dark);
 }
 
 .calculadoras {
@@ -289,11 +302,15 @@ hr {
 }
 
 .exchange-calculator {
-  background-color: #f0f9ff;
+  background-color: #136b46a0;
   padding: 2rem;
   border-radius: 1rem;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.exchange-calculator h2{
+  color: var(--color-white);
 }
 
 .calculator-grid {
@@ -329,6 +346,12 @@ hr {
 
 .exchange-result,
 .loan-result {
+  color: var(--color-primary);
+  font-family: "CORBEL";
+}
+
+.exchange-result,
+.loan-result {
   background: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -339,7 +362,7 @@ hr {
 #monthly-payment {
   font-size: 2rem;
   font-weight: bold;
-  color: #2563eb;
+  color: var(--color-text);
   margin: 1rem 0;
 }
 
@@ -358,31 +381,78 @@ hr {
 }
 /* FIN DE CALCULADORAS */
 
-
 /* International Payments */
-.international {
-  padding: 4rem 0;
-  background-color: rgba(255, 255, 255, 0.786);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
+.pagos-internacionales {  display: grid;
+  grid-template-columns: 1.2fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "PagosHero";
 }
 
-.international p{
+.PagosHero {  display: grid;
+  font-family: "CORBELB";
+  color: var(--color-primary);
+  padding: 1rem 0;
+  background-color: #0e2d1d96;
+  grid-template-columns: 1fr 0.8fr 1.2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Pagos Pagos Mundo"
+    "Pagos Pagos Mundo"
+    "Pagos Pagos Mundo";
+  grid-area: PagosHero;
+}
+
+.Pagos { grid-area: Pagos;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mundo { grid-area: Mundo; }
+
+#animationWindow {
+  width: 100%;
+  height: 100%;
+}
+
+.Pagos h2 {
+  font-size: 4rem;
+  color: var(--color-white);
+  font-family: "CORBELB";
+}
+
+.Pagos p {
+  color: var(--color-white);
+  font-family: "CORBEL";
+  font-weight: 500;
   font-size: 1.5rem;
 }
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
 
 /* Locations Section */
 .locations {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
-  background-color: rgba(255, 255, 255, 0.786);
+  background-color: rgba(255, 255, 255, 0.406);
   padding: 4rem 0;
+  font-family: "CORBELB";
+}
+
+.locations h2 {
+  font-size: 4rem;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 3px var(--color-primary-dark);
+}
+
+.locations p {
+  font-family: "CORBEL";
+  font-size: 1.5rem;
+  color: var(--color-text);
 }
 
 .locations-grid {
@@ -410,7 +480,7 @@ hr {
 }
 
 /* */
-#cambio-internacional{
+#cambio-internacional {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
 }
 
@@ -455,13 +525,13 @@ hr {
 
 .footer-links a {
   font-size: 1rem;
-  color: #002b5c;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
 }
 
 .footer-links a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-dark);
   text-decoration: none;
 }
 
@@ -571,8 +641,8 @@ ul {
   margin-bottom: 1rem;
 }
 
-.footer-info p{
-  font-size:  0.9rem;
+.footer-info p {
+  font-size: 0.9rem;
 }
 
 .logo-section img {
