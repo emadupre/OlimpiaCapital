@@ -507,14 +507,12 @@ h1:hover {
 .horizontal-container {
   overflow: hidden;
   position: relative;
-  padding: 2%;
 }
 .space{
   margin-top: 2%;
 }
 
 .horizontal {
-  margin: 2%;
   display: flex;
   white-space: nowrap;
   gap: 50px;
