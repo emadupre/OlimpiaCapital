@@ -22,23 +22,69 @@
       </nav>
     </header>
 
-    <section class="fondo">
-      <div class="contact-container">
-        <form action="" class="contact-left">
-          <div class="contact-left-title">
-            <h2>Contáctanos!</h2>
-            <hr>
+    <div class="container">
+      <h2>Formulario de Contacto</h2>
+      <form id="contactForm" onsubmit="return validateForm(event)">
+          <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" required>
           </div>
-          <input type="text" name="name" placeholder="Tu Nombre" class="contact-inputs" required>
-          <input type="email" name="email" placeholder="Tu Email" class="contact-inputs" required>
-          <textarea name="message" placeholder="Tu mensaje aquí.." class="contact-inputs" required></textarea>
-          <button type="submit">Enviar <img src="/src/arrow_icon.png" alt="ICONO BOTON ENVIAR"></button>
-        </form>
-        <div class="contact-right">
-          <img src="/src/Paxum.png" alt="IMAGEN PARA EL LADO DERECHO">
-        </div>
-      </div>
-    </section>
+          
+          <div class="form-group">
+              <label for="apellido">Apellido *</label>
+              <input type="text" id="apellido" name="apellido" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="telefono">Teléfono *</label>
+              <div class="phone-group">
+                  <select id="codigo-pais" name="codigo-pais">
+                      <option value="+54">Argentina (+54)</option>
+                      <option value="+591">Bolivia (+591)</option>
+                      <option value="+56">Chile (+56)</option>
+                      <option value="+57">Colombia (+57)</option>
+                      <option value="+593">Ecuador (+593)</option>
+                      <option value="+52">México (+52)</option>
+                      <option value="+51">Perú (+51)</option>
+                      <option value="+598">Uruguay (+598)</option>
+                      <option value="+58">Venezuela (+58)</option>
+                  </select>
+                  <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+              </div>
+          </div>
+          
+          <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="provincia">Provincia/Ciudad *</label>
+              <input type="text" id="provincia" name="provincia" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          
+          <div class="button-container">
+              <button type="submit" class="animated-button">
+                  <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                  <span class="text">Contactarse</span>
+                  <span class="circle"></span>
+                  <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+              </button>
+          </div>
+          <div id="successMessage" class="success-message">
+              ¡Mensaje enviado con éxito!
+          </div>
+      </form>
+  </div>
 
     <footer id="footer" class="custom-footer">
       <div class="footer-content">

@@ -97,15 +97,15 @@ body {
 }
 
 .header.scroll {
-  margin: 20px;
+  position: fixed; /* Asegura que el header esté fijo al hacer scroll */
+  top: 10px; /* Ajusta la posición desde la parte superior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Corrige el desplazamiento hacia la izquierda */
+  margin: 0; /* Elimina márgenes que puedan descentrarlo */
   padding: 10px 50px;
   border-radius: 50px;
   width: auto;
-  left: 50%;
-  transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.313);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: none;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(231, 229, 229, 0.539);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
