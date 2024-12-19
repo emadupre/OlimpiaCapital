@@ -146,14 +146,8 @@ h1 {
   font-family: "CORBELB";
   font-weight: 700;
   font-size: 4rem;
-  color: #ffffff;
+  color: var(--color-text);
   line-height: 1.2;
-  text-shadow: 3px 3px 6px var(--color-primary-dark);
-  transition: color 0.3s ease;
-}
-
-h1:hover {
-  color: var(--color-primary-dark);
 }
 
 .hero p {
@@ -171,14 +165,13 @@ h2 {
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 p {
   font-family: "CORBEL";
   font-size: 1.7rem;
   text-align: center;
-  color: var(--color-text);
   font-weight: 500;
 }
 
@@ -195,6 +188,7 @@ hr {
 .hero #contenedor {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 5%;
   padding: 0 20px;
   align-items: center;
   justify-content: center;
@@ -209,8 +203,13 @@ hr {
   text-align: center;
 }
 
-.hero h1 span {
+.hero h1{
   display: block;
+}
+
+.hero p {
+ margin-top: 2%;
+ color: var(--color-text);
 }
 
 #hero-nosotros {
@@ -239,9 +238,9 @@ hr {
 }
 
 .nuestra-historia p{
-  text-shadow: 1px 1px 1.5px var(--color-white);
   transition: color 0.3s ease;
   padding-top: 2%;
+  color: var(--color-text);
 }
 
 .objetivos {
@@ -363,10 +362,6 @@ hr {
 
 /* FIN TEAM TARJETAS */
 
-.nuestro-team{
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.393);
-}
-
 .nuestro-team h2{
   font-family: "CORBELB";
   font-size: 4rem;
@@ -374,6 +369,7 @@ hr {
 }
 
 .nuestro-team p {
+  color: var(--color-text);
   padding-top: 2%;
 }
 .text-primary {
@@ -386,10 +382,6 @@ hr {
   padding: 50px 20px;
   background-color: #ffffff41;
   color: var(--color-primary);
-}
-
-.cta{
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.393);
 }
 
 .cta p{
@@ -405,12 +397,13 @@ hr {
 }
 
 .btn-primary {
-  background-color: #2563eb;
+  font-family: "CORBELB";
+  background-color: var(--color-text);
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
+  background-color: var(--color-primary);
 }
 
 /* FOOTER */
@@ -434,14 +427,15 @@ hr {
 }
 
 .footer-links a {
+  font-family: "CORBELB";
   font-size: 1rem;
-  color: #002b5c;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
 }
 
 .footer-links a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-dark);
   text-decoration: none;
 }
 
@@ -578,22 +572,6 @@ hr {
   font-size: 0.9rem;
   color: #555;
 }
-
-.legal-links {
-  display: flex;
-  gap: 0.5rem; /* Separación entre los enlaces */
-}
-
-.legal-links a {
-  color: #002b5c;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.legal-links a:hover {
-  text-decoration: underline;
-}
-
 /* TARJETAS CREATIVAS */
 
 .creative-cards {

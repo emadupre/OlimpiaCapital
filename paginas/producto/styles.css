@@ -160,7 +160,7 @@ body {
   grid-template-areas:
     "hero-title hero-title animation"
     "hero-title hero-title animation"
-    "botones botones botones";
+    "botones botones ...";
 }
 
 .hero-title { grid-area: hero-title; }
@@ -184,13 +184,12 @@ body {
 
 .hero {
   font-family: "CORBELB";
-  text-shadow: 1px 1px 3px var(--color-primary-dark);
 }
 
 /* Typography */
 .hero h1 {
   font-family: "CORBELB";
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   font-size: 5rem;
   margin-bottom: 1rem;
 }
@@ -199,9 +198,7 @@ body {
   font-family: "CORBEL";
   color: var(--color-text);
   text-align: center;
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-}
+  font-size: 1.7rem;}
 
 h2 {
   font-size: 3rem;
@@ -282,7 +279,7 @@ hr {
 
 
 #Station {
-  align:center;
+  align-items:center;
 }
 #Station #BlackBuildings {
   transition: all .4s ease-in-out;
@@ -672,8 +669,7 @@ hr {
 
 .locations h2 {
   font-size: 4rem;
-  color: var(--color-primary);
-  text-shadow: 1px 1px 3px var(--color-primary-dark);
+  color: var(--color-text);
 }
 
 .locations p {
@@ -894,19 +890,4 @@ hr {
 .footer-bottom p {
   font-size: 0.9rem;
   color: #555;
-}
-
-.legal-links {
-  display: flex;
-  gap: 0.5rem; /* Separación entre los enlaces */
-}
-
-.legal-links a {
-  color: #002b5c;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.legal-links a:hover {
-  text-decoration: underline;
 }
