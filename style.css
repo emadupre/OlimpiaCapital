@@ -12,22 +12,23 @@ html {
 }
 
 @font-face {
-  font-family: "CORBEL";
-  src: url("fonts/CORBEL.TTF") format("opentype");
+  font-family: "Comfortaa-Medium";
+  src: url("/fonts/Comfortaa-Medium.ttf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "CORBELB";
-  src: url("fonts/CORBELB.TTF") format("opentype");
+  font-family: "Comfortaa-Bold";
+  src: url("/fonts/Comfortaa-Bold.ttf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
+  font-family: "Comfortaa-Medium";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -81,7 +82,7 @@ body {
 }
 
 .navbar a {
-  font-family: "CORBELB", system-ui, -apple-system, sans-serif;
+  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 900;
@@ -193,7 +194,7 @@ body {
   overflow: hidden;
 }
 .text{
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   font-size: 3rem;
   color:var(--color-primary);
 }
@@ -457,7 +458,7 @@ h1:hover {
 }
 
 .about-title {
-  font-family: "Mosk Ultra-Bold", sans-serif;
+  font-family: "Comfortaa-Bold", sans-serif;
   font-size: 3.5rem;
   color: var(--color-text);
   line-height: 1.2;
@@ -465,6 +466,7 @@ h1:hover {
 }
 
 .about-description {
+  font-family: "Comfortaa-Medium";
   font-size: 1.7rem;
   margin: 0 auto;
   color: var(--color-text);
@@ -505,17 +507,22 @@ h1:hover {
 .horizontal-container {
   overflow: hidden;
   position: relative;
-  padding: 5%;
+  padding: 2%;
+}
+.space{
+  margin-top: 2%;
 }
 
 .horizontal {
+  margin: 2%;
   display: flex;
   white-space: nowrap;
   gap: 50px;
 }
 
 .horizontal h1 {
-  font-weight: 700;
+  font-family: "Comfortaa-Bold";
+  font-weight: 900;
   font-size: 14rem;
   color: #08b26b;
   white-space: nowrap;

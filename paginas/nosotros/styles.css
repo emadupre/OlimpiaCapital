@@ -12,22 +12,23 @@ html {
 }
 
 @font-face {
-  font-family: "CORBEL";
-  src: url("/fonts/CORBEL.TTF") format("opentype");
+  font-family: "Comfortaa-Medium";
+  src: url("/fonts/Comfortaa-Medium.ttf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "CORBELB";
-  src: url("/fonts/CORBELB.TTF") format("opentype");
+  font-family: "Comfortaa-Bold";
+  src: url("/fonts/Comfortaa-Bold.ttf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
+  font-family: "Comfortaa-Medium";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,7 +36,7 @@ html {
 
 body {
   opacity: 1;
-  font-family: "CORBEL", system-ui, -apple-system, sans-serif;
+  font-family: "Comfortaa-Medium", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -143,7 +144,7 @@ body {
 /* FIN DE NAV BAR */
 
 h1 {
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   font-weight: 700;
   font-size: 4rem;
   color: var(--color-text);
@@ -159,7 +160,7 @@ h1 {
 }
 
 h2 {
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   font-weight: 900;
   font-size: 4rem;
   line-height: 1.5rem;
@@ -169,7 +170,7 @@ h2 {
 }
 
 p {
-  font-family: "CORBEL";
+  font-family: "Comfortaa-Medium";
   font-size: 1.7rem;
   text-align: center;
   font-weight: 500;
@@ -363,7 +364,7 @@ hr {
 /* FIN TEAM TARJETAS */
 
 .nuestro-team h2{
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   font-size: 4rem;
   color: var(--color-text);
 }
@@ -397,7 +398,7 @@ hr {
 }
 
 .btn-primary {
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   background-color: var(--color-text);
   color: white;
 }
@@ -427,7 +428,7 @@ hr {
 }
 
 .footer-links a {
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
@@ -576,7 +577,7 @@ hr {
 
 .creative-cards {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.393);
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   padding: 120px 0;
   position: relative;
 }

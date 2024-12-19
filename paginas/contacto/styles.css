@@ -12,22 +12,23 @@ html {
 }
 
 @font-face {
-  font-family: "CORBEL";
-  src: url("/fonts/CORBEL.TTF") format("opentype");
+  font-family: "Comfortaa-Medium";
+  src: url("/fonts/Comfortaa-Medium.ttf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "CORBELB";
-  src: url("/fonts/CORBELB.TTF") format("opentype");
+  font-family: "Comfortaa-Bold";
+  src: url("/fonts/Comfortaa-Bold.ttf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
+  font-family: "Comfortaa-Medium";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +37,7 @@ html {
 body {
   opacity: 1;
   background-color: #ffffff;
-  font-family: "CORBEL", system-ui, -apple-system, sans-serif;
+  font-family: "Comfortaa-Medium", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -66,7 +67,7 @@ body {
 }
 
 .navbar a {
-  font-family: "CORBELB", system-ui, -apple-system, sans-serif;
+  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 700;
@@ -77,7 +78,7 @@ body {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: var(--color-accent-dark);
+  color: var(--color-primary-dark);
 }
 
 .header.scroll {
@@ -167,7 +168,7 @@ body {
 }
 
 .contact-left-title h2 {
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   font-weight: 900;
   color: var(--color-primary);
   font-size: 40px;
@@ -279,7 +280,7 @@ body {
 }
 
 .footer-links a {
-  font-family: "CORBELB";
+  font-family: "Comfortaa-Bold";
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
