@@ -36,8 +36,6 @@ html {
 body {
   opacity: 1;
   background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23136b46' fill-opacity='0.72'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-size: 50vh;
   font-family: "CORBEL", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.5;
@@ -146,6 +144,32 @@ body {
 /* FIN DE NAV BAR */
 
 /* HERO */
+.hero-contenedor {  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.i1 {  display: grid;
+  grid-template-columns: 1fr 1.1fr 0.9fr;
+  grid-template-rows: 1fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hero-title hero-title animation"
+    "hero-title hero-title animation"
+    "botones botones botones";
+}
+
+.hero-title { grid-area: hero-title; }
+
+.animation { grid-area: animation; }
+
+.botones { grid-area: botones; }
+
+
 
 .container {
   max-width: 1200px;
@@ -254,6 +278,209 @@ hr {
   gap: 1rem;
   justify-content: center;
   margin-top: 2rem;
+}
+
+
+#Station {
+  align:center;
+}
+#Station #BlackBuildings {
+  transition: all .4s ease-in-out;
+  transform: translate(0px, 160px);
+}
+#Station:hover #BlackBuildings {
+  transform: translate(0px, 0px);
+}
+
+#Station #PurpleLights {
+  transition: all 1s ease-in-out;
+  opacity:0;
+}
+#Station:hover #PurpleLights {
+  opacity:1;
+}
+#Station #Skinny1 {
+  transition: all .3s ease-in-out;
+  transform: translate(0px, 30px);
+}
+#Station:hover #Skinny1 {
+  transform: translate(0px, 0px);
+}
+
+#Station #Skinny2 {
+  transition: all .6s ease-in-out;
+  transform: translate(0px, 220px);
+}
+#Station:hover #Skinny2 {
+  transform: translate(0px, 0px);
+}
+
+#Station #Skinny3 {
+  transition: all .9s ease-in-out;
+  transform: translate(0px, 220px);
+}
+#Station:hover #Skinny3 {
+  transform: translate(0px, 0px);
+}
+
+#Station #Skinny4 {
+  transition: all 1.2s ease-in-out;
+  transform: translate(0px, 220px);
+}
+#Station:hover #Skinny4 {
+  transform: translate(0px, 0px);
+}
+
+#Station #LitWindows {
+  transition: all .4s ease-in-out;
+  opacity:0;
+}
+#Station:hover #LitWindows {
+  opacity:1;
+}
+#Station #Signage {
+  transition: all .6s ease-in-out;
+  transform: translate(0px, 190px);
+}
+#Station:hover #Signage {
+  transform: translate(0px, 0px);
+}
+
+#Station #WindowRow1 {
+  transition: all .2s ease-in-out;
+  transform: translate(0px, 190px);
+}
+#Station:hover #WindowRow1 {
+  transform: translate(0px, 0px);
+}
+#Station #WindowRow2 {
+  transition: all .4s ease-in-out;
+  transform: translate(0px, 190px);
+}
+#Station:hover #WindowRow2 {
+  transform: translate(0px, 0px);
+}
+#Station #WindowRow3 {
+  transition: all .6s ease-in-out;
+  transform: translate(0px, 190px);
+}
+#Station:hover #WindowRow3 {
+  transform: translate(0px, 0px);
+}
+#Station #WindowRow4 {
+  transition: all .8s ease-in-out;
+  transform: translate(0px, 190px);
+}
+#Station:hover #WindowRow4 {
+  transform: translate(0px, 0px);
+}
+#Station #WindowRow5 {
+  transition: all 1s ease-in-out;
+  transform: translate(0px, 190px);
+}
+#Station:hover #WindowRow5 {
+  transform: translate(0px, 0px);
+}
+
+#Station #LitTracks {
+  transition: all .8s ease-in-out;
+  opacity:0;
+}
+#Station:hover #LitTracks {
+  opacity:1;
+}
+
+#Station #Step1 {
+  transition: all .7s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step1 {
+  transform: translate(0px, 0px);
+}
+
+#Station #Step2 {
+  transition: all .65s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step2 {
+  transform: translate(0px, 0px);
+}
+#Station #Step3 {
+  transition: all .6s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step3 {
+  transform: translate(0px, 0px);
+}
+#Station #Step4 {
+  transition: all .55s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step4 {
+  transform: translate(0px, 0px);
+}
+#Station #Step5 {
+  transition: all .5s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step5 {
+  transform: translate(0px, 0px);
+}
+#Station #Step6 {
+  transition: all .45s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step6 {
+  transform: translate(0px, 0px);
+}
+#Station #Step7 {
+  transition: all .4s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step7 {
+  transform: translate(0px, 0px);
+}
+#Station #Step8 {
+  transition: all .35s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step8 {
+  transform: translate(0px, 0px);
+}
+#Station #Step9 {
+  transition: all .3s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step9 {
+  transform: translate(0px, 0px);
+}
+#Station #Step10 {
+  transition: all .25s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step10 {
+  transform: translate(0px, 0px);
+}
+#Station #Step11 {
+  transition: all .2s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step11 {
+  transform: translate(0px, 0px);
+}
+#Station #Step12 {
+  transition: all .15s ease-in-out;
+  transform: translate(0px, 132px);
+}
+#Station:hover #Step12 {
+  transform: translate(0px, 0px);
+}
+#Station #Car {
+  transition: all 1.5s ease-in-out;
+  transform: translate(-280px, 176px);
+}
+#Station:hover #Car {
+  transform: translate(13px, -7px);
 }
 
 /* CALCULADORAS */
@@ -396,7 +623,7 @@ hr {
   font-family: "CORBELB";
   color: var(--color-primary);
   padding: 1rem 0;
-  background-color: #0e2d1d96;
+  background-color: #0e2d1dc7;
   grid-template-columns: 1fr 0.8fr 1.2fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;

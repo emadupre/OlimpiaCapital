@@ -35,10 +35,6 @@ html {
 
 body {
   opacity: 1;
-  background-image: url(/src/mmmotif.svg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size:3000vh;
   font-family: "CORBEL", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.5;
