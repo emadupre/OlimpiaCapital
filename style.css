@@ -515,7 +515,7 @@ h1:hover {
 .horizontal {
   display: flex;
   white-space: nowrap;
-  gap: 50px;
+  gap: 30px;
 }
 
 .horizontal h1 {
@@ -524,7 +524,7 @@ h1:hover {
   font-size: 14rem;
   color: #08b26b;
   white-space: nowrap;
-  padding: 0 1%;
+  padding-left: 2%;
 }
 /* TARJETAS FLOTANTES */
 
