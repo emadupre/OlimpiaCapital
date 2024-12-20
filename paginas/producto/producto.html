@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paxum - Producto</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="shortcut icon" href="/src/icon-page.ico" type="image/x-icon">
     <link rel="stylesheet" href="/paginas/producto/styles.css" />
   </head>
@@ -38,10 +40,10 @@
           <a href="#services" class="btn btn-secondary">Contacto</a>
         </div>
           </div>
+          
           <div class="animation">
             <div class="center">
-              <svg id="Station" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="380px"
-                 height="380.001px" viewBox="0 0 300 300.001" enable-background="new 0 0 300 300.001" xml:space="preserve">
+              <svg id="Station" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="380px" height="380.001px" viewBox="0 0 300 300.001" enable-background="new 0 0 300 300.001" xml:space="preserve">
               <g id="Background">
                 <path fill="#0F2E23" d="M300,275.612c0,13.506-10.949,24.456-24.455,24.456H24.455C10.949,300.068,0,289.118,0,275.612V24.523
                   C0,11.017,10.949,0.067,24.455,0.067h251.089C289.05,0.067,300,11.017,300,24.523V275.612z"/>
@@ -376,6 +378,7 @@
               </svg>
               </div>
           </div>
+        
         </div>
       </div>
     </section>
@@ -528,7 +531,28 @@
           Simplifica tus operaciones internacionales con nuestra plataforma de
           pagos global
         </p>
-        <a href="#services" class="btn btn-secondary">Comenza ahora</a>
+        <a class="tarjeta-contacto" href="/contacto">
+        <div class="contenedor-tarjeta">
+          <div class="left-side">
+           <div class="tarjeta-pago">
+            <div class="card-line"></div>
+            <div class="buttons"></div>
+           </div>
+           <div class="post">
+            <div class="post-line"></div>
+            <div class="screen">
+             <div class="dollar">$</div>
+            </div>
+            <div class="numbers"></div>
+            <div class="numbers-line2"></div>
+           </div>
+          </div>
+          <div class="right-side">
+           <div class="new">Contactanos</div>
+            <svg viewBox="0 0 451.846 451.847" height="512" width="512" xmlns="http://www.w3.org/2000/svg" class="arrow"><path fill="#cfcfcf" data-old_color="#000000" class="active-path" data-original="#000000" d="M345.441 248.292L151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z"></path></svg>
+          </div>
+        </div>
+        </a>
         </div>
         <div class="Mundo">
           <div id="animationWindow" class="mundo"></div>
@@ -553,8 +577,8 @@
           <div class="card-content">
             <h3>Centro Financiero</h3>
             <p><span class="icon">📍</span>Av. Corrientes 1234, CABA</p>
-            <p><span class="icon">⏲</span>Lun - Vie: 9:00-18:00</p>
-            <p><span class="icon">☎</span>(011)4555-0123</p>
+            <p><span class="icon">🕒</span>Lun - Vie: 9:00-18:00</p>
+            <p><span class="icon">📱</span>(011)4555-0123</p>
           </div>
         </div>
         <div class="card">
@@ -563,8 +587,8 @@
           <div class="card-content">
             <h3>Microcentro</h3>
             <p><span class="icon">📍</span>Florida 999, CABA</p>
-            <p><span class="icon">⏲</span>Lun - Vie: 9:00-18:00</p>
-            <p><span class="icon">☎</span>(011)4555-0124</p>
+            <p><span class="icon">🕒</span>Lun - Vie: 9:00-18:00</p>
+            <p><span class="icon">📱</span>(011)4555-0124</p>
           </div>
         </div>
         <div class="card">
@@ -573,8 +597,8 @@
           <div class="card-content">
             <h3>Palermo</h3>
             <p><span class="icon">📍</span>Av. Santa Fe 3456, CABA</p>
-            <p><span class="icon">⏲</span>Lun - Vie: 9:00-18:00</p>
-            <p><span class="icon">☎</span>(011)4555-0125</p>
+            <p><span class="icon">🕒</span>Lun - Vie: 9:00-18:00</p>
+            <p><span class="icon">📱</span>(011)4555-0125</p>
           </div>
         </div>
       </div>
@@ -592,9 +616,41 @@
           <br />
           Ofrecemos las mejores tasas del mercado y un servicio confiable.
         </p>
-        <a href="#services" class="btn btn-secondary"
-          >Contáctanos para más información</a
-        >
+        <section class="tarjetas-contenedor">
+          <div class="tarjeta-espacio">
+            <a class="tarjeta" href="/contacto">
+              <div>
+                <h1>Pagos Globales</h1>
+                <p>Realiza transferencias internacionales a más de 180 países</p>
+              </div>
+            </a>
+          </div>
+          <div class="tarjeta-espacio">
+            <a class="tarjeta" href="/contacto">
+              <div>
+                <h1>Múltiples Métodos</h1>
+                <p>Acepta pagos con tarjetas, transferencias y más</p>
+              </div>
+            </a>
+          </div>
+          <div class="tarjeta-espacio">
+            <a class="tarjeta" href="/contacto">
+              <div>
+                <h1>Mejores Tasas</h1>
+                <p>Tipos de cambio competitivos y tarifas transparentes</p>
+              </div>
+            </a>
+          </div>
+          <div class="tarjeta-espacio">
+            <a class="tarjeta" href="/contacto">
+              <div>
+                <h1>Soporte Empresarial</h1>
+                <p>Soluciones personalizadas para tu negocio</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
       </div>
     </section>
 

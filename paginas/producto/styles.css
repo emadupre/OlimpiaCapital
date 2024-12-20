@@ -5,6 +5,8 @@
   --color-accent-dark: #855500;
   --color-text: #199644;
   --color-white: #ffffff;
+  --color: #3c3163;
+  --tiempo-transicion: 0.5s;
 }
 
 html {
@@ -85,7 +87,9 @@ body {
   position: fixed; /* Asegura que el header esté fijo al hacer scroll */
   top: 10px; /* Ajusta la posición desde la parte superior */
   left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Corrige el desplazamiento hacia la izquierda */
+  transform: translateX(
+    -50%
+  ); /* Corrige el desplazamiento hacia la izquierda */
   margin: 0; /* Elimina márgenes que puedan descentrarlo */
   padding: 10px 50px;
   border-radius: 50px;
@@ -145,7 +149,8 @@ body {
 /* FIN DE NAV BAR */
 
 /* HERO */
-.hero-contenedor {  display: grid;
+.hero-contenedor {
+  display: grid;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
@@ -153,7 +158,8 @@ body {
   grid-auto-flow: row;
 }
 
-.i1 {  display: grid;
+.i1 {
+  display: grid;
   grid-template-columns: 1fr 1.1fr 0.9fr;
   grid-template-rows: 1fr 1.5fr 0.5fr;
   gap: 0px 0px;
@@ -164,13 +170,17 @@ body {
     "botones botones ...";
 }
 
-.hero-title { grid-area: hero-title; }
+.hero-title {
+  grid-area: hero-title;
+}
 
-.animation { grid-area: animation; }
+.animation {
+  grid-area: animation;
+}
 
-.botones { grid-area: botones; }
-
-
+.botones {
+  grid-area: botones;
+}
 
 .container {
   max-width: 1200px;
@@ -199,7 +209,8 @@ body {
   font-family: "Comfortaa-Medium";
   color: var(--color-text);
   text-align: center;
-  font-size: 1.7rem;}
+  font-size: 1.7rem;
+}
 
 h2 {
   font-size: 3rem;
@@ -278,12 +289,11 @@ hr {
   margin-top: 2rem;
 }
 
-
 #Station {
-  align-items:center;
+  align-items: center;
 }
 #Station #BlackBuildings {
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   transform: translate(0px, 160px);
 }
 #Station:hover #BlackBuildings {
@@ -292,13 +302,13 @@ hr {
 
 #Station #PurpleLights {
   transition: all 1s ease-in-out;
-  opacity:0;
+  opacity: 0;
 }
 #Station:hover #PurpleLights {
-  opacity:1;
+  opacity: 1;
 }
 #Station #Skinny1 {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translate(0px, 30px);
 }
 #Station:hover #Skinny1 {
@@ -306,7 +316,7 @@ hr {
 }
 
 #Station #Skinny2 {
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   transform: translate(0px, 220px);
 }
 #Station:hover #Skinny2 {
@@ -314,7 +324,7 @@ hr {
 }
 
 #Station #Skinny3 {
-  transition: all .9s ease-in-out;
+  transition: all 0.9s ease-in-out;
   transform: translate(0px, 220px);
 }
 #Station:hover #Skinny3 {
@@ -330,14 +340,14 @@ hr {
 }
 
 #Station #LitWindows {
-  transition: all .4s ease-in-out;
-  opacity:0;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
 }
 #Station:hover #LitWindows {
-  opacity:1;
+  opacity: 1;
 }
 #Station #Signage {
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   transform: translate(0px, 190px);
 }
 #Station:hover #Signage {
@@ -345,28 +355,28 @@ hr {
 }
 
 #Station #WindowRow1 {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform: translate(0px, 190px);
 }
 #Station:hover #WindowRow1 {
   transform: translate(0px, 0px);
 }
 #Station #WindowRow2 {
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   transform: translate(0px, 190px);
 }
 #Station:hover #WindowRow2 {
   transform: translate(0px, 0px);
 }
 #Station #WindowRow3 {
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   transform: translate(0px, 190px);
 }
 #Station:hover #WindowRow3 {
   transform: translate(0px, 0px);
 }
 #Station #WindowRow4 {
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   transform: translate(0px, 190px);
 }
 #Station:hover #WindowRow4 {
@@ -381,15 +391,15 @@ hr {
 }
 
 #Station #LitTracks {
-  transition: all .8s ease-in-out;
-  opacity:0;
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
 }
 #Station:hover #LitTracks {
-  opacity:1;
+  opacity: 1;
 }
 
 #Station #Step1 {
-  transition: all .7s ease-in-out;
+  transition: all 0.7s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step1 {
@@ -397,77 +407,77 @@ hr {
 }
 
 #Station #Step2 {
-  transition: all .65s ease-in-out;
+  transition: all 0.65s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step2 {
   transform: translate(0px, 0px);
 }
 #Station #Step3 {
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step3 {
   transform: translate(0px, 0px);
 }
 #Station #Step4 {
-  transition: all .55s ease-in-out;
+  transition: all 0.55s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step4 {
   transform: translate(0px, 0px);
 }
 #Station #Step5 {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step5 {
   transform: translate(0px, 0px);
 }
 #Station #Step6 {
-  transition: all .45s ease-in-out;
+  transition: all 0.45s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step6 {
   transform: translate(0px, 0px);
 }
 #Station #Step7 {
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step7 {
   transform: translate(0px, 0px);
 }
 #Station #Step8 {
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step8 {
   transform: translate(0px, 0px);
 }
 #Station #Step9 {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step9 {
   transform: translate(0px, 0px);
 }
 #Station #Step10 {
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step10 {
   transform: translate(0px, 0px);
 }
 #Station #Step11 {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step11 {
   transform: translate(0px, 0px);
 }
 #Station #Step12 {
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   transform: translate(0px, 132px);
 }
 #Station:hover #Step12 {
@@ -534,7 +544,7 @@ hr {
   margin: 0 auto;
 }
 
-.exchange-calculator h2{
+.exchange-calculator h2 {
   color: var(--color-white);
 }
 
@@ -607,17 +617,18 @@ hr {
 /* FIN DE CALCULADORAS */
 
 /* International Payments */
-.pagos-internacionales {  display: grid;
+.pagos-internacionales {
+  display: grid;
   grid-template-columns: 1.2fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "PagosHero";
+  grid-template-areas: "PagosHero";
 }
 
-.PagosHero {  display: grid;
+.PagosHero {
+  display: grid;
   font-family: "Comfortaa-Bold";
   padding: 1rem 0;
   background-color: var(--color-primary);
@@ -632,14 +643,17 @@ hr {
   grid-area: PagosHero;
 }
 
-.Pagos { grid-area: Pagos;
+.Pagos {
+  grid-area: Pagos;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Mundo { grid-area: Mundo; }
+.Mundo {
+  grid-area: Mundo;
+}
 
 #animationWindow {
   padding-left: 20%;
@@ -660,16 +674,266 @@ hr {
   font-size: 1.5rem;
 }
 
-.Pagos a{
+.Pagos a {
   background-color: white;
   border-color: var(--color-white);
 }
 
-.Pagos a:hover{
+.Pagos a:hover {
   color: var(--color-white);
   border-color: var(--color-white);
-  background-color:transparent;
+  background-color: transparent;
 }
+
+.contenedor-tarjeta {
+  background-color: #ffffff;
+  display: flex;
+  width: 460px;
+  height: 120px;
+  position: relative;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.contenedor-tarjeta:hover {
+  transform: scale(1.03);
+  width: 220px;
+}
+
+.contenedor-tarjeta:hover .left-side {
+  width: 100%;
+}
+
+.left-side {
+  background-color: #5de2a3;
+  width: 130px;
+  height: 120px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.right-side {
+  width: calc(100% - 130px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: space-between;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.right-side:hover {
+  background-color: #f9f7f9;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.new {
+  font-size: 23px;
+  font-family: "Lexend Deca", sans-serif;
+  margin-left: 20px;
+}
+
+.tarjeta-pago {
+  width: 70px;
+  height: 46px;
+  background-color: #c7ffbc;
+  border-radius: 6px;
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 9px 9px 9px -2px rgba(77, 200, 143, 0.72);
+  -webkit-box-shadow: 9px 9px 9px -2px rgba(77, 200, 143, 0.72);
+  -moz-box-shadow: 9px 9px 9px -2px rgba(77, 200, 143, 0.72);
+  -webkit-box-shadow: 9px 9px 9px -2px rgba(77, 200, 143, 0.72);
+}
+
+.card-line {
+  width: 65px;
+  height: 13px;
+  background-color: #80ea69;
+  border-radius: 2px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 480px) {
+  .contenedor-tarjeta {
+    transform: scale(0.7);
+  }
+
+  .container:hover {
+    transform: scale(0.74);
+  }
+
+  .new {
+    font-size: 18px;
+  }
+}
+
+.buttons {
+  width: 8px;
+  height: 8px;
+  background-color: #379e1f;
+  box-shadow: 0 -10px 0 0 #26850e, 0 10px 0 0 #56be3e;
+  border-radius: 50%;
+  margin-top: 5px;
+  transform: rotate(90deg);
+  margin: 10px 0 0 -30px;
+}
+
+.contenedor-tarjeta:hover .tarjeta-pago {
+  animation: slide-top 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+
+.contenedor-tarjeta:hover .post {
+  animation: slide-post 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-70px) rotate(90deg);
+    transform: translateY(-70px) rotate(90deg);
+  }
+
+  60% {
+    -webkit-transform: translateY(-70px) rotate(90deg);
+    transform: translateY(-70px) rotate(90deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px) rotate(90deg);
+    transform: translateY(-8px) rotate(90deg);
+  }
+}
+
+.post {
+  width: 63px;
+  height: 75px;
+  background-color: #dddde0;
+  position: absolute;
+  z-index: 11;
+  bottom: 10px;
+  top: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.post-line {
+  width: 47px;
+  height: 9px;
+  background-color: #545354;
+  position: absolute;
+  border-radius: 0px 0px 3px 3px;
+  right: 8px;
+  top: 8px;
+}
+
+.post-line:before {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 9px;
+  background-color: #757375;
+  top: -8px;
+}
+
+.screen {
+  width: 47px;
+  height: 23px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 22px;
+  right: 8px;
+  border-radius: 3px;
+}
+
+.numbers {
+  width: 12px;
+  height: 12px;
+  background-color: #838183;
+  box-shadow: 0 -18px 0 0 #838183, 0 18px 0 0 #838183;
+  border-radius: 2px;
+  position: absolute;
+  transform: rotate(90deg);
+  left: 25px;
+  top: 52px;
+}
+
+.numbers-line2 {
+  width: 12px;
+  height: 12px;
+  background-color: #aaa9ab;
+  box-shadow: 0 -18px 0 0 #aaa9ab, 0 18px 0 0 #aaa9ab;
+  border-radius: 2px;
+  position: absolute;
+  transform: rotate(90deg);
+  left: 25px;
+  top: 68px;
+}
+
+@keyframes slide-post {
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+}
+
+.dollar {
+  position: absolute;
+  font-size: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: #4b953b;
+  text-align: center;
+}
+
+.contenedor-tarjeta:hover .dollar {
+  animation: fade-in-fwd 0.3s 1s backwards;
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tarjeta-contacto{
+  text-decoration: none;
+  color: #0e2d1d;
+}
+
 
 /* Locations Section */
 .locations {
@@ -696,12 +960,16 @@ hr {
   gap: 2rem;
 }
 
+/* TARJETAS CAMBIOS INTERNACIONALES */
+
+/* FIN TARJETAS CAMBIOS INTERNACIONALES */
+
 /* TARJETAS AGENCIA DE CAMBIO */
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Espaciado entre las tarjetas */
+  gap: 10vh; /* Espaciado entre las tarjetas */
   justify-content: center; /* Centra las tarjetas horizontalmente */
   align-items: center;
   margin: 20px; /* Espaciado alrededor del contenedor */
@@ -715,8 +983,8 @@ hr {
 
 .card {
   position: relative;
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 350px;
   border-radius: 14px;
   z-index: 999;
   overflow: hidden;
@@ -732,10 +1000,10 @@ hr {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 190px;
-  height: 240px;
+  width: 290px;
+  height: 340px;
   z-index: 2;
-  background: rgba(255, 255, 255, .95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(24px);
   border-radius: 10px;
   overflow: hidden;
@@ -747,8 +1015,8 @@ hr {
   z-index: 1;
   top: 50%;
   left: 50%;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: #ffffff9b;
   opacity: 1;
@@ -783,14 +1051,13 @@ hr {
 }
 
 .card-content h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
-  line-height: 1.5rem;
 }
 
 .card-content p {
-  margin: 0.2rem 0;
-  font-size: 0.7rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
 }
 
 .card-content .icon {
@@ -799,7 +1066,6 @@ hr {
 }
 
 /*FIN AGENCIA DE CAMBIO */
-
 
 #cambio-internacional {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
@@ -988,4 +1254,178 @@ hr {
 .footer-bottom p {
   font-size: 0.9rem;
   color: #555;
+}
+
+
+.tarjetas-contenedor {
+  display: flex; /* Cambia de grid a flex */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  align-items: center; /* Centra las tarjetas verticalmente */
+  gap: 1rem; /* Espaciado entre las tarjetas */
+  padding: 2rem;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si no caben */
+}
+
+.tarjeta {
+  flex: 0 1 calc(33.333% - 1rem);
+  max-width: 15em;
+  font-family: 'Comfortaa-Medium';
+  --opacidad-filtro-fondo: 0.5;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-filtro-fondo)), rgba(0, 0, 0, var(--opacidad-filtro-fondo))), var(--fondo-img);
+  height: 10em;
+  width: 15em;
+  font-size: 1.5em;
+  color: var(--color-primary);
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em rgba(0, 0, 0, 0.365);
+  transition: all, var(--tiempo-transicion);
+  position: relative;
+  overflow: hidden;
+  border: 5px solid var(--color-primary);
+  text-decoration: none;
+}
+
+.tarjeta:hover {
+  transform: rotate(0);
+}
+
+.tarjeta h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.tarjeta p {
+  font-size: 0.75em;
+  font-family: 'Comfortaa-Medium';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.tarjeta .etiquetas {
+  display: flex;
+}
+
+.tarjeta .etiquetas .etiqueta {
+  font-size: 0.75em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.1rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--tiempo-transicion);
+}
+
+.tarjeta:hover .etiquetas .etiqueta {
+  background: var(--color-text);
+  color: white;
+}
+
+.tarjeta:before, .tarjeta:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--tiempo-transicion);
+  transition-timing-function: ease-in-out;
+}
+
+.tarjeta:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.tarjeta:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.tarjeta:hover {
+  color: var(--color-primary);
+}
+
+.tarjeta:hover:before, .tarjeta:hover:after {
+  transform: scale(1);
+}
+
+.tarjeta-espacio .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .tarjetas-contenedor {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tarjetas-contenedor {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tarjetas-contenedor {
+    padding: 4rem 2rem;
+  }
+  .tarjeta {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    flex: 0 1 calc(50% - 1rem); /* Dos tarjetas por fila */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tarjeta {
+    flex: 0 1 calc(100% - 1rem); /* Una tarjeta por fila */
+  }
 }
