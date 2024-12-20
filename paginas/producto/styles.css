@@ -5,7 +5,6 @@
   --color-accent-dark: #855500;
   --color-text: #199644;
   --color-white: #ffffff;
-  --color: #3c3163;
   --tiempo-transicion: 0.5s;
 }
 
@@ -69,10 +68,10 @@ body {
 }
 
 .navbar a {
-  font-family: "CORBELB", system-ui, -apple-system, sans-serif;
+  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
   text-decoration: none;
@@ -80,7 +79,7 @@ body {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: var(--color-accent-dark);
+  color: var(--color-primary-dark);
 }
 
 .header.scroll {
@@ -159,9 +158,11 @@ body {
 }
 
 .i1 {
+  margin: 5%;
+  margin-top: 10%;
   display: grid;
   grid-template-columns: 1fr 1.1fr 0.9fr;
-  grid-template-rows: 1fr 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -195,13 +196,15 @@ body {
 
 .hero {
   font-family: "Comfortaa-Bold";
+  margin: 0;
+  padding: 0;
 }
 
 /* Typography */
 .hero h1 {
   font-family: "Comfortaa-Bold";
   color: var(--color-text);
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -209,7 +212,7 @@ body {
   font-family: "Comfortaa-Medium";
   color: var(--color-text);
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -273,7 +276,6 @@ hr {
 .hero {
   background-color: rgba(255, 255, 255, 0.786);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
-  padding: 6rem 0;
   text-align: center;
 }
 
@@ -1111,6 +1113,7 @@ hr {
 }
 
 .footer-links a {
+  font-family: "Comfortaa-Bold";
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
@@ -1291,40 +1294,47 @@ hr {
   text-decoration: none;
 }
 
+#tarjeta-1 {
+  background-image: url(/src/global.webp);
+  background-color: #ffffff45;
+}
+
+#tarjeta-2{
+  background-image: url(/src/metodos.webp);
+}
+
+#tarjeta-3{
+  background-image: url(/src/tasas.webp);
+}
+
+#tarjeta-4{
+  background-image: url(/src/soporte.webp);
+}
+
 .tarjeta:hover {
   transform: rotate(0);
 }
 
 .tarjeta h1 {
+  font-family: "Comfortaa-Bold";
+  color: var(--color-text);
   margin: 0;
   font-size: 1.5em;
   line-height: 1.2em;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 .tarjeta p {
+  color: var(--color-text);
   font-size: 0.75em;
   font-family: 'Comfortaa-Medium';
   margin-top: 0.5em;
   line-height: 2em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 .tarjeta .etiquetas {
   display: flex;
-}
-
-.tarjeta .etiquetas .etiqueta {
-  font-size: 0.75em;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 0.1rem;
-  padding: 0 0.5em;
-  margin-right: 0.5em;
-  line-height: 1.5em;
-  transition: all, var(--tiempo-transicion);
-}
-
-.tarjeta:hover .etiquetas .etiqueta {
-  background: var(--color-text);
-  color: white;
 }
 
 .tarjeta:before, .tarjeta:after {
@@ -1341,13 +1351,13 @@ hr {
 }
 
 .tarjeta:before {
-  background: #ddd;
+  background: rgba(255, 255, 255, 0.3);
   width: 250%;
   height: 250%;
 }
 
 .tarjeta:after {
-  background: white;
+  background: rgba(255, 255, 255, 0.3);
   width: 200%;
   height: 200%;
 }
