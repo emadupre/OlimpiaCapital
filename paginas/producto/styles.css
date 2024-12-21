@@ -182,11 +182,6 @@ body {
   justify-content: center;
 }
 
-.center{
-  
-  
-}
-
 .botones {
   grid-area: botones;
 }
@@ -949,6 +944,15 @@ hr {
 
 
 /* Locations Section */
+:root {
+  --fondo-caracteristica: rgba(255, 255, 255, 0.9);
+  --texto-principal: var(--color-text);
+  --texto-secundario: var(--color-text-light);
+  --color-primario: #2563eb;
+  --sombra-caracteristica: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Locations Section */
 .locations {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
   background-color: rgba(255, 255, 255, 0.406);
@@ -957,23 +961,121 @@ hr {
 }
 
 .locations h2 {
-  font-size: 4rem;
+  font-size: 2rem; /* Reducido de 4rem */
   color: var(--color-text);
+  margin-bottom: 1rem;
 }
 
-.locations p {
+.section-description {
   font-family: "Comfortaa-Medium";
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Reducido de 1.5rem */
   color: var(--color-text);
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.locations-grid {
+/* Contenedor de características */
+.caracteristicas-contenedor {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* TARJETAS CAMBIOS INTERNACIONALES */
+/* Característica individual */
+.caracteristica-enlace {
+  background-color: var(--fondo-caracteristica);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: var(--sombra-caracteristica);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow: hidden; /* Previene overflow */
+}
+
+.caracteristica-enlace:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Encabezado de la característica */
+.caracteristica-encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.caracteristica-icono {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-primary-dark);
+}
+
+.caracteristica-titulo {
+  color: var(--texto-principal);
+  font-size: 1.25rem; /* Reducido significativamente */
+  font-weight: 600;
+  font-family: "Comfortaa-Bold";
+  margin: 0;
+  line-height: 1.2;
+  word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+}
+
+/* Contenido de la característica */
+.caracteristica-descripcion {
+  color: var(--color-text);
+  line-height: 1.4;
+  font-family: "Comfortaa-Medium";
+  font-size: 0.9rem; /* Reducido para mejor ajuste */
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .locations h2 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .caracteristica-titulo {
+    font-size: 1.1rem;
+  }
+  
+  .caracteristica-descripcion {
+    font-size: 0.875rem;
+  }
+
+  .caracteristica-enlace {
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .caracteristicas-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .caracteristicas-contenedor {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 2rem;
+  }
+}
 
 /* FIN TARJETAS CAMBIOS INTERNACIONALES */
 
@@ -1270,183 +1372,3 @@ hr {
   color: #555;
 }
 
-
-.tarjetas-contenedor {
-  display: flex; /* Cambia de grid a flex */
-  justify-content: center; /* Centra las tarjetas horizontalmente */
-  align-items: center; /* Centra las tarjetas verticalmente */
-  gap: 1rem; /* Espaciado entre las tarjetas */
-  padding: 2rem;
-  margin: 0 auto;
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si no caben */
-}
-
-.tarjeta {
-  flex: 0 1 calc(33.333% - 1rem);
-  max-width: 15em;
-  font-family: 'Comfortaa-Medium';
-  --opacidad-filtro-fondo: 0.5;
-  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-filtro-fondo)), rgba(0, 0, 0, var(--opacidad-filtro-fondo))), var(--fondo-img);
-  height: 10em;
-  width: 15em;
-  font-size: 1.5em;
-  color: var(--color-primary);
-  border-radius: 1em;
-  padding: 1em;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 5em -1em rgba(0, 0, 0, 0.365);
-  transition: all, var(--tiempo-transicion);
-  position: relative;
-  overflow: hidden;
-  border: 5px solid var(--color-primary);
-  text-decoration: none;
-}
-
-#tarjeta-1 {
-  background-image: url(/src/global.webp);
-  background-color: #ffffff45;
-}
-
-#tarjeta-2{
-  background-image: url(/src/metodos.webp);
-}
-
-#tarjeta-3{
-  background-image: url(/src/tasas.webp);
-}
-
-#tarjeta-4{
-  background-image: url(/src/soporte.webp);
-}
-
-.tarjeta:hover {
-  transform: rotate(0);
-}
-
-.tarjeta h1 {
-  font-family: "Comfortaa-Bold";
-  color: var(--color-text);
-  margin: 0;
-  font-size: 1.5em;
-  line-height: 1.2em;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
-}
-
-.tarjeta p {
-  color: var(--color-text);
-  font-size: 0.75em;
-  font-family: 'Comfortaa-Medium';
-  margin-top: 0.5em;
-  line-height: 2em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-}
-
-.tarjeta .etiquetas {
-  display: flex;
-}
-
-.tarjeta:before, .tarjeta:after {
-  content: '';
-  transform: scale(0);
-  transform-origin: top left;
-  border-radius: 50%;
-  position: absolute;
-  left: -50%;
-  top: -50%;
-  z-index: -5;
-  transition: all, var(--tiempo-transicion);
-  transition-timing-function: ease-in-out;
-}
-
-.tarjeta:before {
-  background: rgba(255, 255, 255, 0.3);
-  width: 250%;
-  height: 250%;
-}
-
-.tarjeta:after {
-  background: rgba(255, 255, 255, 0.3);
-  width: 200%;
-  height: 200%;
-}
-
-.tarjeta:hover {
-  color: var(--color-primary);
-}
-
-.tarjeta:hover:before, .tarjeta:hover:after {
-  transform: scale(1);
-}
-
-.tarjeta-espacio .num {
-  font-size: 3em;
-  margin-bottom: 1.2rem;
-  margin-left: 1rem;
-}
-
-.info {
-  font-size: 1.2em;
-  display: flex;
-  padding: 1em 3em;
-  height: 3em;
-}
-
-.info img {
-  height: 3em;
-  margin-right: 0.5em;
-}
-
-.info h1 {
-  font-size: 1em;
-  font-weight: normal;
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 1285px) {
-  .tarjetas-contenedor {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .tarjetas-contenedor {
-    grid-template-columns: 1fr;
-  }
-  .info {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .tarjetas-contenedor {
-    padding: 4rem 2rem;
-  }
-  .tarjeta {
-    max-width: calc(100vw - 4rem);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .info {
-    display: block;
-    text-align: center;
-  }
-  .info h1 {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .tarjeta {
-    flex: 0 1 calc(50% - 1rem); /* Dos tarjetas por fila */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .tarjeta {
-    flex: 0 1 calc(100% - 1rem); /* Una tarjeta por fila */
-  }
-}

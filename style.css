@@ -129,34 +129,73 @@ body {
   width: 50px;
 }
 
-@media (max-width: 768px) {
-  .logo {
-    width: 120px; /* Tamaño para dispositivos móviles */
-  }
-
-  .scrolled .logo {
-    width: 80px; /* Tamaño reducido en scroll para móviles */
-  }
+/* Estilos básicos para el botón de menú */
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Se mostrará solo en pantallas pequeñas */
 }
 
 @media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-    gap: 2rem;
+  .navbar .nav-links {
+    display: flex; /* Asegurarse de que sea visible */
+    gap: 2rem; /* Espaciado entre los elementos */
+    position: static; /* Restablecer la posición */
+    background: none; /* Quitar fondo */
+    padding: 0; /* Ajustar padding */
+    box-shadow: none; /* Quitar sombra */
   }
 
-  .nav-links a {
+  .navbar .nav-links a {
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
   }
 
-  .nav-links a:hover {
+  .navbar .nav-links a:hover {
     color: var(--color-accent);
   }
+
+  #menu-toggle {
+    display: none; /* Ocultar el botón de menú */
+  }
 }
-*/
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .navbar.open .nav-links {
+    display: flex; /* Mostrar el menú desplegable */
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  #menu-toggle {
+    margin-left: 10px;
+    display: block; /* Mostrar el botón de menú */
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
 
 /* Hero section styles */
 .hero {
@@ -199,11 +238,12 @@ body {
   color:var(--color-primary);
 }
 .dud{
-  color:#757575;
+  color:var(--color-primary);
+  font-size: 2.5rem;
 }
-h1 {
+.hero h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ffffff;
   line-height: 1.2;
   transition: color 0.3s ease;
@@ -396,7 +436,13 @@ h1:hover {
 
   h1 {
     font-weight: 700;
-    font-size: 3.75rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .robot {
+    display: none; /* Oculta el div que contiene el script del robot en pantallas pequeñas */
   }
 }
 

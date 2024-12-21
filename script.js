@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const tiles = document.querySelectorAll(".tile");
 
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.querySelector('.navbar');
+
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('open');
+  });
+
   if (tiles.length > 0) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -219,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
   class TextScramble {
     constructor(el) {
       this.el = el;
-      this.chars = "!<>-_\\/[]{}—=+*^?#________";
+      this.chars = "!*%$!(&)//=+-";
       this.update = this.update.bind(this);
     }
     setText(newText) {
@@ -285,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let counter = 0;
   const next = () => {
     fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 800);
+      setTimeout(next, 1000);
     });
     counter = (counter + 1) % phrases.length;
   };

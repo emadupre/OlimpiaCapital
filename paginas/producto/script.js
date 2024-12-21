@@ -169,4 +169,5 @@ anim.setSpeed(1);
 document.addEventListener("DOMContentLoaded", () => {
   setupExchangeCalculator();
   setupLoanCalculator();
+  lucide.createIcons();
 });
