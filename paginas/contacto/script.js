@@ -76,3 +76,31 @@ document.querySelectorAll('input, textarea').forEach(element => {
       this.classList.remove('error');
   });
 });
+
+
+/*MAIL*/
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Evitar el envío predeterminado del formulario
+
+  // Obtener valores del formulario
+  const nombre = document.getElementById("nombre").value;
+  const apellido = document.getElementById("apellido").value;
+  const codigoPais = document.getElementById("codigo-pais").value;
+  const telefono = document.getElementById("telefono").value;
+  const email = document.getElementById("email").value;
+  const provincia = document.getElementById("provincia").value;
+  const mensaje = document.getElementById("mensaje").value;
+
+  // Construir el cuerpo del correo
+  const body = `Nombre: ${nombre} ${apellido}%0A` +
+               `Teléfono: ${codigoPais} ${telefono}%0A` +
+               `Email: ${email}%0A` +
+               `Provincia/Ciudad: ${provincia}%0A` +
+               `Mensaje: ${mensaje}`;
+
+  // Construir la URL para Gmail
+  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=&su=Formulario%20de%20Contacto&body=${body}`;
+
+  // Abrir Gmail en una nueva pestaña
+  window.open(gmailURL, "_blank");
+});

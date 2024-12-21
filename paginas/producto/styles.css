@@ -177,6 +177,14 @@ body {
 
 .animation {
   grid-area: animation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center{
+  
+  
 }
 
 .botones {
@@ -195,6 +203,9 @@ body {
 }
 
 .hero {
+  display:flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Comfortaa-Bold";
   margin: 0;
   padding: 0;
@@ -288,7 +299,7 @@ hr {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #Station {
@@ -658,7 +669,7 @@ hr {
 }
 
 #animationWindow {
-  padding-left: 20%;
+
   width: 100%;
   height: 100%;
 }
