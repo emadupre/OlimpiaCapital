@@ -170,4 +170,26 @@ document.addEventListener("DOMContentLoaded", () => {
   setupExchangeCalculator();
   setupLoanCalculator();
   lucide.createIcons();
+
+
+  // Selecciona las secciones que deseas animar
+  const secciones = document.querySelectorAll(
+    ".hero, .monedas, .pagos-internacionales, #cambio-internacional, .contenedor-calculadoras, #locations"
+  );
+
+  // Función para detectar cuando las secciones están en el viewport
+  function checkVisibility() {
+    secciones.forEach((seccion) => {
+      const rect = seccion.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top <= window.innerHeight) {
+        seccion.classList.add("visible"); // Añade la clase para activar el fade-in
+      }
+    });
+  }
+
+  // Llama la función al hacer scroll
+  window.addEventListener("scroll", checkVisibility);
+
+  // Llama la función al cargar la página por si alguna sección ya está visible
+  checkVisibility();
 });

@@ -43,6 +43,20 @@ body {
   line-height: 1.5;
 }
 
+
+/* Estilo inicial antes de que los elementos sean visibles */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estilo cuando los elementos son visibles */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Navbar styles */
 
 .header {
@@ -980,7 +994,7 @@ hr {
 /* Contenedor de características */
 .caracteristicas-contenedor {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
