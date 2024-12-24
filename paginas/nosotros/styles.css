@@ -41,7 +41,7 @@ body {
   line-height: 1.5;
 }
 
-/*NAV-BAR*/
+/* Navbar styles */
 
 .header {
   z-index: 1000;
@@ -66,10 +66,10 @@ body {
 }
 
 .navbar a {
-  font-family: "CORBELB", system-ui, -apple-system, sans-serif;
+  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
   text-decoration: none;
@@ -77,7 +77,7 @@ body {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: var(--color-accent-dark);
+  color: var(--color-text);
 }
 
 .header.scroll {
@@ -111,34 +111,6 @@ body {
 
 #main-logo {
   width: 50px;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    width: 120px; /* Tamaño para dispositivos móviles */
-  }
-
-  .scrolled .logo {
-    width: 80px; /* Tamaño reducido en scroll para móviles */
-  }
-}
-
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .nav-links a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
-
-  .nav-links a:hover {
-    color: var(--color-accent);
-  }
 }
 
 /* FIN DE NAV BAR */

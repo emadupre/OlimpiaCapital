@@ -1,6 +1,8 @@
 const header = document.getElementById("main-header");
 const logo = document.getElementById("main-logo");
 
+
+
 // Rutas corregidas
 const defaultLogo = "./src/LOGO-HORIZONTAL-PNG-A-COLOR.png";
 const scrolledLogo = "./src/LOGO-SOLO-A-COLOR.png";

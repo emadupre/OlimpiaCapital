@@ -93,16 +93,14 @@ section.visible {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-text);
 }
 
 .header.scroll {
   position: fixed; /* Asegura que el header esté fijo al hacer scroll */
   top: 10px; /* Ajusta la posición desde la parte superior */
   left: 50%; /* Centra horizontalmente */
-  transform: translateX(
-    -50%
-  ); /* Corrige el desplazamiento hacia la izquierda */
+  transform: translateX(-50%); /* Corrige el desplazamiento hacia la izquierda */
   margin: 0; /* Elimina márgenes que puedan descentrarlo */
   padding: 10px 50px;
   border-radius: 50px;
@@ -129,34 +127,6 @@ section.visible {
 
 #main-logo {
   width: 50px;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    width: 120px; /* Tamaño para dispositivos móviles */
-  }
-
-  .scrolled .logo {
-    width: 80px; /* Tamaño reducido en scroll para móviles */
-  }
-}
-
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .nav-links a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
-
-  .nav-links a:hover {
-    color: var(--color-accent);
-  }
 }
 
 /* FIN DE NAV BAR */
