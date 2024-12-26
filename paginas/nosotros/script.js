@@ -1,7 +1,12 @@
 const header = document.getElementById("main-header");
 const logo = document.getElementById("main-logo");
 
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector(".navbar");
 
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("open");
+});
 
 // Rutas corregidas
 const defaultLogo = "./src/LOGO-HORIZONTAL-PNG-A-COLOR.png";

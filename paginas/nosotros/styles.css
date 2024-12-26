@@ -84,7 +84,9 @@ body {
   position: fixed; /* Asegura que el header esté fijo al hacer scroll */
   top: 10px; /* Ajusta la posición desde la parte superior */
   left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Corrige el desplazamiento hacia la izquierda */
+  transform: translateX(
+    -50%
+  ); /* Corrige el desplazamiento hacia la izquierda */
   margin: 0; /* Elimina márgenes que puedan descentrarlo */
   padding: 10px 50px;
   border-radius: 50px;
@@ -113,6 +115,72 @@ body {
   width: 50px;
 }
 
+/* Estilos básicos para el botón de menú */
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Se mostrará solo en pantallas pequeñas */
+}
+
+@media (min-width: 768px) {
+  .navbar .nav-links {
+    display: flex; /* Asegurarse de que sea visible */
+    gap: 2rem; /* Espaciado entre los elementos */
+    position: static; /* Restablecer la posición */
+    background: none; /* Quitar fondo */
+    padding: 0; /* Ajustar padding */
+    box-shadow: none; /* Quitar sombra */
+  }
+
+  .navbar .nav-links a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .navbar .nav-links a:hover {
+    color: var(--color-accent);
+  }
+
+  #menu-toggle {
+    display: none; /* Ocultar el botón de menú */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .navbar.open .nav-links {
+    display: flex; /* Mostrar el menú desplegable */
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  #menu-toggle {
+    margin-left: 10px;
+    display: block; /* Mostrar el botón de menú */
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
 /* FIN DE NAV BAR */
 
 h1 {

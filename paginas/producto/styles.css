@@ -43,7 +43,6 @@ body {
   line-height: 1.5;
 }
 
-
 /* Estilo inicial antes de que los elementos sean visibles */
 section {
   opacity: 0;
@@ -100,7 +99,9 @@ section.visible {
   position: fixed; /* Asegura que el header esté fijo al hacer scroll */
   top: 10px; /* Ajusta la posición desde la parte superior */
   left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Corrige el desplazamiento hacia la izquierda */
+  transform: translateX(
+    -50%
+  ); /* Corrige el desplazamiento hacia la izquierda */
   margin: 0; /* Elimina márgenes que puedan descentrarlo */
   padding: 10px 50px;
   border-radius: 50px;
@@ -127,6 +128,76 @@ section.visible {
 
 #main-logo {
   width: 50px;
+}
+
+/* Estilos básicos para el botón de menú */
+#menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Se mostrará solo en pantallas pequeñas */
+}
+
+@media (min-width: 768px) {
+  .navbar .nav-links {
+    display: flex; /* Asegurarse de que sea visible */
+    gap: 2rem; /* Espaciado entre los elementos */
+    position: static; /* Restablecer la posición */
+    background: none; /* Quitar fondo */
+    padding: 0; /* Ajustar padding */
+    box-shadow: none; /* Quitar sombra */
+  }
+
+  .navbar .nav-links a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .navbar .nav-links a:hover {
+    color: var(--color-accent);
+  }
+
+  #menu-toggle {
+    display: none; /* Ocultar el botón de menú */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .navbar.open .nav-links {
+    display: flex; /* Mostrar el menú desplegable */
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  #menu-toggle {
+    margin-left: 10px;
+    display: block; /* Mostrar el botón de menú */
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
 
 /* FIN DE NAV BAR */
@@ -182,7 +253,7 @@ section.visible {
 }
 
 .hero {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Comfortaa-Bold";
@@ -235,6 +306,8 @@ hr {
   transition: all 0.3s ease;
   border: none;
   text-decoration: none;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .btn-primary {
@@ -648,7 +721,6 @@ hr {
 }
 
 #animationWindow {
-
   width: 100%;
   height: 100%;
 }
@@ -921,11 +993,10 @@ hr {
   }
 }
 
-.tarjeta-contacto{
+.tarjeta-contacto {
   text-decoration: none;
   color: #0e2d1d;
 }
-
 
 /* Locations Section */
 :root {
@@ -1028,16 +1099,16 @@ hr {
     font-size: 2rem;
     padding: 0 1rem;
   }
-  
+
   .section-description {
     font-size: 1rem;
     padding: 0 1rem;
   }
-  
+
   .caracteristica-titulo {
     font-size: 1.1rem;
   }
-  
+
   .caracteristica-descripcion {
     font-size: 0.875rem;
   }
@@ -1168,25 +1239,6 @@ hr {
 
 #cambio-internacional {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .calculator-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-  }
 }
 
 /* FOOTER */
@@ -1356,3 +1408,658 @@ hr {
   color: #555;
 }
 
+/* FIN FOOTER */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1280px) {
+  .custom-footer {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .logo-section img {
+    width: 25vh;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-info {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .animation {
+    padding-left: 5%;
+  }
+  .center svg {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    width: 80%;
+    height: 20%;
+    padding-left: 20%;
+    margin-top: 2rem;
+  }
+  .btn {
+    width: 40%;
+    font-size: 0.7rem;
+  }
+  .calculadoras h2 {
+    font-size: 1.2rem;
+  }
+  .calculadoras h3 {
+    font-size: 1rem;
+  }
+  .calculadoras p {
+    font-size: 0.8rem;
+  }
+  #result-amount,
+  #monthly-payment {
+    font-size: 1.5rem;
+  }
+  .Pagos {
+    padding: 1rem;
+  }
+  .Pagos h2 {
+    font-size: 2rem;
+  }
+  .Pagos p {
+    font-size: 1rem;
+  }
+  .tarjeta-contacto {
+    margin: 3%;
+  }
+  .contenedor-tarjeta {
+    width: 100%;
+    height: 70px;
+  }
+  .new {
+    font-size: 1.2rem;
+  }
+  .left-side {
+    width: 130px;
+    height: 70px;
+  }
+  .right-side {
+    width: 55%;
+  }
+
+  .locations h2 {
+    font-size: 1.5rem;
+  }
+  .locations p {
+    font-size: 0.89rem;
+  }
+  #agencia-title {
+    font-size: 1.5rem;
+  }
+  #agencia {
+    font-size: 1rem;
+  }
+  .card {
+    width: 200px;
+    height: 250px;
+  }
+  .card-container {
+    gap: 5vh;
+  }
+  .card-content h3 {
+    font-size: 1.2rem;
+  }
+  .bg {
+    width: 190px;
+    height: 240px;
+  }
+  .custom-footer {
+    width: 50%;
+    padding: 2rem;
+  }
+  .logo-section img {
+    width: 20vh;
+    margin-bottom: 20px;
+  }
+  .footer-links a {
+    font-size: 0.8rem;
+  }
+  .social-media {
+    font-size: 0.8rem;
+  }
+  .footer-info p {
+    font-size: 0.7rem;
+  }
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .body {
+    max-width: 425px;
+  }
+  .header {
+    padding: 0.5rem;
+  }
+  #main-logo {
+    width: 40px;
+  }
+  #menu-toggle {
+    margin-left: 10px;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .hero {
+    margin-top: 3rem;
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .animation {
+    padding-left: 2%;
+  }
+  .center svg {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .hero p {
+    font-size: 0.6rem;
+  }
+  .hero-buttons {
+    width: 90%;
+    height: 20%;
+    padding-left: 10%;
+    margin-top: 1rem;
+  }
+  .btn {
+    width: 60%;
+    font-size: 0.6rem;
+  }
+  .calculadoras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajusta el espacio entre las calculadoras según tus necesidades */
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .calculator-inputs,
+  .exchange-result,
+  .loan-result {
+    width: 100%;
+  }
+  .exchange-calculator,
+  .loan-calculator {
+    width: 100%;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .calculadoras h2 {
+    font-size: 2rem;
+  }
+  .calculadoras h3 {
+    font-size: 0.8rem;
+  }
+  .calculadoras p {
+    font-size: 0.7rem;
+  }
+  #result-amount,
+  #monthly-payment {
+    font-size: 1.2rem;
+  }
+  .Pagos {
+    padding: 0.5rem;
+  }
+  .Pagos a {
+    background: none;
+  }
+  .Pagos h2 {
+    font-size: 1.5rem;
+  }
+  .Pagos p {
+    font-size: 0.8rem;
+  }
+  .tarjeta-contacto {
+    margin: 2%;
+  }
+  .contenedor-tarjeta {
+    width: 100%;
+    height: 60px;
+  }
+  .new {
+    font-size: 1rem;
+  }
+  .left-side {
+    width: 100px;
+    height: 60px;
+  }
+  .right-side {
+    width: 50%;
+  }
+
+  .locations h2 {
+    font-size: 1.2rem;
+  }
+  .locations p {
+    font-size: 0.8rem;
+  }
+  #agencia-title {
+    font-size: 1.2rem;
+  }
+  #agencia {
+    font-size: 0.8rem;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .card-container {
+    gap: 3vh;
+  }
+  .card-content h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .bg {
+    width: 190px;
+    height: 190px;
+  }
+  .custom-footer {
+    width: 100%;
+    padding: 1rem;
+  }
+  .logo-section img {
+    width: 15vh;
+    margin-bottom: 10px;
+  }
+  .footer-links a {
+    font-size: 0.7rem;
+  }
+  .social-media {
+    font-size: 0.7rem;
+  }
+  .footer-info p {
+    font-size: 0.6rem;
+  }
+  .footer-bottom p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .body {
+    max-width: 375px;
+  }
+  .header {
+    padding: 0.5rem;
+  }
+  #main-logo {
+    width: 35px;
+  }
+  #menu-toggle {
+    margin-left: 10px;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .hero {
+    margin-top: 2rem;
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .animation {
+    padding-left: 2%;
+  }
+  .center svg {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .hero h1 {
+    font-size: 1.1rem;
+  }
+  .hero p {
+    font-size: 0.5rem;
+  }
+  .hero-buttons {
+    width: 70%;
+    height: 18%;
+    padding-left: 30%;
+    margin-top: 0.7rem;
+  }
+  .btn {
+    width: 70%;
+    font-size: 0.5rem;
+  }
+  .exchange {
+    padding: 1rem 0;
+  }
+  .calculadoras {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Ajusta el espacio entre las calculadoras según tus necesidades */
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .calculator-inputs,
+  .exchange-result,
+  .loan-result {
+    width: 100%;
+  }
+  .exchange-calculator,
+  .loan-calculator {
+    width: 100%;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .calculadoras h2 {
+    font-size: 1.5rem;
+  }
+  .calculadoras h3 {
+    font-size: 0.7rem;
+  }
+  .calculadoras p {
+    font-size: 0.6rem;
+  }
+  #result-amount,
+  #monthly-payment {
+    font-size: 1rem;
+  }
+  .Pagos {
+    padding: 0.5rem;
+  }
+  .Pagos a {
+    background: none;
+  }
+  .Pagos h2 {
+    font-size: 1.2rem;
+  }
+  .Pagos p {
+    font-size: 0.7rem;
+  }
+  .tarjeta-contacto {
+    margin: 2%;
+  }
+  .contenedor-tarjeta {
+    width: 100%;
+    height: 50px;
+  }
+  .new {
+    font-size: 0.9rem;
+  }
+  .left-side {
+    width: 90px;
+    height: 50px;
+  }
+  .right-side {
+    width: 50%;
+  }
+
+  .locations h2 {
+    font-size: 1rem;
+  }
+  .locations p {
+    font-size: 0.7rem;
+  }
+  #agencia-title {
+    font-size: 1rem;
+  }
+  #agencia {
+    font-size: 0.7rem;
+  }
+  .card {
+    width: 180px;
+    height: 180px;
+  }
+  .card-container {
+    gap: 2vh;
+  }
+  .card-content h3 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .bg {
+    width: 170px;
+    height: 170px;
+  }
+  .custom-footer {
+    width: 100%;
+    padding: 0.75rem;
+  }
+  .logo-section img {
+    width: 12vh;
+    margin-bottom: 7px;
+  }
+  .footer-links a {
+    font-size: 0.65rem;
+  }
+  .social-media {
+    font-size: 0.65rem;
+  }
+  .footer-info p {
+    font-size: 0.55rem;
+  }
+  .footer-bottom p {
+    font-size: 0.55rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .body {
+    max-width: 375px;
+  }
+  .header {
+    padding: 0.5rem;
+  }
+  #main-logo {
+    width: 35px;
+  }
+  #menu-toggle {
+    margin-left: 10px;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .hero {
+    margin-top: 2rem;
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .animation {
+    padding-left: 2%;
+  }
+  .center svg {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .hero h1 {
+    font-size: 1rem;
+  }
+  .hero p {
+    font-size: 0.4968rem;
+  }
+
+  .hero-buttons {
+    width: 70%;
+    height: 16%;
+    padding-left: 30%;
+    margin-top: 0.7rem;
+  }
+  .btn {
+    width: 70%;
+    font-size: 0.5rem;
+  }
+  .btn-secondary {
+    border: 1px solid var(--color-primary);
+  }
+  .loans {
+    padding: 1rem 0;
+  }
+  .calculadoras {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Ajusta el espacio entre las calculadoras según tus necesidades */
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .calculator-inputs,
+  .exchange-result,
+  .loan-result {
+    width: 100%;
+  }
+  .exchange-calculator,
+  .loan-calculator {
+    width: 100%;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .calculadoras h2 {
+    font-size: 1.5rem;
+  }
+  .calculadoras h3 {
+    font-size: 0.7rem;
+  }
+  .calculadoras p {
+    font-size: 0.6rem;
+  }
+  #result-amount,
+  #monthly-payment {
+    font-size: 1rem;
+  }
+  .Pagos {
+    padding: 0.5rem;
+  }
+  .Pagos a {
+    background: none;
+  }
+  .Pagos h2 {
+    font-size: 1.2rem;
+  }
+  .Pagos p {
+    font-size: 0.7rem;
+  }
+  .tarjeta-contacto {
+    margin: 2%;
+  }
+  .contenedor-tarjeta {
+    width: 100%;
+    height: 50px;
+  }
+  .new {
+    font-size: 0.9rem;
+  }
+  .left-side {
+    width: 90px;
+    height: 50px;
+  }
+  .right-side {
+    width: 50%;
+  }
+  .locations{
+    padding: 0rem 0;
+  }
+
+  .locations h2 {
+    font-size: 1rem;
+  }
+  .locations p {
+    font-size: 0.7rem;
+  }
+  #agencia-title {
+    font-size: 1rem;
+  }
+  #agencia {
+    font-size: 0.7rem;
+  }
+  .card {
+    width: 180px;
+    height: 180px;
+  }
+  .card-container {
+    gap: 2vh;
+  }
+  .card-content h3 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .bg {
+    width: 170px;
+    height: 170px;
+  }
+  .card-content .icon {
+    font-size: 0.7rem;
+    margin-right: 0.2rem;
+}
+  .custom-footer {
+    width: 100%;
+    padding: 0.75rem;
+  }
+  .logo-section img {
+    width: 12vh;
+    margin-bottom: 7px;
+  }
+  .footer-links a {
+    font-size: 0.65rem;
+  }
+  .social-media {
+    font-size: 0.65rem;
+  }
+  .footer-info p {
+    font-size: 0.55rem;
+  }
+  .footer-bottom p {
+    font-size: 0.55rem;
+  }
+}

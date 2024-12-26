@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paxum - Producto</title>
+    <link rel="shortcut icon" href="/src/icon-page.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/paginas/producto/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="shortcut icon" href="/src/icon-page.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/paginas/producto/styles.css" />
   </head>
   <body>
     <header id="main-header" class="header">
@@ -16,13 +16,18 @@
         <img
           src="/src/PaxumLOGO1.png"
           id="main-logo"
-          alt=""
+          alt="Logo"
         />
       </a>
+      <button id="menu-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
       <nav class="navbar">
-        <a href="/nosotros">Nosotros</a>
-        <a href="/producto">Producto</a>
-        <a href="/contacto">Contacto</a>
+        <div id="nav-links" class="nav-links">
+          <a href="/nosotros">Nosotros</a>
+          <a href="/producto">Producto</a>
+          <a href="/contacto">Contacto</a>
+        </div>
       </nav>
     </header>
 
@@ -190,8 +195,8 @@
                 <polygon fill="#34795E" points="67.46,248.302 62.317,245.216 62.317,255.465 67.46,258.552 	"/>
                 <polygon fill="#34795E" points="61.27,263.127 56.126,260.042 56.126,270.291 61.27,273.376 	"/>
                 <polygon fill="#34795E" points="67.46,266.902 62.317,263.816 62.317,274.065 67.46,277.152 	"/>
-                <polygon fill="#34795E" points="87.106,185.632 81.963,182.546 81.963,192.795 87.106,195.881 	"/>
-                <polygon fill="#34795E" points="93.124,189.199 87.981,186.113 87.981,196.362 93.124,199.449 	"/>
+                <polygon fill="#87BC9A" points="87.106,185.632 81.963,182.546 81.963,192.795 87.106,195.881 	"/>
+                <polygon fill="#87BC9A" points="93.124,189.199 87.981,186.113 87.981,196.362 93.124,199.449 	"/>
               </g>
               <g id="LitWindows">
                 <polygon fill="#8BCDAA" points="81.125,130.154 75.981,127.068 75.981,137.318 81.125,140.404 	"/>
@@ -620,8 +625,8 @@
         <!-- Physical Locations Section -->
     <section id="locations" class="locations">
       <div class="container">
-        <h2>Agencias de Cambio</h2>
-        <p class="section-description">
+        <h2 id="agencia-title">Agencias de Cambio</h2>
+        <p id="agencia" class="section-description">
           Visita nuestras agencias físicas para realizar tus operaciones de
           cambio de manera segura
             </p>
