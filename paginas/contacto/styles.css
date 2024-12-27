@@ -349,22 +349,6 @@ textarea:focus {
   background: rgba(245, 245, 245, 0.276);
 }
 
-.container::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    45deg,
-    transparent 0%,
-    rgba(76, 175, 80, 0.1) 50%,
-    transparent 100%
-  );
-  animation: shine 3s infinite linear;
-}
-
 @keyframes shine {
   0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
@@ -451,7 +435,7 @@ textarea:focus {
   width: 65%;
 }
 
-button {
+.animated-button {
   background: linear-gradient(135deg, #4caf50, #00796b, #81c784);
   background-size: 300% 300%;
   color: white;
@@ -757,4 +741,259 @@ hr {
 .footer-bottom p {
   font-size: 0.9rem;
   color: #555;
+}
+
+/* FIN FOOTER */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1400px) {
+  body {
+    margin-top: 3%;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+  .custom-footer {
+    width: 60%;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-info {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-top: 1.5rem;
+  }
+  body {
+    margin-top: 4%;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-info {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 3rem;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+  .custom-footer {
+    width: 76%;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-info p {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 3rem;
+  }
+
+  .form {
+    margin-bottom: 2rem;
+  }
+
+  .character {
+    display: none;
+  }
+  .custom-footer {
+    width: 100%;
+  }
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-info p {
+    font-size: 0.775rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.775rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 4rem;
+  }
+  .header {
+    padding: 5px 128px;
+  }
+
+  .header.scroll {
+    padding: 5px 64px;
+  }
+  .header.scroll .logo img {
+    width: 80px;
+  }
+  .header .logo img {
+    width: 100px;
+  }
+  .custom-footer {
+    width: 100%;
+  }
+  .form {
+    padding: 1rem;
+  }
+
+  .logo-section img {
+    width: 20vh;
+    margin-bottom: 20px;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
+  }
+
+  .footer-info {
+    font-size: 0.7rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin-top: 3rem;
+  }
+  #main-logo {
+    width: 40px;
+  }
+  .header {
+    padding: 10px 144px;
+  }
+
+  .header.scroll {
+    padding: 5px 64px;
+  }
+  .header.scroll .logo img {
+    width: 80px;
+  }
+  .header .logo img {
+    width: 100px;
+  }
+
+  .form {
+    padding: 0.8rem;
+  }
+
+  .custom-footer {
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 0.7rem;
+  }
+
+  .footer-info {
+    font-size: 0.6rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-top: 5rem;
+  }
+
+  .form {
+    padding: 0.5rem;
+  }
+
+  .footer-links a {
+    font-size: 0.7rem;
+  }
+
+  .footer-info p {
+    font-size: 0.7rem;
+  }
+  .footer-bottom p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    margin-top: 3rem;
+  }
+
+  .form {
+    padding: 0.3rem;
+  }
+
+  .footer-links a {
+    font-size: 0.6rem;
+  }
+
+  .footer-info {
+    font-size: 0.5rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .container {
+    margin-top: 3rem;
+  }
+
+  .form {
+    padding: 0.2rem;
+  }
+
+  .footer-links a {
+    font-size: 0.5rem;
+  }
+
+  .footer-info {
+    font-size: 0.4rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.4rem;
+  }
 }

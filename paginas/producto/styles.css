@@ -1436,6 +1436,29 @@ hr {
 }
 
 @media screen and (max-width: 1024px) {
+  body{
+    max-width: 1024px;
+  }
+  .hero h1{
+    font-size: 2.5rem;
+  }
+  .hero p{
+    font-size: 1.2rem;
+  }
+  .animation {
+    padding-left: 5%;
+  }
+  .center svg {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .locations{
+    padding: 2rem 0;
+  }
+  .locations h2{
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

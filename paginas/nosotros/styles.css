@@ -244,13 +244,13 @@ hr {
   text-align: center;
 }
 
-.hero h1{
+.hero h1 {
   display: block;
 }
 
 .hero p {
- margin-top: 2%;
- color: var(--color-text);
+  margin-top: 2%;
+  color: var(--color-text);
 }
 
 #hero-nosotros {
@@ -278,7 +278,7 @@ hr {
   text-align: justify;
 }
 
-.nuestra-historia p{
+.nuestra-historia p {
   transition: color 0.3s ease;
   padding-top: 2%;
   color: var(--color-text);
@@ -403,7 +403,7 @@ hr {
 
 /* FIN TEAM TARJETAS */
 
-.nuestro-team h2{
+.nuestro-team h2 {
   font-family: "Comfortaa-Bold";
   font-size: 4rem;
   color: var(--color-text);
@@ -425,7 +425,7 @@ hr {
   color: var(--color-primary);
 }
 
-.cta p{
+.cta p {
   padding-top: 2%;
 }
 
@@ -727,4 +727,121 @@ hr {
   .card-details {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 20px 50px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero #contenedor {
+    margin-top: 10%;
+  }
+
+  #historia {
+    padding: 20px;
+  }
+
+  #mision-vision {
+    padding: 5rem calc(50vw - 300px);
+  }
+
+  .nuestra-historia p {
+    font-size: 1.2rem;
+  }
+
+  .nuestro-team h2 {
+    font-size: 3rem;
+  }
+
+  .nuestro-team p {
+    font-size: 1.5rem;
+  }
+  .custom-footer {
+    width: 81%;
+  }
+  .logo-section img {
+    width: 30vh;
+  }
+  .footer-info {
+    font-size: 0.8rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+
+  .logo-section img {
+    width: 20vh;
+  }
+
+  .card-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-details p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .creative-cards .contenedor .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-info p {
+    font-size: 0.63rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .creative-cards .contenedor .row .card-column {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  h2{
+    line-height: 3rem;
+  }
+
+  .card-details {
+    width: 100%;
+  }
+
+  .footer-info p {
+    font-size: 0.5rem;
+  }
+  
 }
