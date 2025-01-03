@@ -258,6 +258,7 @@ h1:hover {
 }
 
 .hero-text {
+  z-index: 10;
   color: var(--color-text);
   font-weight: 400;
   font-size: 2rem;
@@ -1608,7 +1609,33 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .hero .robot {
+    display: none; /* Oculta el modelo 3D en móviles */
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(19, 107, 70, 0.6)
+    );
+  }
+  .hero-content{
+    z-index: 10;
+  }
+  .hero-content .text,
+  .hero-text {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra negra translúcida */
+    color: #fff; /* Asegúrate de usar un color de texto claro */
+  }
   .hero {
+    background: url("/src/equipo2.webp") no-repeat center center;
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el hero */
     max-width: 768px;
   }
   .hero-container {
@@ -1715,7 +1742,7 @@ hr {
     padding: 2rem;
   }
   .logo-section img {
-    width: 20vh;
+    width: 30vh;
     margin-bottom: 20px;
   }
   .footer-links a {
@@ -1895,7 +1922,7 @@ hr {
     padding: 1rem;
   }
   .logo-section img {
-    width: 15vh;
+    width: 30vh;
     margin-bottom: 10px;
   }
   .footer-links a {
@@ -2047,7 +2074,7 @@ hr {
   }
 
   .logo-section img {
-    width: 12vh;
+    width: 25vh;
     margin-top: 7px;
     margin-bottom: 7px;
   }
@@ -2256,7 +2283,7 @@ hr {
   }
 
   .logo-section img {
-    width: 10vh;
+    width: 25vh;
     margin-top: 5px;
     margin-bottom: 5px;
   }

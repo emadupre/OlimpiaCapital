@@ -571,6 +571,7 @@ hr {
 }
 
 .contenedor-calculadoras h2 {
+  font-size: 2.5rem;
   color: var(--color-primary);
   text-shadow: 1px 1px 3px var(--color-primary-dark);
 }
@@ -1016,14 +1017,14 @@ hr {
 }
 
 .locations h2 {
-  font-size: 2rem; /* Reducido de 4rem */
+  font-size: 4rem; /* Reducido de 4rem */
   color: var(--color-text);
   margin-bottom: 1rem;
 }
 
 .section-description {
   font-family: "Comfortaa-Medium";
-  font-size: 1.2rem; /* Reducido de 1.5rem */
+  font-size: 1.3rem; /* Reducido de 1.5rem */
   color: var(--color-text);
   text-align: center;
   margin-bottom: 2rem;
@@ -1246,7 +1247,7 @@ hr {
 .custom-footer {
   background-color: white;
   border-radius: 20px; /* Bordes redondeados */
-  width: 50%;
+  width: 60%;
   margin: 2rem auto;
   padding: 4rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.409);
@@ -1385,7 +1386,7 @@ ul {
 }
 
 .logo-section img {
-  width: 30vh;
+  width: 35vh;
   margin-bottom: 30px;
 }
 
@@ -1436,13 +1437,13 @@ hr {
 }
 
 @media screen and (max-width: 1024px) {
-  body{
+  body {
     max-width: 1024px;
   }
-  .hero h1{
+  .hero h1 {
     font-size: 2.5rem;
   }
-  .hero p{
+  .hero p {
     font-size: 1.2rem;
   }
   .animation {
@@ -1453,10 +1454,10 @@ hr {
     width: 100%;
     height: 100%;
   }
-  .locations{
+  .locations {
     padding: 2rem 0;
   }
-  .locations h2{
+  .locations h2 {
     font-size: 3rem;
   }
 }
@@ -2030,7 +2031,7 @@ hr {
   .right-side {
     width: 50%;
   }
-  .locations{
+  .locations {
     padding: 0rem 0;
   }
 
@@ -2064,7 +2065,7 @@ hr {
   .card-content .icon {
     font-size: 0.7rem;
     margin-right: 0.2rem;
-}
+  }
   .custom-footer {
     width: 100%;
     padding: 0.75rem;
