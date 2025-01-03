@@ -556,6 +556,105 @@ hr {
   transform: translate(13px, -7px);
 }
 
+/* CHEQUES */
+
+.cheque-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/src/pexels-olly-3777564.jpg') no-repeat center top/contain;
+  background-size: cover;
+  position: relative;
+}
+
+.cheque-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.cheque-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.cheque-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.cheque-content .highlight {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.cheque-content .amount {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+
+.cheque-content p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cheque-content .cta-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.cheque-content .cta-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cheque-content h1 {
+      font-size: 2rem;
+  }
+
+  .cheque-content .amount {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+  }
+
+  .cheque-content p {
+      font-size: 1rem;
+  }
+
+  .cheque-content .cta-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+}
+
+/* FIN CHEQUES */
+
+
+
 /* CALCULADORAS */
 
 .contenedor-calculadoras {
