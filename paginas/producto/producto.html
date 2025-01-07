@@ -1050,6 +1050,59 @@
 
     <hr />
 
+    <div class="Cheques">
+      <div class="info-cheque">
+        <h2 class="title-cheque">
+          Calculá tus operaciones de descuento de cheques
+        </h2>
+        <p class="text-cheque">
+          ¿Querés conocer el saldo de una operación de descuento de cheques en
+          el mercado de capitales? Ingresá los datos de la operación y te
+          mostramos con la CALCULADORA cuál es el costo de este canal de
+          financiamiento. <br>
+          Financiamiento hasta 360 días
+          Descontá los cheques de tus clientes o tus cheques propios en el mercado de capitales con el aval de Acindar Pymes. Financiate hasta 360 DÍAS con esta operatoria.
+        </p>
+      </div>
+      <div class="calculadora-cheque">
+        <div class="container-cheque">
+          <h1>Simulador de Cheques</h1>
+
+          <form class="cheque-form" id="chequeForm">
+            <div class="input-group">
+              <label for="tipoCheque">Tipo de Cheque</label>
+              <select id="tipoCheque" required>
+                <option value="">Seleccione un tipo</option>
+                <option value="echeq">ECHEQ (Cheque Electrónico)</option>
+                <option value="fisico">Cheque Físico</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="valor">Valor del Cheque ($)</label>
+              <input type="number" id="valor" required min="0" step="0.01" />
+            </div>
+
+            <div class="input-group">
+              <label for="fechaVencimiento">Fecha de Vencimiento</label>
+              <input type="date" id="fechaVencimiento" required />
+            </div>
+
+            <button type="submit">Calcular</button>
+          </form>
+
+          <div id="result" class="result"></div>
+
+          <div class="cheque-preview" id="chequePreview">
+            
+            <div id="previewContent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
     <!-- Calculadoras -->
     <section class="contenedor-calculadoras">
       <div class="calculadoras">
@@ -1276,8 +1329,8 @@
             <div class="blob"></div>
             <div class="card-content">
               <h3>Centro Financiero</h3>
-              <p><span class="icon">📍</span>Av. Corrientes 1234, CABA</p>
-              <p><span class="icon">🕒</span>Lun - Vie: 9:00-18:00</p>
+              <p></span>Av. Corrientes 1234, CABA</p>
+              <p></span>Lun - Vie: 9:00-18:00</p>
               <p>(011)4555-0123</p>
             </div>
           </div>
@@ -1286,8 +1339,8 @@
             <div class="blob"></div>
             <div class="card-content">
               <h3>Microcentro</h3>
-              <p><span class="icon">📍</span>Florida 999, CABA</p>
-              <p><span class="icon">🕒</span>Lun - Vie: 9:00-18:00</p>
+              <p></span>Florida 999, CABA</p>
+              <p></span>Lun - Vie: 9:00-18:00</p>
               <p>(011)4555-0124</p>
             </div>
           </div>
@@ -1296,8 +1349,8 @@
             <div class="blob"></div>
             <div class="card-content">
               <h3>Palermo</h3>
-              <p><span class="icon">📍</span>Av. Santa Fe 3456, CABA</p>
-              <p><span class="icon">🕒</span>Lun - Vie: 9:00-18:00</p>
+              <p></span>Av. Santa Fe 3456, CABA</p>
+              <p></span>Lun - Vie: 9:00-18:00</p>
               <p>(011)4555-0125</p>
             </div>
           </div>

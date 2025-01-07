@@ -198,4 +198,74 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Llama la función al cargar la página por si alguna sección ya está visible
   checkVisibility();
+
+  // FORMULARIO CHEQUE
+  document.getElementById('chequeForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const tipoCheque = document.getElementById('tipoCheque').value;
+    const valor = parseFloat(document.getElementById('valor').value);
+    const fechaVencimiento = new Date(document.getElementById('fechaVencimiento').value);
+    const hoy = new Date();
+    
+    const resultDiv = document.getElementById('result');
+    const previewContent = document.getElementById('previewContent');
+    
+    if (!tipoCheque || !valor || !fechaVencimiento) {
+      mostrarError('Por favor complete todos los campos');
+      return;
+    }
+    
+    if (fechaVencimiento < hoy) {
+      mostrarError('La fecha de vencimiento no puede ser anterior a hoy');
+      return;
+    }
+    
+    let comision = 0;
+    let mensaje = '';
+    
+    switch(tipoCheque) {
+      case 'echeq':
+        comision = valor * 0.015;
+        mensaje = 'ECHEQ - Comisión del 1.5% (Menor por ser electrónico)';
+        break;
+      case 'fisico':
+        comision = valor * 0.03;
+        mensaje = 'Cheque Físico - Comisión del 3%';
+        break;
+    }
+    
+    const total = valor - comision;
+    
+    resultDiv.innerHTML = `
+      <h3>Resultado del cálculo</h3>
+      <p>${mensaje}</p>
+      <p>Valor del cheque: $${valor.toFixed(2)}</p>
+      <p>Comisión: $${comision.toFixed(2)}</p>
+      <p>Monto final a recibir: $${total.toFixed(2)}</p>
+    `;
+    resultDiv.className = 'result success fade-in';
+    
+    previewContent.innerHTML = `
+    <h3>Vista Previa del Cheque</h3>
+      <div style="margin-top: 10px; border-radius: 12px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05);">
+        <p><strong>Tipo de Cheque:</strong> ${tipoCheque === 'echeq' ? 'ECHEQ (Electrónico)' : 'Cheque Físico'}</p>
+        <p><strong>Fecha de Vencimiento:</strong> ${fechaVencimiento.toLocaleDateString()}</p>
+        <p><strong>Páguese a:</strong> PORTADOR</p>
+        <p><strong>La suma de:</strong> $${valor.toFixed(2)}</p>
+        ${tipoCheque === 'echeq' ? '<p><em>Este es un cheque electrónico válido en todo el sistema financiero</em></p>' : ''}
+      </div>
+    `;
+  });
+  
+  function mostrarError(mensaje) {
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `<p>${mensaje}</p>`;
+    resultDiv.className = 'result error fade-in';
+  }
+  
+  const fechaInput = document.getElementById('fechaVencimiento');
+  const hoy = new Date();
+  const fechaMinima = hoy.toISOString().split('T')[0];
+  fechaInput.min = fechaMinima;
 });

@@ -565,7 +565,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/src/pexels-olly-3777564.jpg') no-repeat center top/contain;
+  background: url("/src/efectivo.webp") no-repeat center top/contain;
   background-size: cover;
   position: relative;
 }
@@ -633,27 +633,224 @@ hr {
 /* Responsive Design */
 @media (max-width: 768px) {
   .cheque-content h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .cheque-content .amount {
-      font-size: 1.5rem;
-      padding: 10px 20px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
   }
 
   .cheque-content p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .cheque-content .cta-button {
-      font-size: 1rem;
-      padding: 10px 20px;
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
 
+.Cheques {
+  display: grid;
+  grid-template-columns: 1.2fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "info-cheque calculadora-cheque";
+}
+
+.info-cheque {
+  grid-area: info-cheque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.title-cheque{
+  font-size: 2.5rem;
+  color: var(--color-text);
+  text-align: start;
+}
+
+.text-cheque{
+  font-size: 1rem;
+  color: var(--color-text);
+  text-align: justify;
+}
+
+.calculadora-cheque {
+  grid-area: calculadora-cheque;
+  padding: 2rem;
+}
+
+.container-cheque {
+  background: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 800px;
+  backdrop-filter: blur(10px);
+}
+
+.calculadora-cheque h1 {
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.calculadora-cheque h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: var(--color-text);
+}
+
+.cheque-form {
+  display: grid;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculadora-cheque label {
+  font-weight: 400;
+  color: var(--color-primary-dark);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.calculadora-cheque input,
+.calculadora-cheque select {
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+
+.calculadora-cheque input:focus,
+.calculadora-cheque select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.1);
+}
+
+.calculadora-cheque button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.calculadora-cheque button:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 247, 255, 0.2);
+}
+
+.calculadora-cheque button:active {
+  transform: translateY(0);
+}
+
+.cheque-preview {
+  margin-top: 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.cheque-preview h3{
+  color: #28a745;
+  font-size: 1.5rem;
+}
+
+.cheque-preview p{
+  font-size: 0.8rem;
+}
+
+.result {
+  margin-top: 2rem;
+  border-radius: 16px;
+  display: none;
+}
+
+.result.success {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: block;
+}
+
+.result.success h3{
+  color: #28a745;
+}
+.result.success p{
+  font-size: 0.8rem;
+}
+
+.result.error {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  color: #ff4545;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Glowing accent elements */
+.container-cheque::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, var(--color-text), transparent);
+  border-radius: 26px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
 /* FIN CHEQUES */
-
-
 
 /* CALCULADORAS */
 
