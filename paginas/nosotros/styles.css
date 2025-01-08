@@ -701,6 +701,7 @@ ul {
 }
 
 .logo-section img {
+  display: inline;
   width: 30vh;
   margin-bottom: 30px;
 }

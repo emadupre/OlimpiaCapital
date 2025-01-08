@@ -200,103 +200,111 @@ document.addEventListener("DOMContentLoaded", () => {
   checkVisibility();
 
   // FORMULARIO CHEQUE
-  document.getElementById('chequeForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const tipoCheque = document.getElementById('tipoCheque').value;
-    const valor = parseFloat(document.getElementById('valor').value);
-    const fechaVencimiento = new Date(document.getElementById('fechaVencimiento').value);
-    const hoy = new Date();
-    
-    const resultDiv = document.getElementById('result');
-    const previewContent = document.getElementById('previewContent');
-    
-    if (!tipoCheque || !valor || !fechaVencimiento) {
-      mostrarError('Por favor complete todos los campos');
-      return;
-    }
-    
-    if (fechaVencimiento < hoy) {
-      mostrarError('La fecha de vencimiento no puede ser anterior a hoy');
-      return;
-    }
-    
-    let comision = 0;
-    let mensaje = '';
-    
-    switch(tipoCheque) {
-      case 'echeq':
-        comision = valor * 0.015;
-        mensaje = 'ECHEQ - Comisión del 1.5% (Menor por ser electrónico)';
-        break;
-      case 'fisico':
-        comision = valor * 0.03;
-        mensaje = 'Cheque Físico - Comisión del 3%';
-        break;
-    }
-    
-    const total = valor - comision;
-    
-    resultDiv.innerHTML = `
+  document
+    .getElementById("chequeForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const tipoCheque = document.getElementById("tipoCheque").value;
+      const valor = parseFloat(document.getElementById("valor").value);
+      const fechaVencimiento = new Date(
+        document.getElementById("fechaVencimiento").value
+      );
+      const hoy = new Date();
+
+      const resultDiv = document.getElementById("result");
+      const previewContent = document.getElementById("previewContent");
+
+      if (!tipoCheque || !valor || !fechaVencimiento) {
+        mostrarError("Por favor complete todos los campos");
+        return;
+      }
+
+      if (fechaVencimiento < hoy) {
+        mostrarError("La fecha de vencimiento no puede ser anterior a hoy");
+        return;
+      }
+
+      let comision = 0;
+      let mensaje = "";
+
+      switch (tipoCheque) {
+        case "echeq":
+          comision = valor * 0.015;
+          mensaje = "ECHEQ - Comisión del 1.5% (Menor por ser electrónico)";
+          break;
+        case "fisico":
+          comision = valor * 0.03;
+          mensaje = "Cheque Físico - Comisión del 3%";
+          break;
+      }
+
+      const total = valor - comision;
+
+      resultDiv.innerHTML = `
       <h3>Resultado del cálculo</h3>
       <p>${mensaje}</p>
       <p>Valor del cheque: $${valor.toFixed(2)}</p>
       <p>Comisión: $${comision.toFixed(2)}</p>
       <p>Monto final a recibir: $${total.toFixed(2)}</p>
     `;
-    resultDiv.className = 'result success fade-in';
-    
-    previewContent.innerHTML = `
+      resultDiv.className = "result success fade-in";
+
+      previewContent.innerHTML = `
     <h3>Vista Previa del Cheque</h3>
       <div style="margin-top: 10px; border-radius: 12px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05);">
-        <p><strong>Tipo de Cheque:</strong> ${tipoCheque === 'echeq' ? 'ECHEQ (Electrónico)' : 'Cheque Físico'}</p>
+        <p><strong>Tipo de Cheque:</strong> ${
+          tipoCheque === "echeq" ? "ECHEQ (Electrónico)" : "Cheque Físico"
+        }</p>
         <p><strong>Fecha de Vencimiento:</strong> ${fechaVencimiento.toLocaleDateString()}</p>
         <p><strong>Páguese a:</strong> PORTADOR</p>
         <p><strong>La suma de:</strong> $${valor.toFixed(2)}</p>
-        ${tipoCheque === 'echeq' ? '<p><em>Este es un cheque electrónico válido en todo el sistema financiero</em></p>' : ''}
+        ${
+          tipoCheque === "echeq"
+            ? "<p><em>Este es un cheque electrónico válido en todo el sistema financiero</em></p>"
+            : ""
+        }
       </div>
     `;
-  });
-  
+    });
+
   function mostrarError(mensaje) {
-    const resultDiv = document.getElementById('result');
+    const resultDiv = document.getElementById("result");
     resultDiv.innerHTML = `<p>${mensaje}</p>`;
-    resultDiv.className = 'result error fade-in';
+    resultDiv.className = "result error fade-in";
   }
-  
-  const fechaInput = document.getElementById('fechaVencimiento');
+
+  const fechaInput = document.getElementById("fechaVencimiento");
   const hoy = new Date();
-  const fechaMinima = hoy.toISOString().split('T')[0];
+  const fechaMinima = hoy.toISOString().split("T")[0];
   fechaInput.min = fechaMinima;
 
   function createMoneyElement() {
-    const container = document.querySelector('.money-container');
-    const money = document.createElement('div');
-    money.className = 'money';
-    
-    // Randomly decide if it's a bill or check
-    const isBill = Math.random() > 0.5;
-    const inner = document.createElement('div');
-    inner.className = isBill ? 'bill' : 'check';
-    money.appendChild(inner);
-    
+    const container = document.querySelector(".money-container");
+    const money = document.createElement("div");
+    money.className = "money";
+
+    const check = document.createElement("div");
+    check.className = "virtual-check";
+    money.appendChild(check);
+
     // Random position on x-axis and slight variation in animation duration
-    money.style.left = Math.random() * 90 + '%';
-    money.style.animationDuration = (7 + Math.random() * 2) + 's';
-    
+    money.style.left = Math.random() * 90 + "%";
+    money.style.animationDuration = 7 + Math.random() * 2 + "s";
+
     container.appendChild(money);
-    
+
     // Remove element after animation
     setTimeout(() => {
       money.remove();
-    }, 2000);
+    }, 3000);
   }
-  
+
   // Create new money elements periodically
   setInterval(createMoneyElement, 500);
-  
+
   // Initial creation of several elements
-  for(let i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     setTimeout(createMoneyElement, i * 100);
   }
 });
