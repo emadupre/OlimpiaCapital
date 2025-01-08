@@ -268,4 +268,35 @@ document.addEventListener("DOMContentLoaded", () => {
   const hoy = new Date();
   const fechaMinima = hoy.toISOString().split('T')[0];
   fechaInput.min = fechaMinima;
+
+  function createMoneyElement() {
+    const container = document.querySelector('.money-container');
+    const money = document.createElement('div');
+    money.className = 'money';
+    
+    // Randomly decide if it's a bill or check
+    const isBill = Math.random() > 0.5;
+    const inner = document.createElement('div');
+    inner.className = isBill ? 'bill' : 'check';
+    money.appendChild(inner);
+    
+    // Random position on x-axis and slight variation in animation duration
+    money.style.left = Math.random() * 90 + '%';
+    money.style.animationDuration = (7 + Math.random() * 2) + 's';
+    
+    container.appendChild(money);
+    
+    // Remove element after animation
+    setTimeout(() => {
+      money.remove();
+    }, 2000);
+  }
+  
+  // Create new money elements periodically
+  setInterval(createMoneyElement, 500);
+  
+  // Initial creation of several elements
+  for(let i = 0; i < 5; i++) {
+    setTimeout(createMoneyElement, i * 100);
+  }
 });

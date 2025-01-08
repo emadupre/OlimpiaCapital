@@ -73,7 +73,6 @@ body {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .header:hover::before {

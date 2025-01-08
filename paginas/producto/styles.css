@@ -70,7 +70,6 @@ section.visible {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .header:hover::before {
@@ -558,64 +557,101 @@ hr {
 
 /* CHEQUES */
 
-.cheque-container {
+.money-container {
+  position: relative;
   width: 100%;
-  min-height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  background: url("/src/efectivo.webp") no-repeat center top/contain;
-  background-size: cover;
-  position: relative;
-}
-
-.cheque-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.cheque-content {
-  position: relative;
-  z-index: 2;
   text-align: center;
-  color: #fff;
-  padding: 20px;
-  max-width: 800px;
 }
 
-.cheque-content h1 {
+.money {
+  position: absolute;
+  animation: float 8s infinite linear;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.bill {
+  width: 60px;
+  height: 30px;
+  background: #2e8b57;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bill::before {
+  content: '$';
+  color: #1a4d30;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.check {
+  width: 70px;
+  height: 35px;
+  background: #fff;
+  border: 2px solid #2e8b57;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.check::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: #2e8b57;
+  top: 50%;
+  left: 25%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.money-container h1 {
+  z-index: 5;
   font-size: 4rem;
   margin-bottom: 10px;
+  color: var(--color-primary);
 }
 
-.cheque-content .highlight {
+.money-container .highlight {
   font-weight: bold;
   color: #28a745;
 }
 
-.cheque-content .amount {
-  background-color: #28a745;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 20px 0;
-  display: inline-block;
-  font-size: 1.8rem;
-  border-radius: 5px;
-}
-
-.cheque-content p {
+.money-container p {
+  color: var(--color-text);
+  z-index: 5;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.cheque-content .cta-button {
+.money-container .cta-button {
+  z-index: 5;
   background-color: #28a745;
   color: #fff;
   padding: 12px 25px;
@@ -624,28 +660,24 @@ hr {
   border-radius: 5px;
   display: inline-block;
   transition: background-color 0.3s;
+  width: 20%;
 }
 
-.cheque-content .cta-button:hover {
+.money-container .cta-button:hover {
   background-color: #218838;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .cheque-content h1 {
+  .money-container h1 {
     font-size: 2rem;
   }
 
-  .cheque-content .amount {
-    font-size: 1.5rem;
-    padding: 10px 20px;
-  }
-
-  .cheque-content p {
+  .money-container p {
     font-size: 1rem;
   }
 
-  .cheque-content .cta-button {
+  .money-container .cta-button {
     font-size: 1rem;
     padding: 10px 20px;
   }
