@@ -680,6 +680,7 @@ hr {
   .money-container .cta-button {
     font-size: 1rem;
     padding: 10px 20px;
+    width: 50%;
   }
 }
 
@@ -1825,6 +1826,15 @@ hr {
     width: 40%;
     font-size: 0.7rem;
   }
+
+  .Cheques {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    grid-template-rows: auto auto; /* Ajusta automáticamente las filas */
+    grid-template-areas:
+      "info-cheque"
+      "calculadora-cheque"; /* info-cheque primero, luego calculadora-cheque */
+  }
+
   .calculadoras h2 {
     font-size: 1.2rem;
   }
