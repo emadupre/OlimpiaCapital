@@ -561,7 +561,6 @@ h3 {
 
 .money-container {
   position: relative;
-  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1336,7 +1335,6 @@ h3 {
 
 /* Locations Section */
 .locations {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
   background-color: rgba(255, 255, 255, 0.406);
   padding: 4rem 0;
   font-family: "Comfortaa-Bold";
@@ -1563,10 +1561,6 @@ h3 {
 }
 
 /*FIN AGENCIA DE CAMBIO */
-
-#cambio-internacional {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
-}
 
 /* FOOTER */
 
@@ -1914,6 +1908,18 @@ ul {
   }
 }
 
+@media screen and (max-width: 430px){
+  .calculadoras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajusta el espacio entre las calculadoras según tus necesidades */
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 @media screen and (max-width: 425px) {
   .body {
     max-width: 425px;
@@ -1936,9 +1942,6 @@ ul {
   }
   .hero {
     margin-top: 3rem;
-  }
-  .calculator-grid {
-    grid-template-columns: 1fr;
   }
   .animation {
     padding-left: 2%;

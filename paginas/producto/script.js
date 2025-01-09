@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
     money.appendChild(check);
 
     // Random position on x-axis and slight variation in animation duration
-    money.style.left = Math.random() * 90 + "%";
+    money.style.left = Math.random() * 80 + "%";
     money.style.animationDuration = 7 + Math.random() * 2 + "s";
 
     container.appendChild(money);
