@@ -1,19 +1,16 @@
 :root {
-  --color-primary: #136b46;
-  --color-primary-dark: #0e2d1d;
-  --color-accent: #cfa869;
-  --color-accent-dark: #855500;
-  --color-text: #199644;
-  --color-white: #ffffff;
+  --color-primary: #001947;
+  --color-text: #0053f1;
+  --color-white: #f1f1f2;
 }
 
 :root {
-  --primary-color: #2d5a27;
-  --secondary-color: #4caf50;
+  --primary-color: #001947;
+  --secondary-color: #0053f1;
   --success-color: #45bf55;
-  --background-color: #e8f5e9;
+  --background-color: #00194755;
   --shadow-light: #ffffff;
-  --shadow-dark: #b8d4ba;
+  --shadow-dark: #0054f169;
   --gradient-start: #4caf50;
   --gradient-end: #81c784;
 }
@@ -23,23 +20,23 @@ html {
 }
 
 @font-face {
-  font-family: "Comfortaa-Medium";
-  src: url("/fonts/Comfortaa-Medium.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Med"; /* Nombre de la fuente Este era el Comfortaa Medium */
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Med.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Comfortaa-Bold";
-  src: url("/fonts/Comfortaa-Bold.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Reg"; /* Nombre de la fuente: Este era Comfortaa Bold*/
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Reg.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,8 +46,8 @@ body {
   opacity: 1;
   margin-top: 5%;
   padding: 20px;
-  background: linear-gradient(145deg, var(--background-color), #d4e6d5);
-  font-family: "Comfortaa-Medium", system-ui, -apple-system, sans-serif;
+  background: #f1f1f2;
+  font-family: "VVDS-Fifties-Exp-Med", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.5;
   flex-direction: column;
@@ -83,7 +80,7 @@ body {
 }
 
 .navbar a {
-  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
+  font-family: "VVDS-Fifties-Exp-Reg", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 900;
@@ -159,7 +156,7 @@ body {
   }
 
   .navbar .nav-links a:hover {
-    color: var(--color-accent);
+    color: var(--color-text);
   }
 
   #menu-toggle {
@@ -245,29 +242,7 @@ label {
   font-weight: 600;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  color: var(--color-primary);
-  background: var(--color-background);
-  box-shadow: inset 4px 4px 8px var(--color-shadow-dark),
-    inset -4px -4px 8px var(--color-shadow-light);
-  transition: all 0.3s ease;
-}
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  box-shadow: inset 4px 4px 8px var(--color-shadow-dark),
-    inset -4px -4px 8px var(--color-shadow-light),
-    0 0 15px rgba(76, 175, 80, 0.3);
-}
 
 .phone-group {
   display: flex;
@@ -283,7 +258,7 @@ textarea:focus {
 }
 
 .animated-button:hover {
-  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 5px 15px var(--secondary-color);
 }
 
 .character-container {
@@ -359,7 +334,7 @@ textarea:focus {
 
 h2 {
   color: var(--primary-color);
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   text-align: center;
   margin-bottom: 1.5rem;
   position: relative;
@@ -378,8 +353,8 @@ h2::after {
   height: 4px;
   background: linear-gradient(
     90deg,
-    var(--gradient-start),
-    var(--gradient-end)
+    var(--primary-color),
+    var(--secondary-color)
   );
   border-radius: 4px;
 }
@@ -407,7 +382,6 @@ textarea {
   border-radius: 10px;
   font-size: 0.9rem;
   color: var(--primary-color);
-  background: var(--background-color);
   box-shadow: inset 6px 6px 12px var(--shadow-dark),
     inset -6px -6px 12px var(--shadow-light);
   transition: all 0.4s ease;
@@ -435,7 +409,7 @@ textarea:focus {
 }
 
 .animated-button {
-  background: linear-gradient(135deg, #4caf50, #00796b, #81c784);
+  background: linear-gradient(135deg, var(--primary-color),var(--secondary-color),var(--shadow-dark));
   background-size: 300% 300%;
   color: white;
   padding: 0.8rem 1.5rem;
@@ -446,7 +420,7 @@ textarea:focus {
   font-size: 1rem;
   font-weight: 600;
   box-shadow: 6px 6px 12px var(--shadow-dark),
-    -6px -6px 12px var(--shadow-light), 0 0 20px rgba(76, 175, 80, 0.4);
+    -6px -6px 12px var(--shadow-light), 0 0 20px #00194760;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -504,32 +478,14 @@ button:active {
     inset -6px -6px 12px rgba(255, 255, 255, 0.1);
 }
 
-.animated-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 16px 36px;
-  border: 4px solid;
-  border-color: transparent;
-  font-size: 16px;
-  background-color: inherit;
-  border-radius: 100px;
-  font-weight: 600;
-  color: greenyellow;
-  box-shadow: 0 0 0 2px greenyellow;
-  cursor: pointer;
-  overflow: hidden;
-  margin-top: 20px;
-  width: auto;
-}
+
 .animated-button .text {
   position: relative;
   z-index: 1;
 }
 
 .animated-button:hover {
-  color: greenyellow;
+  color: #f1f1f2;
 }
 
 .animated-button:active {
@@ -596,7 +552,7 @@ button:active {
 }
 
 .footer-links a {
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
@@ -604,7 +560,7 @@ button:active {
 }
 
 .footer-links a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   text-decoration: none;
 }
 

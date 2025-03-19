@@ -1,10 +1,7 @@
 :root {
-  --color-primary: #136b46;
-  --color-primary-dark: #0e2d1d;
-  --color-accent: #cfa869;
-  --color-accent-dark: #855500;
-  --color-text: #199644;
-  --color-white: #ffffff;
+  --color-primary: #001947;
+  --color-text: #0053f1;
+  --color-white: #f1f1f2;
   --tiempo-transicion: 0.5s;
 }
 
@@ -13,23 +10,23 @@ html {
 }
 
 @font-face {
-  font-family: "Comfortaa-Medium";
-  src: url("/fonts/Comfortaa-Medium.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Med"; /* Nombre de la fuente Este era el Comfortaa Medium */
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Med.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Comfortaa-Bold";
-  src: url("/fonts/Comfortaa-Bold.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Reg"; /* Nombre de la fuente: Este era Comfortaa Bold*/
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Reg.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,7 +35,7 @@ html {
 body {
   opacity: 1;
   background-color: #ffffff;
-  font-family: "Comfortaa-Medium", system-ui, -apple-system, sans-serif;
+  font-family: "VVDS-Fifties-Exp-Med", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -80,8 +77,8 @@ section.visible {
 }
 
 .navbar a {
-  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
-  color: var(--color-primary);
+  font-family: "VVDS-Fifties-Exp-Reg", system-ui, -apple-system, sans-serif;
+  color: var(--color-primario);
   font-size: 1.1rem;
   font-weight: 900;
   font-style: normal;
@@ -91,7 +88,7 @@ section.visible {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .header.scroll {
@@ -156,10 +153,6 @@ section.visible {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
-  }
-
-  .navbar .nav-links a:hover {
-    color: var(--color-accent);
   }
 
   #menu-toggle {
@@ -255,21 +248,19 @@ section.visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Comfortaa-Bold";
   margin: 0;
   padding: 0;
 }
 
 /* Typography */
 .hero h1 {
-  font-family: "Comfortaa-Bold";
   color: var(--color-text);
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   color: var(--color-text);
   text-align: center;
   font-size: 1.5rem;
@@ -311,7 +302,7 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-text);
 }
 
 .btn-secondary {
@@ -554,7 +545,7 @@ h3 {
 /* CHEQUES */
 
 .cheque-container{
-  background: linear-gradient(to bottom, #e6f3e6, #f0f8f0);
+  background: linear-gradient(to bottom, #e6eaf3, #f0f1f8);
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -580,7 +571,7 @@ h3 {
   width: 80px;
   height: 40px;
   background: #fff;
-  border: 2px solid #2e8b57;
+  border: 2px solid var(--color-primario);
   border-radius: 5px;
   position: relative;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -595,7 +586,7 @@ h3 {
   position: absolute;
   width: 60%;
   height: 2px;
-  background: #2e8b57;
+  background: var(--color-text);
   top: 40%;
   left: 20%;
 }
@@ -604,7 +595,7 @@ h3 {
   content: 'VIRTUAL';
   position: absolute;
   font-size: 8px;
-  color: #2e8b57;
+  color: var(--color-text);
   bottom: 5px;
   right: 5px;
   font-family: monospace;
@@ -636,7 +627,7 @@ h3 {
 
 .money-container .highlight {
   font-weight: bold;
-  color: #28a745;
+  color: var(--color-text);
 }
 
 .money-container p {
@@ -648,7 +639,7 @@ h3 {
 
 .money-container .cta-button {
   z-index: 5;
-  background-color: #28a745;
+  background-color: var(--color-primario);
   color: #fff;
   padding: 12px 25px;
   font-size: 1.2rem;
@@ -660,7 +651,7 @@ h3 {
 }
 
 .money-container .cta-button:hover {
-  background-color: #218838;
+  background-color: var(--color-primary);
 }
 
 /* Responsive Design */
@@ -703,7 +694,7 @@ h3 {
 
 .title-cheque{
   font-size: 2.5rem;
-  color: var(--color-text);
+  color: var(--color-primary);
   text-align: start;
 }
 
@@ -759,7 +750,7 @@ h3 {
 
 .calculadora-cheque label {
   font-weight: 400;
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -772,7 +763,7 @@ h3 {
   border-radius: 12px;
   font-size: 1rem;
   background: rgba(255, 255, 255, 0.05);
-  color: var(--color-text);
+  color: var(--color-primary);
   transition: all 0.3s ease;
 }
 
@@ -798,7 +789,7 @@ h3 {
 }
 
 .calculadora-cheque button:hover {
-  background: var(--color-primary-dark);
+  background: var(--color-primario);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 247, 255, 0.2);
 }
@@ -816,7 +807,7 @@ h3 {
 }
 
 .cheque-preview h3{
-  color: #28a745;
+  color: var(--color-text);
   font-size: 1.5rem;
 }
 
@@ -837,7 +828,7 @@ h3 {
 }
 
 .result.success h3{
-  color: #28a745;
+  color: var(--color-text);
 }
 .result.success p{
   font-size: 0.8rem;
@@ -884,7 +875,7 @@ h3 {
 /* CALCULADORAS */
 
 .contenedor-calculadoras {
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.139);
   background-color: rgba(255, 255, 255, 0.786);
   display: grid;
@@ -897,8 +888,8 @@ h3 {
 
 .contenedor-calculadoras h2 {
   font-size: 2.5rem;
-  color: var(--color-primary);
-  text-shadow: 1px 1px 3px var(--color-primary-dark);
+  color: var(--color-text);
+  text-shadow: 1px 1px 3px var(--color-primary);
 }
 
 .calculadoras {
@@ -928,7 +919,7 @@ h3 {
 }
 
 .exchange-calculator {
-  background-color: #136b46a0;
+  background-color: var(--color-primario);
   padding: 2rem;
   border-radius: 1rem;
   max-width: 800px;
@@ -973,7 +964,7 @@ h3 {
 .exchange-result,
 .loan-result {
   color: var(--color-primary);
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
 }
 
 .exchange-result,
@@ -1020,7 +1011,7 @@ h3 {
 
 .PagosHero {
   display: grid;
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   padding: 1rem 0;
   background-color: var(--color-primary);
   grid-template-columns: 1fr 0.8fr 1.2fr;
@@ -1054,12 +1045,12 @@ h3 {
 .Pagos h2 {
   font-size: 4rem;
   color: var(--color-white);
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
 }
 
 .Pagos p {
   color: var(--color-white);
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -1337,17 +1328,17 @@ h3 {
 .locations {
   background-color: rgba(255, 255, 255, 0.406);
   padding: 4rem 0;
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
 }
 
 .locations h2 {
   font-size: 4rem; /* Reducido de 4rem */
-  color: var(--color-text);
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .section-description {
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   font-size: 1.3rem; /* Reducido de 1.5rem */
   color: var(--color-text);
   text-align: center;
@@ -1396,14 +1387,14 @@ h3 {
 .caracteristica-icono {
   width: 2rem;
   height: 2rem;
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
 .caracteristica-titulo {
-  color: var(--texto-principal);
+  color: var(--color-primary);
   font-size: 1.25rem; /* Reducido significativamente */
   font-weight: 600;
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   margin: 0;
   line-height: 1.2;
   word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
@@ -1413,7 +1404,7 @@ h3 {
 .caracteristica-descripcion {
   color: var(--color-text);
   line-height: 1.4;
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   font-size: 0.9rem; /* Reducido para mejor ajuste */
   margin: 0;
 }
@@ -1488,7 +1479,7 @@ h3 {
   align-items: center;
   justify-content: center;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  background-color: #199644; /* Agregado el color verde */
+  background-color: var(--color-text); /* Agregado el color verde */
 }
 
 .bg {
@@ -1551,6 +1542,7 @@ h3 {
 }
 
 .card-content p {
+  color: var(--color-text);
   margin: 1rem 0;
   font-size: 1.2rem;
 }
@@ -1583,7 +1575,6 @@ h3 {
 }
 
 .footer-links a {
-  font-family: "Comfortaa-Bold";
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
@@ -1591,7 +1582,7 @@ h3 {
 }
 
 .footer-links a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   text-decoration: none;
 }
 
