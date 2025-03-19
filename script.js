@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const phrases = [
     "Soluciones Financieras",
-    "Unete ahora a Paxum",
+    "Unete ahora a Olimpia",
   ];
 
   const el = document.querySelector(".text");

@@ -1,10 +1,7 @@
 :root {
-  --color-primary: #136b46;
-  --color-primary-dark: #0e2d1d;
-  --color-accent: #cfa869;
-  --color-accent-dark: #855500;
-  --color-text: #199644;
-  --color-white: #ffffff;
+  --color-primary: #001947;
+  --color-text: #0053f1;
+  --color-white: #f1f1f2;
 }
 
 html {
@@ -12,23 +9,25 @@ html {
 }
 
 @font-face {
-  font-family: "Comfortaa-Medium";
-  src: url("/fonts/Comfortaa-Medium.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Med"; /* Nombre de la fuente Este era el Comfortaa Medium */
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Med.otf")
+    format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Comfortaa-Bold";
-  src: url("/fonts/Comfortaa-Bold.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Reg"; /* Nombre de la fuente: Este era Comfortaa Bold*/
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Reg.otf")
+    format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -81,7 +80,7 @@ body {
 }
 
 .navbar a {
-  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
+  font-family: "VVDS-Fifties-Exp-Reg", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 900;
@@ -233,7 +232,7 @@ body {
   overflow: hidden;
 }
 .text {
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   font-size: 3rem;
   color: var(--color-primary);
   font-weight: bold;
@@ -524,7 +523,7 @@ h1:hover {
 }
 
 .about-title {
-  font-family: "Comfortaa-Bold", sans-serif;
+  font-family: "VVDS-Fifties-Exp-Reg", sans-serif;
   font-size: 3.5rem;
   color: var(--color-text);
   line-height: 1.2;
@@ -532,7 +531,7 @@ h1:hover {
 }
 
 .about-description {
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   font-size: 1.7rem;
   margin: 0 auto;
   color: var(--color-text);
@@ -585,10 +584,10 @@ h1:hover {
 }
 
 .horizontal h1 {
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   font-weight: 900;
   font-size: 14rem;
-  color: #08b26b;
+  color: var(--color-text);
   white-space: nowrap;
   padding-left: 2%;
 }
@@ -1355,6 +1354,13 @@ ul {
   text-align: center;
 }
 
+.logo-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
 /* Estilo para los links principales */
 .footer-links {
   display: flex;
@@ -1364,10 +1370,11 @@ ul {
 }
 
 .footer-links a {
+  font-family: "VVDS-Fifties-Exp-Reg";
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .footer-links a:hover {
@@ -1448,7 +1455,7 @@ ul {
 
 .redes .contenido-icono a[data-social="linkedin"] .relleno,
 .redes .contenido-icono a[data-social="linkedin"] ~ .tooltip {
-  background-color: #EA4335;
+  background-color: #ea4335;
 }
 
 .redes .contenido-icono a[data-social="whatsapp"] .relleno,
@@ -1481,8 +1488,12 @@ ul {
   margin-bottom: 1rem;
 }
 
+.footer-info p {
+  font-size: 0.9rem;
+}
+
 .logo-section img {
-  width: 30vh;
+  width: 35vh;
   margin-bottom: 30px;
 }
 
@@ -1503,6 +1514,17 @@ hr {
 .footer-bottom p {
   font-size: 0.9rem;
   color: #555;
+}
+
+/* FIN FOOTER */
+
+/* ============= Responsive Ipad ==================== */
+@media (max-width: 992px) {
+  .creative-cards .contenedor .row .card-column {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-bottom: 40px;
+  }
 }
 
 /* FIN FOOTER */

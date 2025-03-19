@@ -1,10 +1,7 @@
 :root {
-  --color-primary: #136b46;
-  --color-primary-dark: #0e2d1d;
-  --color-accent: #cfa869;
-  --color-accent-dark: #855500;
-  --color-text: #199644;
-  --color-white: #ffffff;
+  --color-primary: #001947;
+  --color-text: #0053f1;
+  --color-white: #f1f1f2;
 }
 
 html {
@@ -12,23 +9,25 @@ html {
 }
 
 @font-face {
-  font-family: "Comfortaa-Medium";
-  src: url("/fonts/Comfortaa-Medium.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Med"; /* Nombre de la fuente Este era el Comfortaa Medium */
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Med.otf")
+    format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Comfortaa-Bold";
-  src: url("/fonts/Comfortaa-Bold.ttf") format("opentype");
+  font-family: "VVDS-Fifties-Exp-Reg"; /* Nombre de la fuente: Este era Comfortaa Bold*/
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Reg.otf")
+    format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
-  font-family: "Comfortaa-Medium";
+  font-family: "VVDS-Fifties-Exp-Med";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +35,7 @@ html {
 
 body {
   opacity: 1;
-  font-family: "Comfortaa-Medium", system-ui, -apple-system, sans-serif;
+  font-family: "VVDS-Fifties-Exp-Med", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -65,7 +64,7 @@ body {
 }
 
 .navbar a {
-  font-family: "Comfortaa-Bold", system-ui, -apple-system, sans-serif;
+  font-family: "VVDS-Fifties-Exp-Reg", system-ui, -apple-system, sans-serif;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 900;
@@ -207,9 +206,8 @@ section.is-visible {
 
 /* HERO SECTION */
 
-
 h1 {
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   font-weight: 700;
   font-size: 4rem;
   color: var(--color-white);
@@ -217,7 +215,7 @@ h1 {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-text));
   color: var(--color-white);
   margin-top: 5rem;
   padding: 8rem 2rem;
@@ -243,9 +241,17 @@ h1 {
 }
 
 @keyframes float {
-  0% { transform: translateY(100vh) scale(0); opacity: 0; }
-  50% { opacity: 0.5; }
-  100% { transform: translateY(-100vh) scale(1); opacity: 0; }
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
 }
 
 .hero h1 {
@@ -257,8 +263,14 @@ h1 {
 }
 
 @keyframes slideIn {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .experience-badge {
@@ -273,9 +285,15 @@ h1 {
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .experience-badge svg {
@@ -285,8 +303,12 @@ h1 {
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .about-section {
@@ -326,8 +348,13 @@ h1 {
 }
 
 @keyframes floatIcon {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 .about-content.visible {
@@ -365,7 +392,9 @@ h1 {
 }
 
 @keyframes dotAppear {
-  to { transform: scale(1); }
+  to {
+    transform: scale(1);
+  }
 }
 
 .services-grid {
@@ -378,14 +407,14 @@ h1 {
   background: var(--color-white);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .service-card:hover {
   transform: translateY(-5px) rotate(1deg);
-  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
 }
 
 .service-card h3 {
@@ -431,7 +460,8 @@ h1 {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23136b46'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E") no-repeat center;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23136b46'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E")
+    no-repeat center;
   background-size: contain;
 }
 
@@ -447,7 +477,7 @@ h1 {
   color: var(--color-primary);
   margin-bottom: 2rem;
 }
-.process-sub{
+.process-sub {
   margin-bottom: 2rem;
   font-size: 1rem;
   text-align: center;
@@ -465,7 +495,7 @@ h1 {
   background: var(--color-white);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   text-align: center;
   transition: all 0.3s ease;
   opacity: 0;
@@ -479,7 +509,7 @@ h1 {
 
 .step-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
 }
 
 .step-number {
@@ -501,24 +531,24 @@ h1 {
 
 @media (max-width: 768px) {
   .hero h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
   .about-content {
-      flex-direction: column;
+    flex-direction: column;
   }
   .about-icon {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
   }
   .about-content h2 {
-      font-size: 1.75rem;
+    font-size: 1.75rem;
   }
   .services-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .process-steps {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -530,7 +560,7 @@ h1 {
   color: var(--color-primary);
 }
 
-.cta h2{
+.cta h2 {
   font-size: 3rem;
 }
 
@@ -548,7 +578,7 @@ h1 {
 }
 
 .btn-primary {
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   background-color: var(--color-text);
   color: white;
 }
@@ -569,6 +599,13 @@ h1 {
   text-align: center;
 }
 
+.logo-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
 /* Estilo para los links principales */
 .footer-links {
   display: flex;
@@ -578,15 +615,15 @@ h1 {
 }
 
 .footer-links a {
-  font-family: "Comfortaa-Bold";
+  font-family: "VVDS-Fifties-Exp-Reg";
   font-size: 1rem;
   color: var(--color-primary);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .footer-links a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -663,7 +700,7 @@ ul {
 
 .redes .contenido-icono a[data-social="linkedin"] .relleno,
 .redes .contenido-icono a[data-social="linkedin"] ~ .tooltip {
-  background-color: #EA4335;
+  background-color: #ea4335;
 }
 
 .redes .contenido-icono a[data-social="whatsapp"] .relleno,
@@ -701,8 +738,7 @@ ul {
 }
 
 .logo-section img {
-  display: inline;
-  width: 30vh;
+  width: 35vh;
   margin-bottom: 30px;
 }
 
@@ -724,100 +760,8 @@ hr {
   font-size: 0.9rem;
   color: #555;
 }
-/* TARJETAS CREATIVAS */
 
-.creative-cards {
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.393);
-  font-family: "Comfortaa-Bold";
-  padding: 120px 0;
-  position: relative;
-}
-.creative-cards .contenedor {
-  max-width: 1320px;
-  width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-.creative-cards .contenedor .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.creative-cards .contenedor .row .card-column {
-  flex: 0 0 auto;
-  width: 33.33333333%;
-  text-align: center;
-  max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.card-details {
-  width: 80%;
-  margin: auto;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-.card-details:before {
-  content: "";
-  width: 190px;
-  height: 380px;
-  background: #f7f6f2;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) skew(-20deg, 0deg);
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-}
-.card-details:hover:before {
-  background-color: rgba(54, 104, 54, 0.259);
-}
-.card-icons {
-  width: 140px;
-  height: 150px;
-  position: relative;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-icons:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid;
-  width: 100%;
-  height: 100%;
-  transform: skew(-20deg, 0deg);
-  background: #fff;
-  border-color: rgba(77, 135, 77, 0.56);
-  transition: 0.3s ease-in-out;
-}
-.card-details:hover .card-icons:before {
-  background-color: rgb(255, 255, 255);
-}
-.card-icons img {
-  position: relative;
-  width: 70px;
-  height: 70px;
-}
-.card-details h2 {
-  color: var(--color-primary);
-  margin-bottom: 15px;
-  margin-top: 50px;
-  font-weight: 900;
-  font-size: 2rem;
-  line-height: 1.5;
-}
-.card-details p {
-  font-size: 1.2rem;
-  line-height: 1;
-  color: var(--color-text);
-  font-weight: 400;
-  margin-bottom: 30px;
-}
+/* FIN FOOTER */
 
 /* ============= Responsive Ipad ==================== */
 @media (max-width: 992px) {
@@ -943,7 +887,7 @@ hr {
     width: 100%;
     margin-bottom: 20px;
   }
-  h2{
+  h2 {
     line-height: 3rem;
   }
 
@@ -954,5 +898,4 @@ hr {
   .footer-info p {
     font-size: 0.5rem;
   }
-  
 }
