@@ -11,7 +11,7 @@ html {
 
 @font-face {
   font-family: "VVDS-Fifties-Exp-Med"; /* Nombre de la fuente Este era el Comfortaa Medium */
-  src: url("./src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Med.otf") format("opentype");
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Med.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@ html {
 
 @font-face {
   font-family: "VVDS-Fifties-Exp-Reg"; /* Nombre de la fuente: Este era Comfortaa Bold*/
-  src: url("./src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Reg.otf") format("opentype");
+  src: url("/src/ELEMENTOS DE MARCA/TIPOGRAFIAS/PARA TITULOS/VVDS-Fifties-Exp-Reg.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
