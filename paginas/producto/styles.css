@@ -1086,7 +1086,7 @@ h3 {
 }
 
 .left-side {
-  background-color: #5de2a3;
+  background-color: var(--color-text);
   width: 130px;
   height: 120px;
   border-radius: 4px;
