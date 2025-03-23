@@ -312,7 +312,7 @@ h1 {
 }
 
 .about-section {
-  padding: 4rem 2rem;
+  padding: 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -478,8 +478,7 @@ h1 {
   margin-bottom: 2rem;
 }
 .process-sub {
-  margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
   color: var(--color-primary);
 }
@@ -555,7 +554,6 @@ h1 {
 /* Contacto con nosotros */
 #cta-nosotros {
   text-align: center;
-  padding: 50px 20px;
   background-color: #ffffff41;
   color: var(--color-primary);
 }

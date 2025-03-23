@@ -699,7 +699,7 @@ h3 {
 }
 
 .text-cheque{
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--color-text);
   text-align: justify;
 }
@@ -812,7 +812,7 @@ h3 {
 }
 
 .cheque-preview p{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .result {
@@ -831,7 +831,7 @@ h3 {
   color: var(--color-text);
 }
 .result.success p{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .result.error {
